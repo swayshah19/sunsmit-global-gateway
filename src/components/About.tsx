@@ -60,7 +60,7 @@ const About = () => {
               <CardContent className="p-6">
                 <Users className="h-12 w-12 text-secondary mx-auto mb-4" />
                 <h4 className="font-semibold text-foreground mb-2">Expert Team</h4>
-                <p className="text-sm text-muted-foreground">50+ Chemical Engineers</p>
+                <p className="text-sm text-muted-foreground">Team of Chemical & Supply Chain Experts</p>
               </CardContent>
             </Card>
 
