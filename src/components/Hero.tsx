@@ -46,15 +46,11 @@ const Hero = () => {
             275,000+ L/day of premium chemicals with unwavering quality and reliability.
           </p>
           
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-6 mb-16 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
             <Button size="lg" className="bg-primary hover:bg-primary-dark text-white px-8 py-4 text-lg font-semibold shadow-primary hover:shadow-glow transition-smooth group">
               Download Company Profile
               <ChevronDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="lg" className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold backdrop-blur-sm group">
-              <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              Watch Our Story
             </Button>
           </div>
 
