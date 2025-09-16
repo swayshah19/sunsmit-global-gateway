@@ -24,16 +24,6 @@ const Products = () => {
       description: "Premium quality stable bleaching powder with minimum 34% chlorine content. Mercury-free and stable in alkaline medium for reliable performance.",
       applications: ["Water Purification", "Effluent Treatment", "Paper Industry", "Textile Bleaching", "Food Processing", "Oil Refineries"],
       color: "text-green-600"
-    },
-    {
-      icon: <FlaskConical className="h-8 w-8" />,
-      name: "Future Products",
-      brand: "Expansion Plans",
-      concentration: "Various",
-      capacity: "Upcoming",
-      description: "Planned pigment plant at Kalol, Gandhinagar to expand our product portfolio and serve diverse industrial applications.",
-      applications: ["Pigments", "Specialty Chemicals", "Industrial Applications", "Custom Solutions"],
-      color: "text-purple-600"
     }
   ];
 
@@ -50,7 +40,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 justify-items-center max-w-4xl mx-auto">
           {products.map((product, index) => (
             <Card key={index} className="shadow-card hover:shadow-corporate transition-all duration-300 group">
               <CardHeader>
