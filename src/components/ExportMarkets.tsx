@@ -95,9 +95,6 @@ const ExportMarkets = () => {
             <h3 className="text-3xl font-bold text-foreground mb-4">
               Export Capabilities
             </h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Interactive map showing our global export reach and high-demand chemical categories
-            </p>
           </div>
           <ExportMap />
         </div>
