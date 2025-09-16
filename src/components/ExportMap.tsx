@@ -276,12 +276,7 @@ const ExportMap: React.FC<ExportMapProps> = ({
                   <h4 className={`font-semibold text-sm mb-2 ${category.textColor}`}>
                     {category.title}
                   </h4>
-                  <div className="space-y-1 mb-3">
-                    {category.products.slice(0, 2).map((product, idx) => <Badge key={idx} variant="secondary" className="text-xs mr-1 mb-1 block w-fit">
-                        {product.length > 25 ? product.substring(0, 25) + '...' : product}
-                      </Badge>)}
-                    <Badge variant="outline" className="text-xs">+{category.products.length - 2} more</Badge>
-                  </div>
+                  
                   <div className="flex items-center text-xs text-muted-foreground">
                     <MapPin className="h-3 w-3 mr-1" />
                     {category.regions}
