@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Globe, Award, Factory, Users } from "lucide-react";
-import heroImage from "@/assets/hero-chemical-plant.jpg";
+import heroImage from "@/assets/hero-background-new.jpg";
 
 const Hero = () => {
   return (
