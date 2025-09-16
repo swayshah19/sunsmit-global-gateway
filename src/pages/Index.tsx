@@ -7,6 +7,7 @@ import DomesticMarkets from "@/components/DomesticMarkets";
 import ExportMarkets from "@/components/ExportMarkets";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <ExportMarkets />
       <Contact />
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };
