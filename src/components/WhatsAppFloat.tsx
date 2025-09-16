@@ -5,8 +5,13 @@ const WhatsAppFloat = () => {
   const message = "Hello! I'm interested in your chemical products and would like to know more.";
   
   const handleWhatsAppClick = () => {
-    const whatsappUrl = `https://wa.me/91${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    const fullNumber = `91${phoneNumber}`;
+    const encoded = encodeURIComponent(message);
+    const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+    const url = isMobile
+      ? `https://wa.me/${fullNumber}?text=${encoded}`
+      : `https://web.whatsapp.com/send?phone=${fullNumber}&text=${encoded}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   return (
