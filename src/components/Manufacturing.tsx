@@ -3,29 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Factory, FlaskConical, Microscope, ShieldCheck, Recycle, Users } from "lucide-react";
 
 const Manufacturing = () => {
-  const capabilities = [
-    {
-      icon: <Factory className="h-8 w-8" />,
-      title: "Advanced Reactors",
-      description: "State-of-the-art chemical reactors with precise temperature and pressure control",
-    },
-    {
-      icon: <FlaskConical className="h-8 w-8" />,
-      title: "Distillation Units",
-      description: "High-efficiency distillation systems for product purification and separation",
-    },
-    {
-      icon: <Recycle className="h-8 w-8" />,
-      title: "Drying Systems",
-      description: "Modern drying equipment ensuring optimal moisture content and product stability",
-    },
-    {
-      icon: <Microscope className="h-8 w-8" />,
-      title: "Quality Control Labs",
-      description: "In-house laboratories with HPLC, GC, FTIR, KF, and wet analysis capabilities",
-    },
-  ];
-
   const certifications = [
     { name: "ISO 9001:2015", type: "Quality Management" },
     { name: "ISO 14001:2015", type: "Environmental Management" },
@@ -44,21 +21,6 @@ const Manufacturing = () => {
             Our state-of-the-art manufacturing facilities across Ahmedabad, Ankleshwar, and Ghaziabad 
             combine advanced technology with stringent quality controls to deliver world-class chemical products.
           </p>
-        </div>
-
-        {/* Manufacturing Capabilities */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {capabilities.map((capability, index) => (
-            <Card key={index} className="text-center shadow-card hover:shadow-corporate transition-all duration-300">
-               <CardContent className="">
-                 <div className="text-primary mb-4 flex justify-center">
-                   {capability.icon}
-                 </div>
-                 <h3 className="font-semibold text-foreground mb-3">{capability.title}</h3>
-                 <p className="text-sm text-muted-foreground">{capability.description}</p>
-               </CardContent>
-            </Card>
-          ))}
         </div>
 
         {/* Manufacturing Facilities */}
