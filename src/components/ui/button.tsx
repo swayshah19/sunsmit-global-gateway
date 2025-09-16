@@ -5,26 +5,28 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium ring-offset-background transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        default: "bg-primary text-primary-foreground hover:bg-primary-dark shadow-card hover:shadow-primary",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-card",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground shadow-card hover:shadow-elevated",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary-dark shadow-card hover:shadow-elevated",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Corporate variants for Sun Smit Dye Chem
-        corporate: "bg-gradient-primary text-primary-foreground shadow-corporate hover:shadow-lg transform hover:scale-105 transition-all duration-300",
-        hero: "bg-white text-primary shadow-lg hover:bg-white/90 font-semibold px-8",
-        "outline-hero": "border-2 border-white text-white bg-transparent hover:bg-white hover:text-primary font-semibold px-8",
-        success: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/90",
+        // Enhanced Premium Variants
+        premium: "bg-gradient-primary text-primary-foreground shadow-primary hover:shadow-glow transform hover:scale-105 font-semibold",
+        hero: "bg-white/95 text-primary shadow-elevated hover:bg-white hover:shadow-glow font-semibold backdrop-blur-sm border border-white/20",
+        glass: "glass text-white hover:bg-white/20 font-medium shadow-card hover:shadow-elevated",
+        accent: "bg-accent text-accent-foreground hover:bg-accent-dark shadow-card hover:shadow-glow font-semibold",
+        success: "bg-secondary text-secondary-foreground shadow-card hover:bg-secondary-dark hover:shadow-elevated",
       },
       size: {
         default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        sm: "h-9 rounded-md px-3 text-sm",
+        lg: "h-12 rounded-xl px-8 py-3 text-base font-semibold",
+        xl: "h-14 rounded-xl px-10 py-4 text-lg font-bold",
         icon: "h-10 w-10",
       },
     },

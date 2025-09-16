@@ -180,7 +180,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button variant="corporate" size="lg" className="w-full">
+                  <Button variant="premium" size="lg" className="w-full">
                     Send Enquiry
                   </Button>
 

@@ -50,7 +50,7 @@ const Header = () => {
               <Mail className="h-4 w-4" />
               <span>export02@sunsmitdyechem.com</span>
             </div>
-            <Button variant="corporate" size="sm">
+            <Button variant="premium" size="sm">
               Get Quote
             </Button>
           </div>
@@ -85,7 +85,7 @@ const Header = () => {
                 ))}
               </ul>
               <div className="mt-4 pt-4 border-t border-border">
-                <Button variant="corporate" className="w-full">
+                <Button variant="premium" className="w-full">
                   Get Quote
                 </Button>
               </div>
