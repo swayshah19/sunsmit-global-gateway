@@ -8,31 +8,31 @@ const Products = () => {
     {
       icon: <Droplets className="h-8 w-8" />,
       name: "Sodium Hypochlorite",
-      brand: "Sun Chlorex",
-      concentration: "10-15%",
-      capacity: "430 MT/day",
-      description: "High-grade liquid bleaching agent for water treatment, textile processing, and sanitation applications.",
-      applications: ["Water Treatment", "Textile Industry", "Sanitization", "Paper & Pulp"],
+      brand: "Sun Chlorex (12%)",
+      concentration: "12%",
+      capacity: "275,000 L/day",
+      description: "High-grade liquid disinfectant and bleaching agent with Manufacturing Drug License for water purification. Mercury-free and stable formulation.",
+      applications: ["Drinking Water Disinfection", "Textile Bleaching", "Food Processing", "Sanitation", "Paper Industry", "Effluent Treatment"],
       color: "text-blue-600"
     },
     {
       icon: <Sparkles className="h-8 w-8" />,
       name: "Calcium Hypochlorite",
       brand: "Stable Bleaching Powder",
-      concentration: "65-70%",
-      capacity: "Export Grade",
-      description: "Premium quality stable bleaching powder for long-term storage and international shipping.",
-      applications: ["Water Purification", "Swimming Pools", "Industrial Bleaching", "Disinfection"],
+      concentration: "Min 34% Chlorine",
+      capacity: "10 TPD",
+      description: "Premium quality stable bleaching powder with minimum 34% chlorine content. Mercury-free and stable in alkaline medium for reliable performance.",
+      applications: ["Water Purification", "Effluent Treatment", "Paper Industry", "Textile Bleaching", "Food Processing", "Oil Refineries"],
       color: "text-green-600"
     },
     {
       icon: <FlaskConical className="h-8 w-8" />,
-      name: "Specialty Intermediates",
-      brand: "Custom Solutions",
+      name: "Future Products",
+      brand: "Expansion Plans",
       concentration: "Various",
-      capacity: "20 MT Campaign",
-      description: "Specialized chemical intermediates manufactured for pharmaceutical and fine chemical industries.",
-      applications: ["Pharmaceutical", "Fine Chemicals", "Research", "Custom Synthesis"],
+      capacity: "Upcoming",
+      description: "Planned pigment plant at Kalol, Gandhinagar to expand our product portfolio and serve diverse industrial applications.",
+      applications: ["Pigments", "Specialty Chemicals", "Industrial Applications", "Custom Solutions"],
       color: "text-purple-600"
     }
   ];

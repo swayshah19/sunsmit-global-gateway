@@ -10,8 +10,9 @@ const About = () => {
             About Sun Smit Dye Chem
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Established in 1996, Sun Smit Dye Chem Pvt. Ltd. has grown from a local manufacturer 
-            to a leading global chemical exporter, building trust through quality, reliability, and sustainability.
+            Established in 1996, Sun Smit Dye Chem Pvt. Ltd. has built over two decades of leadership 
+            in chemical manufacturing, specializing in Sodium Hypochlorite and Bleaching Powder with strong 
+            domestic presence and growing export focus.
           </p>
         </div>
 
@@ -22,25 +23,25 @@ const About = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Founded 1996:</strong> Started in Ahmedabad with a vision to serve the chemical industry with excellence
+                  <strong className="text-foreground">Established Leadership:</strong> Over two decades of operations in chemical manufacturing since 1996
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Family Leadership:</strong> Guided by the Shah family's commitment to quality and growth
+                  <strong className="text-foreground">Licensed Manufacturing:</strong> Holds Manufacturing Drug License for sodium hypochlorite for water purification
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Strategic Focus:</strong> Specialized in bulk chemicals with strong export capabilities
+                  <strong className="text-foreground">Strategic Locations:</strong> Three manufacturing plants in Ahmedabad, Ankleshwar, and Ghaziabad (Delhi NCR)
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Global Reach:</strong> Serving customers across Europe, Africa, and Asia
+                  <strong className="text-foreground">Growth Focus:</strong> Strong domestic presence with planned expansion into export markets
                 </p>
               </div>
             </div>

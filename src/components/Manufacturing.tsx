@@ -41,8 +41,8 @@ const Manufacturing = () => {
             Manufacturing Excellence
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Our state-of-the-art manufacturing facility in Ankleshwar, Gujarat, combines advanced 
-            technology with stringent quality controls to deliver world-class chemical products.
+            Our state-of-the-art manufacturing facilities across Ahmedabad, Ankleshwar, and Ghaziabad 
+            combine advanced technology with stringent quality controls to deliver world-class chemical products.
           </p>
         </div>
 
@@ -61,24 +61,24 @@ const Manufacturing = () => {
           ))}
         </div>
 
-        {/* Key Statistics */}
+        {/* Manufacturing Facilities */}
         <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-white mb-16">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">430</div>
-              <div className="text-white/90">MT/day Sodium Hypochlorite</div>
+          <h3 className="text-2xl font-bold text-center mb-8">Three Strategic Manufacturing Locations</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-2xl font-bold mb-2">Ahmedabad Plant</div>
+              <div className="text-white/90 mb-2">100,000 L/day</div>
+              <div className="text-sm text-white/80">Sodium Hypochlorite for Textiles, Starch & Paper Industries</div>
             </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">20</div>
-              <div className="text-white/90">MT Campaign Capacity</div>
+            <div className="text-center">
+              <div className="text-2xl font-bold mb-2">Ankleshwar Plant</div>
+              <div className="text-white/90 mb-2">100,000 L/day + 10 TPD</div>
+              <div className="text-sm text-white/80">Sun Chlorex + Stable Bleaching Powder for Pharma, Pesticides, Power Plants</div>
             </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">24/7</div>
-              <div className="text-white/90">Production Operations</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">99.9%</div>
-              <div className="text-white/90">Quality Assurance</div>
+            <div className="text-center">
+              <div className="text-2xl font-bold mb-2">Ghaziabad Plant</div>
+              <div className="text-white/90 mb-2">75,000 L/day</div>
+              <div className="text-sm text-white/80">Delhi NCR Supply Hub for Northern Region</div>
             </div>
           </div>
         </div>

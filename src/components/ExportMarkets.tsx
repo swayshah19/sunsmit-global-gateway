@@ -54,8 +54,8 @@ const ExportMarkets = () => {
             Global Export Markets
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            From Gujarat to the globe, we serve diverse markets across continents with 
-            tailored chemical solutions and exceptional service standards.
+            Building on our strong domestic presence across textiles, pharma, power, and government sectors, 
+            we are expanding into global export markets with proven quality and compliance.
           </p>
         </div>
 

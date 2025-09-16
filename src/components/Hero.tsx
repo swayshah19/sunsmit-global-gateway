@@ -25,8 +25,8 @@ const Hero = () => {
             Supplying Chemicals with Trust, Quality & Scale
           </p>
           <p className="text-lg text-white/80 mb-8 max-w-2xl">
-            Leading chemical exporters with 30+ years of expertise in manufacturing and supplying 
-            high-quality chemicals to global markets across Europe, Africa, and Asia.
+            Over two decades of chemical manufacturing excellence with three strategic plants producing 
+            275,000+ L/day Sodium Hypochlorite and 10 TPD Stable Bleaching Powder.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -43,7 +43,7 @@ const Hero = () => {
             <div className="text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2">
                 <Award className="h-8 w-8 text-secondary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">30+</div>
+                <div className="text-2xl font-bold text-white">25+</div>
                 <div className="text-sm text-white/80">Years Legacy</div>
               </div>
             </div>
@@ -51,24 +51,24 @@ const Hero = () => {
             <div className="text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2">
                 <Factory className="h-8 w-8 text-secondary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">430</div>
-                <div className="text-sm text-white/80">MT/day Capacity</div>
+                <div className="text-2xl font-bold text-white">275K</div>
+                <div className="text-sm text-white/80">L/day Capacity</div>
               </div>
             </div>
             
             <div className="text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2">
                 <Globe className="h-8 w-8 text-secondary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">Global</div>
-                <div className="text-sm text-white/80">Export Network</div>
+                <div className="text-2xl font-bold text-white">3</div>
+                <div className="text-sm text-white/80">Manufacturing Plants</div>
               </div>
             </div>
             
             <div className="text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2">
                 <Users className="h-8 w-8 text-secondary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">50+</div>
-                <div className="text-sm text-white/80">Expert Team</div>
+                <div className="text-2xl font-bold text-white">10</div>
+                <div className="text-sm text-white/80">TPD Bleaching Powder</div>
               </div>
             </div>
           </div>
