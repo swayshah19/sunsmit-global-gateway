@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Badge } from "@/components/ui/badge";
 import { FlaskConical, Leaf, Shield, Droplets, Factory, MapPin } from "lucide-react";
+import mapboxgl from 'mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 interface ExportMapProps {
   className?: string;
@@ -8,12 +10,17 @@ interface ExportMapProps {
 
 const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+  const mapContainer = useRef<HTMLDivElement>(null);
+  const map = useRef<mapboxgl.Map | null>(null);
+
+  // Set Mapbox access token
+  mapboxgl.accessToken = 'pk.eyJ1Ijoic3dheXNoYWgiLCJhIjoiY21mbWlncmprMDJneDJqc2MxYTZzMTdndyJ9.-XIrM-KmglGTcjcss6O42w';
 
   const exportRegions = [
     { 
       id: "north-america",
       name: "North America", 
-      coordinates: { x: 180, y: 120 },
+      coordinates: [-100, 40] as [number, number],
       chemicals: ["Pharmaceutical Intermediates", "Specialty Chemicals"],
       color: "#3B82F6",
       description: "High-value pharmaceutical and specialty chemical exports"
@@ -21,7 +28,7 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
     { 
       id: "europe",
       name: "Europe", 
-      coordinates: { x: 480, y: 100 },
+      coordinates: [10, 50] as [number, number],
       chemicals: ["Pharmaceutical Intermediates", "Specialty Chemicals"],
       color: "#10B981",
       description: "Premium quality standards and technical support"
@@ -29,7 +36,7 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
     { 
       id: "latin-america",
       name: "Latin America", 
-      coordinates: { x: 220, y: 260 },
+      coordinates: [-60, -15] as [number, number],
       chemicals: ["Agrochemical Intermediates", "Pesticide Inputs"],
       color: "#F59E0B",
       description: "Strong demand for crop protection formulations"
@@ -37,7 +44,7 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
     { 
       id: "southeast-asia",
       name: "Southeast Asia", 
-      coordinates: { x: 680, y: 200 },
+      coordinates: [110, 0] as [number, number],
       chemicals: ["Agrochemical Intermediates", "Water Treatment"],
       color: "#EF4444",
       description: "Growing agricultural and industrial markets"
@@ -45,7 +52,7 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
     { 
       id: "africa",
       name: "Africa", 
-      coordinates: { x: 520, y: 240 },
+      coordinates: [20, 0] as [number, number],
       chemicals: ["Water Treatment", "Agrochemical Intermediates"],
       color: "#8B5CF6",
       description: "Water purification and sanitation solutions"
@@ -53,7 +60,7 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
     { 
       id: "middle-east",
       name: "Middle East", 
-      coordinates: { x: 560, y: 170 },
+      coordinates: [45, 30] as [number, number],
       chemicals: ["Water Treatment", "Bulk Organics"],
       color: "#06B6D4",
       description: "Bulk chemical exports for industrial use"
@@ -61,7 +68,7 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
     { 
       id: "east-asia",
       name: "East Asia", 
-      coordinates: { x: 720, y: 140 },
+      coordinates: [120, 35] as [number, number],
       chemicals: ["Specialty Chemicals", "Pharmaceutical Intermediates"],
       color: "#F97316",
       description: "High-margin niche chemical exports"
@@ -116,6 +123,153 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
     }
   ];
 
+  useEffect(() => {
+    if (!mapContainer.current) return;
+
+    // Initialize map
+    map.current = new mapboxgl.Map({
+      container: mapContainer.current,
+      style: 'mapbox://styles/mapbox/light-v11',
+      projection: 'globe',
+      zoom: 1.2,
+      center: [30, 20],
+      pitch: 0,
+    });
+
+    // Add navigation controls
+    map.current.addControl(
+      new mapboxgl.NavigationControl({
+        visualizePitch: true,
+      }),
+      'top-right'
+    );
+
+    // Add atmosphere and fog effects
+    map.current.on('style.load', () => {
+      map.current?.setFog({
+        color: 'rgb(255, 255, 255)',
+        'high-color': 'rgb(200, 200, 225)',
+        'horizon-blend': 0.2,
+      });
+
+      // Add custom CSS for pulsing animation
+      const style = document.createElement('style');
+      style.textContent = `
+        @keyframes pulse {
+          0%, 100% { opacity: 0.3; transform: scale(1); }
+          50% { opacity: 0.7; transform: scale(1.2); }
+        }
+        .pulse-marker { animation: pulse 2s infinite; }
+      `;
+      document.head.appendChild(style);
+
+      // Add markers for each export region
+      exportRegions.forEach((region) => {
+        // Create marker element
+        const markerEl = document.createElement('div');
+        markerEl.className = 'cursor-pointer pulse-marker';
+        markerEl.style.cssText = `
+          width: 20px;
+          height: 20px;
+          background: ${region.color};
+          border: 3px solid white;
+          border-radius: 50%;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+          transition: transform 0.2s ease;
+        `;
+
+        markerEl.addEventListener('mouseenter', () => {
+          markerEl.style.transform = 'scale(1.2)';
+        });
+
+        markerEl.addEventListener('mouseleave', () => {
+          markerEl.style.transform = 'scale(1)';
+        });
+
+        // Create popup content
+        const popupContent = `
+          <div class="p-3 min-w-[200px]">
+            <h4 class="font-bold text-sm mb-2" style="color: ${region.color}">${region.name}</h4>
+            <p class="text-xs text-gray-600 mb-2 italic">${region.description}</p>
+            <div class="space-y-1">
+              ${region.chemicals.map(chemical => `
+                <div class="text-xs font-medium text-gray-700">• ${chemical}</div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+
+        // Create popup
+        const popup = new mapboxgl.Popup({
+          offset: 25,
+          closeButton: true,
+          closeOnClick: false
+        }).setHTML(popupContent);
+
+        // Create marker with popup
+        new mapboxgl.Marker(markerEl)
+          .setLngLat(region.coordinates)
+          .setPopup(popup)
+          .addTo(map.current!);
+
+        // Add click handler
+        markerEl.addEventListener('click', () => {
+          setSelectedRegion(selectedRegion === region.id ? null : region.id);
+        });
+      });
+    });
+
+    // Rotation animation settings
+    const secondsPerRevolution = 300;
+    const maxSpinZoom = 4;
+    let userInteracting = false;
+    let spinEnabled = true;
+
+    // Spin globe function
+    function spinGlobe() {
+      if (!map.current) return;
+      
+      const zoom = map.current.getZoom();
+      if (spinEnabled && !userInteracting && zoom < maxSpinZoom) {
+        const distancePerSecond = 360 / secondsPerRevolution;
+        const center = map.current.getCenter();
+        center.lng -= distancePerSecond;
+        map.current.easeTo({ center, duration: 1000, easing: (n) => n });
+      }
+    }
+
+    // Event listeners for interaction
+    map.current.on('mousedown', () => {
+      userInteracting = true;
+    });
+    
+    map.current.on('dragstart', () => {
+      userInteracting = true;
+    });
+    
+    map.current.on('mouseup', () => {
+      userInteracting = false;
+      spinGlobe();
+    });
+    
+    map.current.on('touchend', () => {
+      userInteracting = false;
+      spinGlobe();
+    });
+
+    map.current.on('moveend', () => {
+      spinGlobe();
+    });
+
+    // Start the globe spinning
+    spinGlobe();
+
+    // Cleanup
+    return () => {
+      map.current?.remove();
+    };
+  }, [selectedRegion]);
+
   return (
     <div className={`w-full ${className}`}>
       <div className="grid lg:grid-cols-3 gap-8">
@@ -126,136 +280,12 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
               Global Export Markets & Chemical Demand
             </h3>
             
-            <div className="relative bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-6 overflow-hidden">
-              {/* World Map SVG */}
-              <svg
-                viewBox="0 0 800 400"
-                className="w-full h-auto"
-                style={{ maxHeight: '400px' }}
-              >
-                {/* Simplified world map outline */}
-                <defs>
-                  <pattern id="dots" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                    <circle cx="2" cy="2" r="1" fill="#e2e8f0" opacity="0.5"/>
-                  </pattern>
-                </defs>
-                
-                {/* Ocean background */}
-                <rect width="800" height="400" fill="url(#dots)" />
-                
-                {/* More accurate continent shapes based on reference */}
-                {/* North America */}
-                <path d="M60 90 Q90 70 130 75 Q170 70 200 80 L220 90 Q240 100 250 120 L260 140 Q270 160 265 180 L250 200 Q230 210 200 215 L170 220 Q140 215 120 200 L100 180 Q80 160 70 140 L65 120 Q60 105 60 90 Z" 
-                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
-                      
-                {/* Greenland */}
-                <path d="M220 50 Q240 45 260 55 L270 70 Q265 85 250 80 L235 75 Q220 65 220 50 Z" 
-                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
-                      
-                {/* South America */}
-                <path d="M200 230 Q220 235 240 250 L250 270 Q255 290 250 310 L245 330 Q240 350 235 370 L225 385 Q215 390 205 385 L195 380 Q185 370 180 350 L175 330 Q170 310 175 290 L180 270 Q185 250 195 240 L200 230 Z" 
-                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
-                      
-                {/* Europe */}
-                <path d="M420 80 Q440 75 460 80 L480 85 Q500 90 510 100 L520 110 Q525 120 520 130 L510 135 Q490 140 470 135 L450 130 Q430 125 425 115 L420 105 Q415 95 420 80 Z" 
-                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
-                      
-                {/* Africa */}
-                <path d="M450 150 Q470 145 490 150 L510 155 Q530 160 540 170 L550 180 Q560 200 555 220 L550 240 Q545 260 540 280 L535 300 Q530 315 520 325 L505 330 Q485 335 470 330 L455 325 Q445 315 440 300 L435 280 Q430 260 435 240 L440 220 Q445 200 450 180 L455 165 Q450 155 450 150 Z" 
-                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
-                      
-                {/* Asia */}
-                <path d="M540 80 Q580 75 620 80 L660 85 Q700 90 720 100 L740 110 Q760 120 770 140 L775 160 Q770 180 760 200 L745 215 Q725 225 700 220 L675 215 Q650 210 625 205 L600 200 Q575 195 560 185 L545 175 Q535 165 530 150 L525 135 Q530 120 535 105 L540 90 Q540 85 540 80 Z" 
-                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
-                      
-                {/* Australia */}
-                <path d="M650 290 Q680 285 710 290 L730 295 Q750 300 760 310 L765 320 Q760 330 745 335 L725 340 Q700 345 680 340 L665 335 Q650 330 645 320 L640 310 Q645 300 650 290 Z" 
-                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
-
-                {/* Export region markers */}
-                {exportRegions.map((region, index) => (
-                  <g key={region.id}>
-                    {/* Pulsing circle animation */}
-                    <circle
-                      cx={region.coordinates.x}
-                      cy={region.coordinates.y}
-                      r="12"
-                      fill={region.color}
-                      opacity="0.2"
-                      className="animate-ping"
-                      style={{ animationDelay: `${index * 0.3}s` }}
-                    />
-                    
-                    {/* Main marker */}
-                    <circle
-                      cx={region.coordinates.x}
-                      cy={region.coordinates.y}
-                      r="8"
-                      fill={region.color}
-                      stroke="white"
-                      strokeWidth="3"
-                      className="cursor-pointer hover:r-10 transition-all duration-200 shadow-lg"
-                      onClick={() => setSelectedRegion(selectedRegion === region.id ? null : region.id)}
-                    />
-                    
-                    {/* Region label */}
-                    <text
-                      x={region.coordinates.x}
-                      y={region.coordinates.y - 20}
-                      textAnchor="middle"
-                      className="text-xs font-bold fill-gray-800 pointer-events-none drop-shadow-sm"
-                      style={{ textShadow: '1px 1px 2px rgba(255,255,255,0.8)' }}
-                    >
-                      {region.name}
-                    </text>
-                    
-                    {/* Connection lines to chemicals */}
-                    {selectedRegion === region.id && (
-                      <g>
-                        <rect
-                          x={region.coordinates.x + 15}
-                          y={region.coordinates.y - 40}
-                          width="200"
-                          height="80"
-                          fill="white"
-                          stroke={region.color}
-                          strokeWidth="3"
-                          rx="12"
-                          className="shadow-2xl"
-                          filter="drop-shadow(0 10px 25px rgba(0,0,0,0.15))"
-                        />
-                        <text
-                          x={region.coordinates.x + 25}
-                          y={region.coordinates.y - 20}
-                          className="text-sm font-bold fill-gray-800"
-                        >
-                          {region.name}
-                        </text>
-                        <text
-                          x={region.coordinates.x + 25}
-                          y={region.coordinates.y - 5}
-                          className="text-xs fill-gray-600 italic"
-                        >
-                          {region.description}
-                        </text>
-                        {region.chemicals.map((chemical, idx) => (
-                          <text
-                            key={idx}
-                            x={region.coordinates.x + 25}
-                            y={region.coordinates.y + 10 + (idx * 14)}
-                            className="text-xs fill-gray-700 font-medium"
-                          >
-                            • {chemical}
-                          </text>
-                        ))}
-                      </g>
-                    )}
-                  </g>
-                ))}
-              </svg>
+            <div className="relative bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl overflow-hidden">
+              {/* Mapbox Globe */}
+              <div ref={mapContainer} className="w-full h-[400px] rounded-xl" />
               
-              <p className="text-sm text-muted-foreground text-center mt-4">
-                Click on the markers to see regional chemical demands
+              <p className="text-sm text-muted-foreground text-center p-4">
+                Interactive globe showing export regions - click markers for details
               </p>
             </div>
           </div>
