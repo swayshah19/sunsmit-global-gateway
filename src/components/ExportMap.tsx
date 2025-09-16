@@ -277,10 +277,7 @@ const ExportMap: React.FC<ExportMapProps> = ({
                     {category.title}
                   </h4>
                   
-                  <div className="flex items-center text-xs text-muted-foreground">
-                    <MapPin className="h-3 w-3 mr-1" />
-                    {category.regions}
-                  </div>
+                  
                 </div>
               </div>
             </div>)}
