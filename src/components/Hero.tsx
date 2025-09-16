@@ -66,9 +66,9 @@ const Hero = () => {
             
             <div className="text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2">
-                <Users className="h-8 w-8 text-secondary mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">10</div>
-                <div className="text-sm text-white/80">TPD Bleaching Powder</div>
+                <Factory className="h-8 w-8 text-secondary mx-auto mb-2" />
+                <div className="text-2xl font-bold text-white">275K</div>
+                <div className="text-sm text-white/80">L/day Sodium Hypochlorite</div>
               </div>
             </div>
           </div>
