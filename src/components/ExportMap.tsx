@@ -143,30 +143,34 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
                 {/* Ocean background */}
                 <rect width="800" height="400" fill="url(#dots)" />
                 
-                {/* Continents - simplified shapes */}
+                {/* More accurate continent shapes based on reference */}
                 {/* North America */}
-                <path d="M50 80 Q150 60 250 80 L280 120 Q270 180 230 200 L180 220 Q120 200 80 180 L50 140 Z" 
-                      fill="#f8fafc" stroke="#cbd5e1" strokeWidth="1" opacity="0.8"/>
+                <path d="M60 90 Q90 70 130 75 Q170 70 200 80 L220 90 Q240 100 250 120 L260 140 Q270 160 265 180 L250 200 Q230 210 200 215 L170 220 Q140 215 120 200 L100 180 Q80 160 70 140 L65 120 Q60 105 60 90 Z" 
+                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
+                      
+                {/* Greenland */}
+                <path d="M220 50 Q240 45 260 55 L270 70 Q265 85 250 80 L235 75 Q220 65 220 50 Z" 
+                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
                       
                 {/* South America */}
-                <path d="M200 220 Q250 240 280 280 L270 350 Q240 380 200 370 L170 340 Q160 300 180 260 Z" 
-                      fill="#f8fafc" stroke="#cbd5e1" strokeWidth="1" opacity="0.8"/>
+                <path d="M200 230 Q220 235 240 250 L250 270 Q255 290 250 310 L245 330 Q240 350 235 370 L225 385 Q215 390 205 385 L195 380 Q185 370 180 350 L175 330 Q170 310 175 290 L180 270 Q185 250 195 240 L200 230 Z" 
+                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
                       
                 {/* Europe */}
-                <path d="M420 70 Q480 60 520 80 L530 120 Q520 140 480 130 L440 120 Q420 100 420 70 Z" 
-                      fill="#f8fafc" stroke="#cbd5e1" strokeWidth="1" opacity="0.8"/>
+                <path d="M420 80 Q440 75 460 80 L480 85 Q500 90 510 100 L520 110 Q525 120 520 130 L510 135 Q490 140 470 135 L450 130 Q430 125 425 115 L420 105 Q415 95 420 80 Z" 
+                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
                       
                 {/* Africa */}
-                <path d="M450 150 Q520 140 580 160 L590 280 Q570 320 520 330 L480 320 Q450 280 450 200 Z" 
-                      fill="#f8fafc" stroke="#cbd5e1" strokeWidth="1" opacity="0.8"/>
+                <path d="M450 150 Q470 145 490 150 L510 155 Q530 160 540 170 L550 180 Q560 200 555 220 L550 240 Q545 260 540 280 L535 300 Q530 315 520 325 L505 330 Q485 335 470 330 L455 325 Q445 315 440 300 L435 280 Q430 260 435 240 L440 220 Q445 200 450 180 L455 165 Q450 155 450 150 Z" 
+                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
                       
                 {/* Asia */}
-                <path d="M580 80 Q700 70 750 100 L770 180 Q750 220 700 210 L620 200 Q580 160 580 120 Z" 
-                      fill="#f8fafc" stroke="#cbd5e1" strokeWidth="1" opacity="0.8"/>
+                <path d="M540 80 Q580 75 620 80 L660 85 Q700 90 720 100 L740 110 Q760 120 770 140 L775 160 Q770 180 760 200 L745 215 Q725 225 700 220 L675 215 Q650 210 625 205 L600 200 Q575 195 560 185 L545 175 Q535 165 530 150 L525 135 Q530 120 535 105 L540 90 Q540 85 540 80 Z" 
+                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
                       
                 {/* Australia */}
-                <path d="M650 280 Q720 270 750 290 L760 320 Q740 340 700 335 L670 330 Q650 310 650 290 Z" 
-                      fill="#f8fafc" stroke="#cbd5e1" strokeWidth="1" opacity="0.8"/>
+                <path d="M650 290 Q680 285 710 290 L730 295 Q750 300 760 310 L765 320 Q760 330 745 335 L725 340 Q700 345 680 340 L665 335 Q650 330 645 320 L640 310 Q645 300 650 290 Z" 
+                      fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="1" opacity="0.9"/>
 
                 {/* Export region markers */}
                 {exportRegions.map((region, index) => (
@@ -175,9 +179,9 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
                     <circle
                       cx={region.coordinates.x}
                       cy={region.coordinates.y}
-                      r="8"
+                      r="12"
                       fill={region.color}
-                      opacity="0.3"
+                      opacity="0.2"
                       className="animate-ping"
                       style={{ animationDelay: `${index * 0.3}s` }}
                     />
@@ -186,20 +190,21 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
                     <circle
                       cx={region.coordinates.x}
                       cy={region.coordinates.y}
-                      r="6"
+                      r="8"
                       fill={region.color}
                       stroke="white"
-                      strokeWidth="2"
-                      className="cursor-pointer hover:r-8 transition-all duration-200"
+                      strokeWidth="3"
+                      className="cursor-pointer hover:r-10 transition-all duration-200 shadow-lg"
                       onClick={() => setSelectedRegion(selectedRegion === region.id ? null : region.id)}
                     />
                     
                     {/* Region label */}
                     <text
                       x={region.coordinates.x}
-                      y={region.coordinates.y - 15}
+                      y={region.coordinates.y - 20}
                       textAnchor="middle"
-                      className="text-xs font-semibold fill-gray-700 pointer-events-none"
+                      className="text-xs font-bold fill-gray-800 pointer-events-none drop-shadow-sm"
+                      style={{ textShadow: '1px 1px 2px rgba(255,255,255,0.8)' }}
                     >
                       {region.name}
                     </text>
@@ -209,28 +214,36 @@ const ExportMap: React.FC<ExportMapProps> = ({ className = "" }) => {
                       <g>
                         <rect
                           x={region.coordinates.x + 15}
-                          y={region.coordinates.y - 30}
-                          width="180"
-                          height="60"
+                          y={region.coordinates.y - 40}
+                          width="200"
+                          height="80"
                           fill="white"
                           stroke={region.color}
-                          strokeWidth="2"
-                          rx="8"
-                          className="shadow-lg"
+                          strokeWidth="3"
+                          rx="12"
+                          className="shadow-2xl"
+                          filter="drop-shadow(0 10px 25px rgba(0,0,0,0.15))"
                         />
                         <text
                           x={region.coordinates.x + 25}
-                          y={region.coordinates.y - 15}
-                          className="text-xs font-bold fill-gray-800"
+                          y={region.coordinates.y - 20}
+                          className="text-sm font-bold fill-gray-800"
                         >
                           {region.name}
+                        </text>
+                        <text
+                          x={region.coordinates.x + 25}
+                          y={region.coordinates.y - 5}
+                          className="text-xs fill-gray-600 italic"
+                        >
+                          {region.description}
                         </text>
                         {region.chemicals.map((chemical, idx) => (
                           <text
                             key={idx}
                             x={region.coordinates.x + 25}
-                            y={region.coordinates.y - 5 + (idx * 12)}
-                            className="text-xs fill-gray-600"
+                            y={region.coordinates.y + 10 + (idx * 14)}
+                            className="text-xs fill-gray-700 font-medium"
                           >
                             • {chemical}
                           </text>
