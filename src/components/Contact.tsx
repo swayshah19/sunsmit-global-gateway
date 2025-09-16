@@ -103,7 +103,7 @@ const Contact = () => {
           <div className="lg:col-span-2">
             <Card className="shadow-card">
               <CardHeader>
-                <CardTitle>Get Export Quote</CardTitle>
+                <CardTitle>Get Quote</CardTitle>
                 <p className="text-muted-foreground">
                   Fill out the form below and our export team will respond within 24 hours.
                 </p>
