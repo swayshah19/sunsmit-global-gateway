@@ -39,9 +39,9 @@ const Hero = () => {
           </div>
 
           {/* Key Highlights */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-stretch">
             <div className="text-center">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2 h-full flex flex-col justify-center items-center min-h-[120px]">
                 <Award className="h-8 w-8 text-secondary mx-auto mb-2" />
                 <div className="text-2xl font-bold text-white">25+</div>
                 <div className="text-sm text-white/80">Years Legacy</div>
@@ -49,7 +49,7 @@ const Hero = () => {
             </div>
             
             <div className="text-center">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2 h-full flex flex-col justify-center items-center min-h-[120px]">
                 <Factory className="h-8 w-8 text-secondary mx-auto mb-2" />
                 <div className="text-2xl font-bold text-white">275K</div>
                 <div className="text-sm text-white/80">L/day Sodium Hypochlorite</div>
@@ -57,7 +57,7 @@ const Hero = () => {
             </div>
             
             <div className="text-center">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2 h-full flex flex-col justify-center items-center min-h-[120px]">
                 <Globe className="h-8 w-8 text-secondary mx-auto mb-2" />
                 <div className="text-2xl font-bold text-white">3</div>
                 <div className="text-sm text-white/80">Manufacturing Plants</div>
@@ -65,7 +65,7 @@ const Hero = () => {
             </div>
             
             <div className="text-center">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-2 h-full flex flex-col justify-center items-center min-h-[120px]">
                 <Award className="h-8 w-8 text-secondary mx-auto mb-2" />
                 <div className="text-2xl font-bold text-white">ISO</div>
                 <div className="text-sm text-white/80">9001 & 14001 Compliant</div>
