@@ -15,6 +15,11 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Corporate variants for Sun Smit Dye Chem
+        corporate: "bg-gradient-primary text-primary-foreground shadow-corporate hover:shadow-lg transform hover:scale-105 transition-all duration-300",
+        hero: "bg-white text-primary shadow-lg hover:bg-white/90 font-semibold px-8",
+        "outline-hero": "border-2 border-white text-white bg-transparent hover:bg-white hover:text-primary font-semibold px-8",
+        success: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/90",
       },
       size: {
         default: "h-10 px-4 py-2",
