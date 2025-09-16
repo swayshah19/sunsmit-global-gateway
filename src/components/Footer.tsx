@@ -1,8 +1,6 @@
 import { MapPin, Mail, Phone, Globe, Award } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-foreground text-white py-12">
+  return <footer className="bg-foreground text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -50,7 +48,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-secondary" />
-                <span>export02@sunsmitdyechem.com</span>
+                <span>shashwat@sunsmitdyechem.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-secondary" />
@@ -73,8 +71,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
