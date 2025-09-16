@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Globe, MapPin, Ship, Truck, Plane, Award, ArrowRight, Target, CheckCircle } from "lucide-react";
+import ExportMap from "./ExportMap";
 
 const ExportMarkets = () => {
   const markets = [
@@ -86,6 +87,19 @@ const ExportMarkets = () => {
             we are <span className="text-primary font-semibold">actively seeking export opportunities globally</span>. 
             Our IEC-certified operations and proven quality standards position us perfectly for international partnerships.
           </p>
+        </div>
+
+        {/* World Map Section */}
+        <div className="mb-20 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-foreground mb-4">
+              Export Capabilities
+            </h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Interactive map showing our global export reach and high-demand chemical categories
+            </p>
+          </div>
+          <ExportMap />
         </div>
 
         {/* Distribution Network */}
