@@ -146,24 +146,7 @@ const ExportMarkets = () => {
           </div>
         </div>
 
-        {/* Global Presence Stats */}
-        <div className="text-center animate-fade-in-up" style={{
-        animationDelay: '0.8s'
-      }}>
-          <h3 className="text-3xl font-bold text-foreground mb-12">Our Global Presence</h3>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {globalStats.map((stat, index) => <div key={index} className="group hover-lift">
-                <div className="card-premium p-6 text-center h-full">
-                  <div className="text-primary mb-4 flex justify-center group-hover:scale-110 transition-transform">
-                    {stat.icon}
-                  </div>
-                  <div className="text-4xl font-bold text-gradient mb-2">{stat.number}</div>
-                  <div className="text-muted-foreground font-medium">{stat.label}</div>
-                </div>
-              </div>)}
-          </div>
-        </div>
+      
       </div>
     </section>;
 };
