@@ -3,10 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-
 const Contact = () => {
-  return (
-    <section id="contact" className="py-20 bg-muted/30">
+  return <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -59,7 +57,7 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-primary" />
-                    <span>Export Enquiries</span>
+                    <span>Enquiries</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
@@ -174,10 +172,7 @@ const Contact = () => {
                     <label className="text-sm font-medium text-foreground mb-2 block">
                       Message
                     </label>
-                    <Textarea 
-                      placeholder="Please provide details about your requirements, specifications, and any other relevant information..."
-                      className="min-h-[120px]"
-                    />
+                    <Textarea placeholder="Please provide details about your requirements, specifications, and any other relevant information..." className="min-h-[120px]" />
                   </div>
 
                   <Button variant="premium" size="lg" className="w-full">
@@ -193,8 +188,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
