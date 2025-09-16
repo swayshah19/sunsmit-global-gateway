@@ -138,10 +138,7 @@ const ExportMarkets = () => {
                 Join our global network of satisfied customers and unlock new market opportunities
               </p>
               
-              <Button variant="hero" size="lg" className="shadow-glow hover:shadow-elevated">
-                Start Export Partnership
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              
             </div>
           </div>
         </div>
