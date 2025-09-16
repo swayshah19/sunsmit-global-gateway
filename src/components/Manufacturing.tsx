@@ -50,13 +50,13 @@ const Manufacturing = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {capabilities.map((capability, index) => (
             <Card key={index} className="text-center shadow-card hover:shadow-corporate transition-all duration-300">
-              <CardContent className="p-6">
-                <div className="text-primary mb-4 flex justify-center">
-                  {capability.icon}
-                </div>
-                <h3 className="font-semibold text-foreground mb-3">{capability.title}</h3>
-                <p className="text-sm text-muted-foreground">{capability.description}</p>
-              </CardContent>
+               <CardContent className="">
+                 <div className="text-primary mb-4 flex justify-center">
+                   {capability.icon}
+                 </div>
+                 <h3 className="font-semibold text-foreground mb-3">{capability.title}</h3>
+                 <p className="text-sm text-muted-foreground">{capability.description}</p>
+               </CardContent>
             </Card>
           ))}
         </div>
