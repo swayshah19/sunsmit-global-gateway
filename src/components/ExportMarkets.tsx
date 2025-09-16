@@ -8,23 +8,23 @@ const ExportMarkets = () => {
     {
       region: "Europe",
       flag: "🇪🇺",
-      products: ["Liquid Sodium Hypochlorite"],
-      highlights: ["Premium quality standards", "Reliable supply chain", "Technical support"],
-      description: "Serving European markets with high-grade liquid sodium hypochlorite for water treatment and industrial applications."
+      products: ["Specialty Chemicals", "Chemical Intermediates"],
+      highlights: ["Premium quality standards", "IEC certified operations", "Technical support"],
+      description: "Eager to serve European markets with high-grade specialty chemicals and intermediates for various industrial applications."
     },
     {
       region: "Africa",
       flag: "🌍",
-      products: ["Calcium Hypochlorite", "Bleaching Powder"],
-      highlights: ["Stable shipping solutions", "Long shelf life products", "Competitive pricing"],
-      description: "Supplying stable bleaching powder and calcium hypochlorite across African nations for water purification and sanitation."
+      products: ["Bulk Chemicals", "Specialty Chemicals"],
+      highlights: ["Stable shipping solutions", "Export-ready facilities", "Competitive pricing"],
+      description: "Looking forward to supplying bulk and specialty chemicals across African nations for industrial and manufacturing sectors."
     },
     {
       region: "Asia",
       flag: "🌏",
-      products: ["Specialty Intermediates", "Custom Solutions"],
-      highlights: ["Custom formulations", "Quick turnaround", "Regional expertise"],
-      description: "Providing specialized chemical intermediates and custom solutions to pharmaceutical and fine chemical industries across Asia."
+      products: ["Chemical Intermediates", "Bulk Chemicals"],
+      highlights: ["Custom formulations", "Export compliance", "Regional expertise"],
+      description: "Seeking opportunities to provide chemical intermediates and bulk chemicals to pharmaceutical and fine chemical industries across Asia."
     }
   ];
 
@@ -54,8 +54,10 @@ const ExportMarkets = () => {
             Global Export Markets
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Building on our strong domestic presence across textiles, pharma, power, and government sectors, 
-            we are expanding into global export markets with proven quality and compliance.
+            With our strong domestic presence across textiles, pharma, power, and government sectors, 
+            we are actively seeking export opportunities globally. Our IEC-certified operations and 
+            proven quality standards position us perfectly for international partnerships in chemical intermediates, 
+            specialty chemicals, and bulk chemicals.
           </p>
         </div>
 
