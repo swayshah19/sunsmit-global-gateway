@@ -63,7 +63,7 @@ const Contact = () => {
                 <CardContent className="space-y-3">
                   <div className="flex items-center space-x-2">
                     <Mail className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-muted-foreground">export02@sunsmitdyechem.com</span>
+                    <span className="text-muted-foreground">shashwat@sunsmitdyechem.com</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-muted-foreground" />
