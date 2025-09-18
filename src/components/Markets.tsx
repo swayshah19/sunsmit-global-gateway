@@ -208,28 +208,6 @@ const Markets = () => {
             </div>
           </div>
 
-          {/* Packaging & Transport */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {packagingOptions.map((option, index) => (
-              <Card key={index} className="shadow-card">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-semibold text-foreground mb-4">{option.product}</h4>
-                  <p className="text-muted-foreground mb-4">{option.description}</p>
-                  <div className="space-y-2">
-                    <h5 className="font-semibold text-sm text-foreground">Packaging Options:</h5>
-                    <ul className="space-y-1">
-                      {option.options.map((pkg, pkgIndex) => (
-                        <li key={pkgIndex} className="text-sm text-muted-foreground flex items-center space-x-2">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
-                          <span>{pkg}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
         </div>
 
         {/* Export Markets Section */}
