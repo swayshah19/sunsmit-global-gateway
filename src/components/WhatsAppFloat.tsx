@@ -7,10 +7,7 @@ const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
     const fullNumber = `91${phoneNumber}`;
     const encoded = encodeURIComponent(message);
-    const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
-    const url = isMobile
-      ? `https://wa.me/${fullNumber}?text=${encoded}`
-      : `https://web.whatsapp.com/send?phone=${fullNumber}&text=${encoded}`;
+    const url = `https://wa.me/${fullNumber}?text=${encoded}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
