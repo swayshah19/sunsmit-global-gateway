@@ -35,7 +35,7 @@ const About = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Growth Focus:</strong> Strong domestic presence with planned expansion into export markets
+                  <strong className="text-foreground">Growth Focus:</strong> Deliver speciality chemicals and intermediates
                 </p>
               </div>
             </div>
