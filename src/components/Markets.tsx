@@ -124,7 +124,7 @@ const Markets = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Our Markets
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Serving diverse industries domestically while expanding our reach globally with quality chemical solutions.Trusted by leading industries across India with proven track record in textiles, pharmaceuticals, power generation, and government water treatment sectors.</p>
+          
         </div>
 
         {/* Domestic Markets Section */}
