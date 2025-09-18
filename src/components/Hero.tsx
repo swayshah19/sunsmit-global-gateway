@@ -51,7 +51,7 @@ const Hero = () => {
           </div>
 
           {/* Key Metrics */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 animate-fade-in-up" style={{
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6" style={{
           animationDelay: '0.8s'
         }}>
             <div className="glass text-center p-6 rounded-2xl hover-lift group">
