@@ -18,20 +18,15 @@ const Manufacturing = () => {
             Manufacturing Excellence
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Our state-of-the-art manufacturing facilities across Ahmedabad, Ankleshwar, and Ghaziabad 
+            Our state-of-the-art manufacturing facilities across Ankleshwar and Ghaziabad 
             combine advanced technology with stringent quality controls to deliver world-class chemical products.
           </p>
         </div>
 
         {/* Manufacturing Facilities */}
         <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-white mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Three Strategic Manufacturing Locations</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-2xl font-bold mb-2">Ahmedabad Plant</div>
-              <div className="text-white/90 mb-2">100,000 L/day</div>
-              <div className="text-sm text-white/80">Sodium Hypochlorite for Textiles, Starch & Paper Industries</div>
-            </div>
+          <h3 className="text-2xl font-bold text-center mb-8">Two Strategic Manufacturing Locations</h3>
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center">
               <div className="text-2xl font-bold mb-2">Ankleshwar Plant</div>
               <div className="text-white/90 mb-2">100,000 L/day + 10 TPD</div>
