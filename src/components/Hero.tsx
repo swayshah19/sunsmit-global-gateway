@@ -41,10 +41,7 @@ const Hero = () => {
           {/* Description */}
           <p className="text-lg text-white/75 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{
           animationDelay: '0.4s'
-        }}>
-            From our state-of-the-art facilities in Ahmedabad, Ankleshwar, and Ghaziabad, we deliver 
-            275,000+ L/day of premium chemicals with unwavering quality and reliability.
-          </p>
+        }}>From our state-of-the-art facilities in  Ankleshwar, and Ghaziabad, we manufact 275,000+ L/day of premium chemicals with unwavering quality and reliability.</p>
           
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-6 mb-16 animate-fade-in-up" style={{
@@ -71,7 +68,7 @@ const Hero = () => {
             
             <div className="glass text-center p-6 rounded-2xl hover-lift group">
               <Globe className="h-10 w-10 text-primary-glow mx-auto mb-4 group-hover:scale-110 transition-transform" />
-              <div className="text-3xl font-bold text-white mb-2">3</div>
+              <div className="text-3xl font-bold text-white mb-2"></div>
               <div className="text-sm text-white/80 font-medium">Manufacturing Hubs</div>
             </div>
             
