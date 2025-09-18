@@ -68,7 +68,7 @@ const Hero = () => {
             
             <div className="glass text-center p-6 rounded-2xl hover-lift group">
               <Globe className="h-10 w-10 text-primary-glow mx-auto mb-4 group-hover:scale-110 transition-transform" />
-              <div className="text-3xl font-bold text-white mb-2"></div>
+              <div className="text-3xl font-bold text-white mb-2">2</div>
               <div className="text-sm text-white/80 font-medium">Manufacturing Hubs</div>
             </div>
             
