@@ -222,23 +222,7 @@ const Markets = () => {
                 </div>)}
             </div>
 
-            <div className="bg-gradient-primary rounded-2xl p-8 text-white text-center relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full blur-xl"></div>
-              
-              <div className="relative z-10">
-                <div className="flex items-center justify-center mb-4">
-                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4">
-                    <Ship className="h-8 w-8 text-white" />
-                  </div>
-                </div>
-                
-                <h5 className="text-2xl font-bold mb-3">Ready to Export?</h5>
-                <p className="text-white/90 mb-6 max-w-md mx-auto">
-                  Join our global network of satisfied customers and unlock new market opportunities
-                </p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
