@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Mail, Phone } from "lucide-react";
+import companyLogo from "@/assets/company-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,11 +20,19 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-primary">
-                Sun Smit Dye Chem
-              </h1>
-              <p className="text-xs text-muted-foreground">Pvt. Ltd.</p>
+            <div className="flex-shrink-0 flex items-center space-x-3">
+              <img 
+                src={companyLogo} 
+                alt="Sun Smit Dye Chem Logo" 
+                className="h-10 w-10 object-contain mix-blend-multiply dark:mix-blend-normal dark:invert"
+                style={{ backgroundColor: 'transparent' }}
+              />
+              <div>
+                <h1 className="text-xl font-bold text-primary">
+                  Sun Smit Dye Chem
+                </h1>
+                <p className="text-xs text-muted-foreground">Pvt. Ltd.</p>
+              </div>
             </div>
           </div>
 
