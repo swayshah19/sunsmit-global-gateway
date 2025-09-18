@@ -7,7 +7,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             About Sun Smit Dye Chem
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Established in 1996, Sun Smit Dye Chem Pvt. Ltd. has built over three decades of leadership in chemical manufacturing, specializing in Sodium Hypochlorite and Bleaching Powder with strong domestic presence and growing export focus. in speciality chemicals and intermediates.</p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Established in 1996, Sun Smit Dye Chem Pvt. Ltd. has built over three decades of leadership in chemical manufacturing, specializing in Sodium Hypochlorite and Bleaching Powder with strong domestic presence and growing export focus in speciality chemicals and intermediates.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
