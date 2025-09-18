@@ -263,7 +263,7 @@ const ExportMap: React.FC<ExportMapProps> = ({
 
         {/* Chemical Categories */}
         <div className="space-y-4">
-          <h3 className="text-xl font-bold text-foreground mb-6">High-Demand Export Chemicals</h3>
+          <h3 className="text-xl font-bold text-foreground mb-6">We supply </h3>
           {chemicalCategories.map((category, index) => <div key={index} className={`card-premium p-4 hover-lift animate-fade-in-up border-l-4 ${category.bgColor}`} style={{
           animationDelay: `${index * 0.1}s`,
           borderLeftColor: category.color.replace('bg-', '').replace('-500', '')
