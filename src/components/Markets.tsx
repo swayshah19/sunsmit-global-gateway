@@ -179,14 +179,7 @@ const Markets = () => {
                     {industry.icon}
                   </div>
                   <h4 className="text-xl font-semibold text-foreground mb-3">{industry.name}</h4>
-                  <p className="text-muted-foreground mb-4">{industry.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {industry.products.map((product, productIndex) => (
-                      <Badge key={productIndex} variant="outline" className="text-xs">
-                        {product}
-                      </Badge>
-                    ))}
-                  </div>
+                  <p className="text-muted-foreground">{industry.description}</p>
                 </CardContent>
               </Card>
             ))}
