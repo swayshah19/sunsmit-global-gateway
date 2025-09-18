@@ -124,14 +124,25 @@ const Markets = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Our Markets
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Serving diverse industries domestically while expanding our reach globally with quality chemical solutions.Trusted by leading industries across India with proven track record in textiles, pharmaceuticals, power generation, and government water treatment sectors.</p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Serving diverse industries domestically while expanding our reach globally with quality chemical solutions.</p>
         </div>
 
         {/* Domestic Markets Section */}
         <div className="mb-24">
           <div className="text-center mb-16">
+            <div className="inline-flex items-center glass-dark px-6 py-3 rounded-full text-primary mb-6">
+              <MapPin className="h-5 w-5 mr-2" />
+              <span className="font-semibold">India Operations</span>
+            </div>
             
+            <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Domestic
+              <span className="text-gradient block mt-2">Markets</span>
+            </h3>
             
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Trusted by leading industries across India with proven track record in textiles, pharmaceuticals, power generation, and government water treatment sectors.
+            </p>
           </div>
 
           {/* Industries Served */}
@@ -171,9 +182,9 @@ const Markets = () => {
 
         </div>
 
-        {/* Export Markets Section */}
+        {/* International Markets Section */}
         <div className="section-gradient rounded-3xl p-8 md:p-12">
-          {/* Export Header */}
+          {/* International Markets Header */}
           <div className="text-center mb-16 animate-fade-in-up">
             <div className="inline-flex items-center glass-dark px-6 py-3 rounded-full text-primary mb-6">
               <Globe className="h-5 w-5 mr-2" />
@@ -181,7 +192,7 @@ const Markets = () => {
             </div>
             
             <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Global Export
+              International
               <span className="text-gradient block mt-2">Markets</span>
             </h3>
             
