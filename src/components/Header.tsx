@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Mail, Phone, Sun } from "lucide-react";
 import companyLogo from "@/assets/company-logo.png";
+import sunSymbol from "@/assets/sun-symbol.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const Header = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center space-x-3">
               <img 
-                src={companyLogo} 
+                src={sunSymbol} 
                 alt="Sun Smit Dye Chem Logo" 
                 className="h-10 w-10 object-contain mix-blend-multiply dark:mix-blend-normal dark:invert"
                 style={{ backgroundColor: 'transparent' }}
