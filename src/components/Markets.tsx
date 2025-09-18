@@ -142,7 +142,6 @@ const Markets = () => {
                     {industry.icon}
                   </div>
                   <h4 className="text-xl font-semibold text-foreground mb-3">{industry.name}</h4>
-                  <p className="text-muted-foreground">{industry.description}</p>
                 </CardContent>
               </Card>)}
           </div>
