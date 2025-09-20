@@ -291,7 +291,7 @@ const ExportMap: React.FC<ExportMapProps> = ({
                 <div className="text-xs text-muted-foreground">Target Regions</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-secondary">20+</div>
+                <div className="text-2xl font-bold text-secondary">100+</div>
                 <div className="text-xs text-muted-foreground">Chemical Types</div>
               </div>
               <div>
