@@ -64,7 +64,7 @@ const Markets = () => {
   const infrastructureStats = [
     { number: "430", unit: "MT/day", label: "Sodium Hypochlorite" },
     { number: "Dahej", unit: "dahej warehouse", label: "Near Dahej & Mundra Ports" },
-    { number: "20", unit: "MT/campaign", label: "Specialty Intermediates" },
+    { number: "20", unit: "MT DAY CAMPAIGN SPECIAILITY INTERMEDIATE", label: "Specialty Intermediates" },
     { number: "Multi", unit: "Format", label: "Export Packaging" }
   ];
 
