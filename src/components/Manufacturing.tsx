@@ -1,17 +1,21 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Factory, FlaskConical, Microscope, ShieldCheck, Recycle, Users } from "lucide-react";
-
 const Manufacturing = () => {
-  const certifications = [
-    { name: "ISO 9001:2015", type: "Quality Management" },
-    { name: "ISO 14001:2015", type: "Environmental Management" },
-    { name: "Water Purification License", type: "Chemical Manufacturing" },
-    { name: "Export License", type: "International Trade" },
-  ];
-
-  return (
-    <section id="manufacturing" className="py-20 bg-background">
+  const certifications = [{
+    name: "ISO 9001:2015",
+    type: "Quality Management"
+  }, {
+    name: "ISO 14001:2015",
+    type: "Environmental Management"
+  }, {
+    name: "Water Purification License",
+    type: "Chemical Manufacturing"
+  }, {
+    name: "Export License",
+    type: "International Trade"
+  }];
+  return <section id="manufacturing" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -31,7 +35,7 @@ const Manufacturing = () => {
               <div className="text-2xl font-bold mb-2">Ankleshwar, Gujarat Plant</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold mb-2">Narol Plant</div>
+              <div className="text-2xl font-bold mb-2">Narol, Gujarat Plant</div>
             </div>
           </div>
         </div>
@@ -68,20 +72,16 @@ const Manufacturing = () => {
           <div>
             <h3 className="text-2xl font-semibold text-foreground mb-6">Certifications</h3>
             <div className="grid grid-cols-2 gap-4">
-              {certifications.map((cert, index) => (
-                <Card key={index} className="shadow-card">
+              {certifications.map((cert, index) => <Card key={index} className="shadow-card">
                   <CardContent className="p-4">
                     <Badge variant="secondary" className="mb-2">{cert.name}</Badge>
                     <p className="text-sm text-muted-foreground">{cert.type}</p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Manufacturing;
