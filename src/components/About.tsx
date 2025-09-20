@@ -29,7 +29,7 @@ const About = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Strategic Locations:</strong> Two manufacturing plants in Ankleshwar and Narol, Ahmedabad, Gujarat
+                  <strong className="text-foreground">Strategic Locations:</strong> Two manufacturing plants in Ankleshwar, Gujarat and Narol, Ahmedabad, Gujarat
                 </p>
               </div>
               <div className="flex items-start space-x-3">

@@ -47,7 +47,7 @@ const Contact = () => {
                 <CardContent>
                   <p className="text-muted-foreground">
                     3455, G.I.D.C. Industrial Area,<br />
-                    Nr. MJ Pharma, Ankleshwar – 393002<br />
+                    Nr. MJ Pharma, Ankleshwar, Gujarat – 393002<br />
                     Dist. Bharuch, Gujarat
                   </p>
                 </CardContent>

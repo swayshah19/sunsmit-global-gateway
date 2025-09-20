@@ -18,7 +18,7 @@ const Manufacturing = () => {
             Manufacturing Excellence
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Our state-of-the-art manufacturing facilities across Ankleshwar and Narol 
+            Our state-of-the-art manufacturing facilities across Ankleshwar, Gujarat and Narol 
             combine advanced technology with stringent quality controls to deliver world-class chemical products.
           </p>
         </div>
@@ -28,7 +28,7 @@ const Manufacturing = () => {
           <h3 className="text-2xl font-bold text-center mb-8">Two Strategic Manufacturing Locations</h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center">
-              <div className="text-2xl font-bold mb-2">Ankleshwar Plant</div>
+              <div className="text-2xl font-bold mb-2">Ankleshwar, Gujarat Plant</div>
               <div className="text-white/90 mb-2">100,000 L/day + 10 TPD</div>
               <div className="text-sm text-white/80">Sun Chlorex + Stable Bleaching Powder for Pharma, Pesticides, Power Plants</div>
             </div>
