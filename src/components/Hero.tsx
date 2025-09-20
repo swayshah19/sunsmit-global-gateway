@@ -41,7 +41,7 @@ const Hero = () => {
           {/* Description */}
           <p className="text-lg text-white/75 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{
           animationDelay: '0.4s'
-        }}>From our state-of-the-art facilities in Ankleshwar, Gujarat and Narol, Ahmedabad, Gujarat, we manufacture and deliver speciality and bulk chemicals with unwavering quality and reliability.</p>
+        }}>From our state-of-the-art facilities in Ankleshwar, Gujarat and Narol, Gujarat, we manufacture and deliver speciality and bulk chemicals with unwavering quality and reliability.</p>
           
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-6 mb-16 animate-fade-in-up" style={{
