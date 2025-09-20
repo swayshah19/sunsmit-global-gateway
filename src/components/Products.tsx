@@ -47,10 +47,7 @@ const Products = () => {
                 <div className={`${product.color} mb-4`}>
                   {product.icon}
                 </div>
-                <CardTitle className="text-xl mb-2">{product.name}</CardTitle>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="secondary">{product.brand}</Badge>
-                </div>
+                <CardTitle className="text-xl mb-4">{product.name}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">{product.description}</p>
