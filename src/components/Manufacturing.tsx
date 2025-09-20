@@ -29,7 +29,6 @@ const Manufacturing = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center">
               <div className="text-2xl font-bold mb-2">Ankleshwar, Gujarat Plant</div>
-              <div className="text-sm text-white/80">Sun Chlorex + Stable Bleaching Powder for Pharma, Pesticides, Power Plants</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold mb-2">Narol Plant</div>
