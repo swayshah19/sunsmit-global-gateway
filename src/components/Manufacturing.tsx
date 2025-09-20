@@ -22,7 +22,7 @@ const Manufacturing = () => {
             Manufacturing Excellence
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Our state-of-the-art manufacturing facilities across Ankleshwar, Gujarat and Narol 
+            Our state-of-the-art manufacturing facilities across Ankleshwar, Gujarat and Dahej, Gujarat 
             combine advanced technology with stringent quality controls to deliver world-class chemical products.
           </p>
         </div>
@@ -35,7 +35,7 @@ const Manufacturing = () => {
               <div className="text-2xl font-bold mb-2">Ankleshwar, Gujarat Plant</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold mb-2">Narol, Gujarat Plant</div>
+              <div className="text-2xl font-bold mb-2">Dahej, Gujarat Plant</div>
             </div>
           </div>
         </div>
