@@ -4,7 +4,24 @@ import { Button } from "@/components/ui/button";
 import { Globe, MapPin, Ship, Truck, Plane, Award, ArrowRight, Target, CheckCircle, Building2, Droplets, Zap, Factory, ShieldCheck, Wheat } from "lucide-react";
 import ExportMap from "./ExportMap";
 const Markets = () => {
-  // Domestic Markets Data
+  // Supply Categories Data
+  const supplyCategories = [
+    "Agrochemical Intermediates",
+    "Pharmaceutical Intermediates", 
+    "Specialty Chemicals",
+    "Water Treatment",
+    "Bulk Organics"
+  ];
+
+  // Export Readiness Stats
+  const exportStats = [
+    { number: "7", label: "Target Regions" },
+    { number: "20+", label: "Chemical Types" },
+    { number: "IEC", label: "Certified" },
+    { number: "Ready", label: "To Export" }
+  ];
+
+  // Domestic Industries Data
   const industries = [{
     icon: <Droplets className="h-8 w-8" />,
     name: "Textiles",
@@ -42,42 +59,6 @@ const Markets = () => {
     products: ["Food Grade Sodium Hypochlorite"],
     color: "text-green-700"
   }];
-  const packagingOptions = [{
-    product: "Sodium Hypochlorite",
-    options: ["MS Rubber-lined Tankers", "PVC/HDPE Drums", "Carboys"],
-    description: "Flexible packaging for various quantity requirements"
-  }, {
-    product: "Bleaching Powder",
-    options: ["25 kg LDPE-lined HDPE Bags"],
-    description: "Stable packaging for long-term storage and transport"
-  }];
-
-  // Export Markets Data
-  const markets = [{
-    region: "Europe",
-    flag: "🇪🇺",
-    products: ["Specialty Chemicals", "Chemical Intermediates"],
-    highlights: ["Premium quality standards", "IEC certified operations", "Technical support"],
-    description: "Eager to serve European markets with high-grade specialty chemicals and intermediates for various industrial applications.",
-    color: "primary",
-    bgGradient: "from-primary/10 to-primary/5"
-  }, {
-    region: "Africa",
-    flag: "🌍",
-    products: ["Bulk Chemicals", "Specialty Chemicals"],
-    highlights: ["Stable shipping solutions", "Export-ready facilities", "Competitive pricing"],
-    description: "Looking forward to supplying bulk and specialty chemicals across African nations for industrial and manufacturing sectors.",
-    color: "secondary",
-    bgGradient: "from-secondary/10 to-secondary/5"
-  }, {
-    region: "Asia",
-    flag: "🌏",
-    products: ["Chemical Intermediates", "Bulk Chemicals"],
-    highlights: ["Custom formulations", "Export compliance", "Regional expertise"],
-    description: "Seeking opportunities to provide chemical intermediates and bulk chemicals to pharmaceutical and fine chemical industries across Asia.",
-    color: "accent",
-    bgGradient: "from-accent/10 to-accent/5"
-  }];
   const distributionChannels = [{
     icon: <Ship className="h-10 w-10" />,
     title: "Sea Freight",
@@ -111,40 +92,120 @@ const Markets = () => {
     label: "Customer Support",
     icon: <Target className="h-6 w-6" />
   }];
-  return <section id="markets" className="py-20 overflow-hidden relative">
+  return (
+    <section id="markets" className="py-20 overflow-hidden relative">
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-secondary/5 rounded-full blur-3xl animate-float" style={{
-      animationDelay: '3s'
-    }}></div>
+        animationDelay: '3s'
+      }}></div>
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Main Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Our Markets
           </h2>
-          
         </div>
 
-        {/* Domestic Markets Section */}
-        <div className="mb-24">
+        {/* 1. Introduction Section */}
+        <div className="text-center mb-20">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              With our strong domestic presence across textiles, pharma, power, and government sectors, 
+              we are <span className="text-primary font-semibold">actively seeking export opportunities globally</span>. 
+              Our IEC-certified operations and proven quality standards position us perfectly for international partnerships.
+            </p>
+          </div>
+        </div>
+
+        {/* 2. International Market (Globe) */}
+        <div className="mb-20">
+          <ExportMap />
+        </div>
+
+        {/* 3. We Supply Section */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-foreground mb-8">We Supply</h3>
+          </div>
           
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Supply Categories */}
+            <div>
+              <div className="space-y-4">
+                {supplyCategories.map((category, index) => (
+                  <div key={index} className="flex items-center p-4 bg-muted/30 rounded-lg">
+                    <CheckCircle className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
+                    <span className="text-foreground font-medium">{category}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Export Readiness Stats */}
+            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8">
+              <h4 className="text-xl font-bold text-center text-foreground mb-8">Export Readiness</h4>
+              <div className="grid grid-cols-2 gap-6 text-center">
+                {exportStats.map((stat, index) => (
+                  <div key={index}>
+                    <div className="text-3xl font-bold text-primary mb-2">{stat.number}</div>
+                    <div className="text-muted-foreground text-sm">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 4. Distribution Network */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-foreground mb-4">
+              Distribution Network
+            </h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Comprehensive logistics solutions ensuring seamless delivery across global markets
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {distributionChannels.map((channel, index) => (
+              <Card key={index} className="text-center group hover-lift">
+                <CardContent className="p-8">
+                  <div className={`${channel.color} mb-6 flex justify-center group-hover:scale-110 transition-transform`}>
+                    {channel.icon}
+                  </div>
+                  <h5 className="font-bold text-foreground mb-3 text-lg">{channel.title}</h5>
+                  <p className="text-muted-foreground leading-relaxed">{channel.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* 5. Sectors We Serve */}
+        <div className="bg-muted/30 rounded-2xl p-8 md:p-12">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-foreground mb-8">Our Markets</h3>
+          </div>
 
           {/* Industries Served */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {industries.map((industry, index) => <Card key={index} className="shadow-card hover:shadow-corporate transition-all duration-300">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {industries.map((industry, index) => (
+              <Card key={index} className="shadow-card hover:shadow-corporate transition-all duration-300">
                 <CardContent className="p-6">
                   <div className={`${industry.color} mb-4`}>
                     {industry.icon}
                   </div>
                   <h4 className="text-xl font-semibold text-foreground mb-3">{industry.name}</h4>
                 </CardContent>
-              </Card>)}
+              </Card>
+            ))}
           </div>
 
-          {/* Market Strengths */}
-          <div className="bg-muted/30 rounded-2xl p-8 md:p-12 mb-16">
+          {/* Domestic Market Strengths */}
+          <div className="bg-background/50 rounded-xl p-8">
             <h4 className="text-2xl font-bold text-center text-foreground mb-8">Domestic Market Strengths</h4>
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
@@ -165,64 +226,9 @@ const Markets = () => {
               </div>
             </div>
           </div>
-
-        </div>
-
-        {/* International Markets Section */}
-        <div className="section-gradient rounded-3xl p-8 md:p-12">
-          {/* International Markets Header */}
-          <div className="text-center mb-16 animate-fade-in-up">
-            <div className="inline-flex items-center glass-dark px-6 py-3 rounded-full text-primary mb-6">
-              <Globe className="h-5 w-5 mr-2" />
-              <span className="font-semibold">Global Expansion Ready</span>
-            </div>
-            
-            <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              International
-              <span className="text-gradient block mt-2">Markets</span>
-            </h3>
-            
-            <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              With our strong domestic presence across textiles, pharma, power, and government sectors, 
-              we are <span className="text-primary font-semibold">actively seeking export opportunities globally</span>. 
-              Our IEC-certified operations and proven quality standards position us perfectly for international partnerships.
-            </p>
-          </div>
-
-          {/* World Map Section */}
-          <div className="mb-16 animate-fade-in-up" style={{
-          animationDelay: '0.4s'
-        }}>
-            <ExportMap />
-          </div>
-
-          {/* Distribution Network */}
-          <div className="card-glass p-8 md:p-12 animate-fade-in-up" style={{
-          animationDelay: '0.6s'
-        }}>
-            <div className="text-center mb-12">
-              <h4 className="text-3xl font-bold text-foreground mb-4">
-                Distribution Network
-              </h4>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive logistics solutions ensuring seamless delivery across global markets
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              {distributionChannels.map((channel, index) => <div key={index} className="text-center group hover-lift">
-                  <div className={`${channel.color} mb-6 flex justify-center group-hover:scale-110 transition-transform`}>
-                    {channel.icon}
-                  </div>
-                  <h5 className="font-bold text-foreground mb-3 text-lg">{channel.title}</h5>
-                  <p className="text-muted-foreground leading-relaxed">{channel.description}</p>
-                </div>)}
-            </div>
-
-            
-          </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default Markets;
