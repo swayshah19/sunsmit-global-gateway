@@ -50,7 +50,6 @@ const Products = () => {
                 <CardTitle className="text-xl mb-2">{product.name}</CardTitle>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <Badge variant="secondary">{product.brand}</Badge>
-                  <Badge variant="outline">{product.concentration}</Badge>
                 </div>
               </CardHeader>
               <CardContent>
