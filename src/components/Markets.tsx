@@ -213,11 +213,6 @@ const Markets = () => {
                         ))}
                       </div>
                     </div>
-                    <div className="bg-muted/30 rounded-lg p-3">
-                      <p className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Advantage:</strong> {category.advantage}
-                      </p>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
