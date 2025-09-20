@@ -252,7 +252,7 @@ const Markets = () => {
               {infrastructureStats.map((stat, index) => (
                 <div key={index}>
                   <div className="text-3xl font-bold text-primary mb-1">{stat.number}</div>
-                  <div className="text-sm text-secondary font-medium mb-2">MT/DAY</div>
+                  <div className="text-sm text-secondary font-medium mb-2">{stat.unit}</div>
                   <div className="text-muted-foreground text-sm">{stat.label}</div>
                 </div>
               ))}
