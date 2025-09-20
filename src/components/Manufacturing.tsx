@@ -32,7 +32,6 @@ const Manufacturing = () => {
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold mb-2">Narol Plant</div>
-              <div className="text-sm text-white/80">Ahmedabad, Gujarat Supply Hub for Western Region</div>
             </div>
           </div>
         </div>
