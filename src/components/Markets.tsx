@@ -1,24 +1,71 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Globe, MapPin, Ship, Truck, Plane, Award, ArrowRight, Target, CheckCircle, Building2, Droplets, Zap, Factory, ShieldCheck, Wheat } from "lucide-react";
+import { Globe, MapPin, Ship, Truck, Plane, Award, ArrowRight, Target, CheckCircle, Building2, Droplets, Zap, Factory, ShieldCheck, Wheat, Beaker, FlaskConical, Leaf, Shield, Settings, Package } from "lucide-react";
 import ExportMap from "./ExportMap";
 const Markets = () => {
-  // Supply Categories Data
-  const supplyCategories = [
-    "Agrochemical Intermediates",
-    "Pharmaceutical Intermediates", 
-    "Specialty Chemicals",
-    "Water Treatment",
-    "Bulk Organics"
+  // Export Product Categories
+  const exportCategories = [
+    {
+      title: "Inorganic Chemicals (HS 28)",
+      icon: <Beaker className="h-8 w-8" />,
+      color: "text-blue-600",
+      products: ["Soda Ash (Sodium Carbonate)", "Caustic Soda (NaOH)", "Alumina / Aluminium Hydroxide", "Titanium Dioxide", "Hydrogen Peroxide"],
+      advantage: "Stable supply base, globally competitive pricing, and proximity to Dahej and Mundra ports"
+    },
+    {
+      title: "Organic Chemicals (HS 29)",
+      icon: <FlaskConical className="h-8 w-8" />,
+      color: "text-green-600",
+      products: ["Acetic Acid & Derivatives", "Ethanol / Industrial Alcohols", "Phenols & Aniline Derivatives", "Industrial Solvents", "Specialty Organics"],
+      advantage: "Applications: Pharmaceuticals, coatings, resins, plastics, adhesives"
+    },
+    {
+      title: "Dyes & Dye Intermediates (HS 32)",
+      icon: <Droplets className="h-8 w-8" />,
+      color: "text-purple-600",
+      products: ["Reactive Dyes", "Acid Dyes", "Azo Intermediates"],
+      advantage: "India supplies ~16% of global dyestuffs and exports to 90+ countries"
+    },
+    {
+      title: "Agro-Chemicals (HS 29/38)",
+      icon: <Wheat className="h-8 w-8" />,
+      color: "text-amber-600",
+      products: ["Technical-grade Pesticides", "Formulations (insecticides, herbicides, fungicides)"],
+      advantage: "India is one of the world's largest producers of agro-chemicals"
+    },
+    {
+      title: "Plastics & Polymers (HS 39)",
+      icon: <Package className="h-8 w-8" />,
+      color: "text-indigo-600",
+      products: ["Polyethylene (PE) & Polypropylene (PP) derivatives", "Films & Packaging Materials", "Synthetic Rubber & Filaments"],
+      advantage: "Applications: FMCG, industrial packaging, automotive, textiles"
+    },
+    {
+      title: "Pharmaceuticals & Intermediates (HS 30/29)",
+      icon: <ShieldCheck className="h-8 w-8" />,
+      color: "text-red-600",
+      products: ["APIs (Active Pharmaceutical Ingredients)", "Bulk Drug Intermediates", "Specialty Fine Chemicals for pharma"],
+      advantage: "India's pharma ecosystem is export-driven, with world-class regulatory compliance (US FDA, EU GMP)"
+    }
   ];
 
-  // Export Readiness Stats
-  const exportStats = [
-    { number: "7", label: "Target Regions" },
-    { number: "20+", label: "Chemical Types" },
-    { number: "IEC", label: "Certified" },
-    { number: "Ready", label: "To Export" }
+  // Why Choose SunSmit
+  const whyChooseUs = [
+    { title: "Proven Legacy", description: "30 years of chemical manufacturing experience", icon: <Award className="h-6 w-6" /> },
+    { title: "Strategic Location", description: "Gujarat-based operations with easy access to Dahej & Mundra ports", icon: <MapPin className="h-6 w-6" /> },
+    { title: "Scale & Network", description: "Partnerships across India's largest chemical clusters", icon: <Globe className="h-6 w-6" /> },
+    { title: "Quality Assurance", description: "ISO-certified, in-house testing labs (HPLC, GC, FTIR, KF)", icon: <Shield className="h-6 w-6" /> },
+    { title: "Flexible Packaging", description: "ISO tanks, IBCs, HDPE drums, carboys, bulk bags", icon: <Package className="h-6 w-6" /> },
+    { title: "Global Reach", description: "Active exports to Europe, Africa, Asia, expanding to Americas", icon: <Target className="h-6 w-6" /> }
+  ];
+
+  // Export Infrastructure Stats
+  const infrastructureStats = [
+    { number: "430", unit: "MT/day", label: "Sodium Hypochlorite" },
+    { number: "10", unit: "TPD", label: "Bleaching Powder" },
+    { number: "20", unit: "MT/campaign", label: "Specialty Intermediates" },
+    { number: "Multi", unit: "Format", label: "Export Packaging" }
   ];
 
   // Domestic Industries Data
@@ -104,18 +151,27 @@ const Markets = () => {
         {/* Main Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Our Markets
+            🌍 Export & Distribution Services
           </h2>
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            For nearly three decades, SunSmit Dye Chem Pvt. Ltd. has been a trusted manufacturer of sodium hypochlorite in India. 
+            Building on our legacy of reliability, technical strength, and quality assurance, we are now expanding into the 
+            <span className="text-primary font-semibold"> global export and distribution of bulk and specialty chemicals</span>.
+          </p>
         </div>
 
         {/* 1. Introduction Section */}
         <div className="text-center mb-20">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              With our strong domestic presence across textiles, pharma, power, and government sectors, 
-              we are <span className="text-primary font-semibold">actively seeking export opportunities globally</span>. 
-              Our IEC-certified operations and proven quality standards position us perfectly for international partnerships.
+          <div className="max-w-5xl mx-auto bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              With strong roots in Gujarat's chemical manufacturing hub and close partnerships with leading producers across India, 
+              SunSmit offers a diverse product basket, competitive pricing, and efficient supply chain solutions for international buyers.
             </p>
+            <div className="bg-background/50 rounded-xl p-6">
+              <p className="text-primary font-semibold text-xl">
+                India has become a global powerhouse in chemical manufacturing, with Gujarat alone contributing nearly half of the nation's exports.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -124,41 +180,121 @@ const Markets = () => {
           <ExportMap />
         </div>
 
-        {/* 3. We Supply Section */}
+        {/* 3. What We Export - Detailed Categories */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-foreground mb-8">We Supply</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-4">🔹 What We Export</h3>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              SunSmit leverages India's chemical manufacturing ecosystem to bring high-demand, export-ready chemicals to global markets
+            </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Supply Categories */}
-            <div>
-              <div className="space-y-4">
-                {supplyCategories.map((category, index) => (
-                  <div key={index} className="flex items-center p-4 bg-muted/30 rounded-lg">
-                    <CheckCircle className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                    <span className="text-foreground font-medium">{category}</span>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {exportCategories.map((category, index) => (
+              <Card key={index} className="shadow-card hover:shadow-corporate transition-all duration-300 hover-lift">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className={`${category.color}`}>
+                      {category.icon}
+                    </div>
+                    <CardTitle className="text-lg">{category.title}</CardTitle>
                   </div>
-                ))}
-              </div>
-            </div>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <div className="space-y-4">
+                    <div>
+                      <h5 className="font-semibold text-foreground mb-2">Products:</h5>
+                      <div className="space-y-1">
+                        {category.products.map((product, idx) => (
+                          <div key={idx} className="flex items-start space-x-2">
+                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                            <span className="text-muted-foreground text-sm">{product}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="bg-muted/30 rounded-lg p-3">
+                      <p className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Advantage:</strong> {category.advantage}
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
 
-            {/* Export Readiness Stats */}
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8">
-              <h4 className="text-xl font-bold text-center text-foreground mb-8">Export Readiness</h4>
-              <div className="grid grid-cols-2 gap-6 text-center">
-                {exportStats.map((stat, index) => (
-                  <div key={index}>
-                    <div className="text-3xl font-bold text-primary mb-2">{stat.number}</div>
-                    <div className="text-muted-foreground text-sm">{stat.label}</div>
+        {/* 4. Why Choose SunSmit */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-foreground mb-4">🔹 Why Choose SunSmit for Export & Distribution?</h3>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {whyChooseUs.map((item, index) => (
+              <Card key={index} className="text-center shadow-card hover:shadow-corporate transition-all duration-300 hover-lift">
+                <CardContent className="p-6">
+                  <div className="text-primary mb-4 flex justify-center">
+                    {item.icon}
                   </div>
-                ))}
+                  <h4 className="font-bold text-foreground mb-2">{item.title}</h4>
+                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* 5. Export-Ready Infrastructure */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-foreground mb-4">🔹 Export-Ready Infrastructure</h3>
+          </div>
+          
+          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8">
+            <div className="grid md:grid-cols-4 gap-8 text-center mb-8">
+              {infrastructureStats.map((stat, index) => (
+                <div key={index}>
+                  <div className="text-3xl font-bold text-primary mb-1">{stat.number}</div>
+                  <div className="text-sm text-secondary font-medium mb-2">{stat.unit}</div>
+                  <div className="text-muted-foreground text-sm">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-background/50 rounded-xl p-6">
+                <h5 className="font-bold text-foreground mb-3">Manufacturing Backbone</h5>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• 430 MT/day sodium hypochlorite</li>
+                  <li>• 10 TPD bleaching powder</li>
+                  <li>• 20 MT/campaign specialty intermediates</li>
+                </ul>
+              </div>
+              
+              <div className="bg-background/50 rounded-xl p-6">
+                <h5 className="font-bold text-foreground mb-3">Export Packaging</h5>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• ISO tanks & IBCs</li>
+                  <li>• HDPE drums & carboys</li>
+                  <li>• LDPE-lined bulk bags</li>
+                </ul>
+              </div>
+              
+              <div className="bg-background/50 rounded-xl p-6">
+                <h5 className="font-bold text-foreground mb-3">Compliance</h5>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• MSDS & COAs provided</li>
+                  <li>• Global regulatory certifications</li>
+                  <li>• Port logistics partnerships</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        {/* 4. Distribution Network */}
+        {/* 6. Distribution Network */}
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">
@@ -184,10 +320,10 @@ const Markets = () => {
           </div>
         </div>
 
-        {/* 5. Sectors We Serve */}
+        {/* 7. Domestic Market Strengths */}
         <div className="bg-muted/30 rounded-2xl p-8 md:p-12">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-foreground mb-8">Our Markets</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-8">Domestic Market Leadership</h3>
           </div>
 
           {/* Industries Served */}
