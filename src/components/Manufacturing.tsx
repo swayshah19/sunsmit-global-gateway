@@ -18,7 +18,7 @@ const Manufacturing = () => {
             Manufacturing Excellence
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Our state-of-the-art manufacturing facilities across Ankleshwar and Ghaziabad 
+            Our state-of-the-art manufacturing facilities across Ankleshwar and Narol 
             combine advanced technology with stringent quality controls to deliver world-class chemical products.
           </p>
         </div>
@@ -33,9 +33,9 @@ const Manufacturing = () => {
               <div className="text-sm text-white/80">Sun Chlorex + Stable Bleaching Powder for Pharma, Pesticides, Power Plants</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold mb-2">Ghaziabad Plant</div>
+              <div className="text-2xl font-bold mb-2">Narol Plant</div>
               <div className="text-white/90 mb-2">75,000 L/day</div>
-              <div className="text-sm text-white/80">Delhi NCR Supply Hub for Northern Region</div>
+              <div className="text-sm text-white/80">Ahmedabad, Gujarat Supply Hub for Western Region</div>
             </div>
           </div>
         </div>
