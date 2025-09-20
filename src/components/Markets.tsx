@@ -160,7 +160,12 @@ const Markets = () => {
           </p>
         </div>
 
-        {/* 1. Introduction Section */}
+        {/* International Market (Globe) */}
+        <div className="mb-20">
+          <ExportMap />
+        </div>
+
+        {/* Introduction Section */}
         <div className="text-center mb-20">
           <div className="max-w-5xl mx-auto bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -173,11 +178,6 @@ const Markets = () => {
               </p>
             </div>
           </div>
-        </div>
-
-        {/* 2. International Market (Globe) */}
-        <div className="mb-20">
-          <ExportMap />
         </div>
 
         {/* 3. What We Export - Detailed Categories */}
