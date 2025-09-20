@@ -2,7 +2,7 @@ import { MessageCircle } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
 
 const WhatsAppFloat = () => {
-  const phoneNumber = "7069889770";
+  const phoneNumber = "9825030377";
   const message = "Hello! I'm interested in your chemical products and would like to know more.";
   
   const handleWhatsAppClick = () => {
