@@ -7,42 +7,42 @@ const Markets = () => {
   // Export Product Categories
   const exportCategories = [
     {
-      title: "Inorganic Chemicals (HS 28)",
+      title: "Inorganic Chemicals",
       icon: <Beaker className="h-8 w-8" />,
       color: "text-blue-600",
       products: ["Soda Ash (Sodium Carbonate)", "Caustic Soda (NaOH)", "Alumina / Aluminium Hydroxide", "Titanium Dioxide", "Hydrogen Peroxide"],
       advantage: "Stable supply base, globally competitive pricing, and proximity to Dahej and Mundra ports"
     },
     {
-      title: "Organic Chemicals (HS 29)",
+      title: "Organic Chemicals",
       icon: <FlaskConical className="h-8 w-8" />,
       color: "text-green-600",
       products: ["Acetic Acid & Derivatives", "Ethanol / Industrial Alcohols", "Phenols & Aniline Derivatives", "Industrial Solvents", "Specialty Organics"],
       advantage: "Applications: Pharmaceuticals, coatings, resins, plastics, adhesives"
     },
     {
-      title: "Dyes & Dye Intermediates (HS 32)",
+      title: "Dyes & Dye Intermediates",
       icon: <Droplets className="h-8 w-8" />,
       color: "text-purple-600",
       products: ["Reactive Dyes", "Acid Dyes", "Azo Intermediates"],
       advantage: "India supplies ~16% of global dyestuffs and exports to 90+ countries"
     },
     {
-      title: "Agro-Chemicals (HS 29/38)",
+      title: "Agro-Chemicals",
       icon: <Wheat className="h-8 w-8" />,
       color: "text-amber-600",
       products: ["Technical-grade Pesticides", "Formulations (insecticides, herbicides, fungicides)"],
       advantage: "India is one of the world's largest producers of agro-chemicals"
     },
     {
-      title: "Plastics & Polymers (HS 39)",
+      title: "Plastics & Polymers",
       icon: <Package className="h-8 w-8" />,
       color: "text-indigo-600",
       products: ["Polyethylene (PE) & Polypropylene (PP) derivatives", "Films & Packaging Materials", "Synthetic Rubber & Filaments"],
       advantage: "Applications: FMCG, industrial packaging, automotive, textiles"
     },
     {
-      title: "Pharmaceuticals & Intermediates (HS 30/29)",
+      title: "Pharmaceuticals & Intermediates",
       icon: <ShieldCheck className="h-8 w-8" />,
       color: "text-red-600",
       products: ["APIs (Active Pharmaceutical Ingredients)", "Bulk Drug Intermediates", "Specialty Fine Chemicals for pharma"],
