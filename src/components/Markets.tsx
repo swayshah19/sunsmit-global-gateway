@@ -268,7 +268,6 @@ const Markets = () => {
                 <h5 className="font-bold text-foreground mb-3">Manufacturing Backbone</h5>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• 430 MT/day sodium hypochlorite</li>
-                  <li>• 10 TPD bleaching powder</li>
                   <li>• 20 MT/campaign specialty intermediates</li>
                 </ul>
               </div>
