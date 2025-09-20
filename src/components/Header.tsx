@@ -12,10 +12,10 @@ const Header = () => {
     label: "About Us",
     href: "#about"
   }, {
-    label: "Markets",
+    label: "Export and Supply Chain Services",
     href: "#markets"
   }, {
-    label: "Manufacturing",
+    label: "Manufacturing Services",
     href: "#manufacturing"
   }, {
     label: "Contact",
