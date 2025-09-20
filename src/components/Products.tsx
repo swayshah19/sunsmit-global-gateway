@@ -70,11 +70,6 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="bg-muted/50 rounded-lg p-3 mb-4">
-                  <div className="text-sm text-muted-foreground">Production Capacity</div>
-                  <div className="font-semibold text-foreground">{product.capacity}</div>
-                </div>
-
                 <Button variant="outline" className="w-full group-hover:border-primary group-hover:text-primary">
                   Request Quote
                 </Button>
