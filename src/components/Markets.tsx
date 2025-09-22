@@ -170,7 +170,7 @@ const Markets = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Main Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">🌍 Export & Supplying Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">🌍 Export  Services</h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             For nearly three decades, SunSmit Dye Chem Pvt. Ltd. has been a trusted manufacturer of sodium hypochlorite in India. 
             Building on our legacy of reliability, technical strength, and quality assurance, we are now expanding into the 
