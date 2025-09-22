@@ -61,7 +61,7 @@ const About = () => {
             <Card className="text-center shadow-card">
               <CardContent className="p-6">
                 <Award className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h4 className="font-semibold text-foreground mb-2">Certificchange to ations</h4>
+                <h4 className="font-semibold text-foreground mb-2">complaint</h4>
                 <p className="text-sm text-muted-foreground">ISO 9001 & 14001</p>
               </CardContent>
             </Card>
