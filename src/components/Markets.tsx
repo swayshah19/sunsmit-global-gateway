@@ -72,7 +72,7 @@ const Markets = () => {
 
   // Export Infrastructure Stats
   const infrastructureStats = [{
-    number: "600",
+    number: "13000",
     unit: "MT/MONTH",
     label: "Sodium Hypochlorite"
   }, {
