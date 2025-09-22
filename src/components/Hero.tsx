@@ -62,8 +62,8 @@ const Hero = () => {
             
             <div className="glass text-center p-6 rounded-2xl hover-lift group">
               <Factory className="h-10 w-10 text-secondary mx-auto mb-4 group-hover:scale-110 transition-transform" />
-              <div className="text-3xl font-bold text-white mb-2">430</div>
-              <div className="text-sm text-white/80 font-medium">MT/DAY</div>
+              <div className="text-3xl font-bold text-white mb-2">14,000</div>
+              <div className="text-sm text-white/80 font-medium">MT/month</div>
             </div>
             
             <div className="glass text-center p-6 rounded-2xl hover-lift group">
