@@ -5,68 +5,89 @@ import { Globe, MapPin, Ship, Truck, Plane, Award, ArrowRight, Target, CheckCirc
 import ExportMap from "./ExportMap";
 const Markets = () => {
   // Export Product Categories
-  const exportCategories = [
-    {
-      title: "Inorganic Chemicals",
-      icon: <Beaker className="h-8 w-8" />,
-      color: "text-blue-600",
-      products: ["Soda Ash (Sodium Carbonate)", "Caustic Soda (NaOH)", "Alumina / Aluminium Hydroxide", "Titanium Dioxide", "Hydrogen Peroxide"],
-      advantage: "Stable supply base, globally competitive pricing, and proximity to Dahej and Mundra ports"
-    },
-    {
-      title: "Organic Chemicals",
-      icon: <FlaskConical className="h-8 w-8" />,
-      color: "text-green-600",
-      products: ["Acetic Acid & Derivatives", "Ethanol / Industrial Alcohols", "Phenols & Aniline Derivatives", "Industrial Solvents", "Specialty Organics"],
-      advantage: "Applications: Pharmaceuticals, coatings, resins, plastics, adhesives"
-    },
-    {
-      title: "Dyes & Dye Intermediates",
-      icon: <Droplets className="h-8 w-8" />,
-      color: "text-purple-600",
-      products: ["Reactive Dyes", "Acid Dyes", "Azo Intermediates"],
-      advantage: "India supplies ~16% of global dyestuffs and exports to 90+ countries"
-    },
-    {
-      title: "Agro-Chemicals",
-      icon: <Wheat className="h-8 w-8" />,
-      color: "text-amber-600",
-      products: ["Technical-grade Pesticides", "Formulations (insecticides, herbicides, fungicides)"],
-      advantage: "India is one of the world's largest producers of agro-chemicals"
-    },
-    {
-      title: "Plastics & Polymers",
-      icon: <Package className="h-8 w-8" />,
-      color: "text-indigo-600",
-      products: ["Polyethylene (PE) & Polypropylene (PP) derivatives", "Films & Packaging Materials", "Synthetic Rubber & Filaments"],
-      advantage: "Applications: FMCG, industrial packaging, automotive, textiles"
-    },
-    {
-      title: "Pharmaceuticals & Intermediates",
-      icon: <ShieldCheck className="h-8 w-8" />,
-      color: "text-red-600",
-      products: ["APIs (Active Pharmaceutical Ingredients)", "Bulk Drug Intermediates", "Specialty Fine Chemicals for pharma"],
-      advantage: "India's pharma ecosystem is export-driven, with world-class regulatory compliance (US FDA, EU GMP)"
-    }
-  ];
+  const exportCategories = [{
+    title: "Inorganic Chemicals",
+    icon: <Beaker className="h-8 w-8" />,
+    color: "text-blue-600",
+    products: ["Soda Ash (Sodium Carbonate)", "Caustic Soda (NaOH)", "Alumina / Aluminium Hydroxide", "Titanium Dioxide", "Hydrogen Peroxide"],
+    advantage: "Stable supply base, globally competitive pricing, and proximity to Dahej and Mundra ports"
+  }, {
+    title: "Organic Chemicals",
+    icon: <FlaskConical className="h-8 w-8" />,
+    color: "text-green-600",
+    products: ["Acetic Acid & Derivatives", "Ethanol / Industrial Alcohols", "Phenols & Aniline Derivatives", "Industrial Solvents", "Specialty Organics"],
+    advantage: "Applications: Pharmaceuticals, coatings, resins, plastics, adhesives"
+  }, {
+    title: "Dyes & Dye Intermediates",
+    icon: <Droplets className="h-8 w-8" />,
+    color: "text-purple-600",
+    products: ["Reactive Dyes", "Acid Dyes", "Azo Intermediates"],
+    advantage: "India supplies ~16% of global dyestuffs and exports to 90+ countries"
+  }, {
+    title: "Agro-Chemicals",
+    icon: <Wheat className="h-8 w-8" />,
+    color: "text-amber-600",
+    products: ["Technical-grade Pesticides", "Formulations (insecticides, herbicides, fungicides)"],
+    advantage: "India is one of the world's largest producers of agro-chemicals"
+  }, {
+    title: "Plastics & Polymers",
+    icon: <Package className="h-8 w-8" />,
+    color: "text-indigo-600",
+    products: ["Polyethylene (PE) & Polypropylene (PP) derivatives", "Films & Packaging Materials", "Synthetic Rubber & Filaments"],
+    advantage: "Applications: FMCG, industrial packaging, automotive, textiles"
+  }, {
+    title: "Pharmaceuticals & Intermediates",
+    icon: <ShieldCheck className="h-8 w-8" />,
+    color: "text-red-600",
+    products: ["APIs (Active Pharmaceutical Ingredients)", "Bulk Drug Intermediates", "Specialty Fine Chemicals for pharma"],
+    advantage: "India's pharma ecosystem is export-driven, with world-class regulatory compliance (US FDA, EU GMP)"
+  }];
 
   // Why Choose SunSmit
-  const whyChooseUs = [
-    { title: "Proven Legacy", description: "30 years of chemical manufacturing experience", icon: <Award className="h-6 w-6" /> },
-    { title: "Strategic Location", description: "Gujarat-based operations with easy access to Dahej & Mundra ports", icon: <MapPin className="h-6 w-6" /> },
-    { title: "Scale & Network", description: "Partnerships across India's largest chemical clusters", icon: <Globe className="h-6 w-6" /> },
-    { title: "Quality Assurance", description: "ISO-certified, in-house testing labs (HPLC, GC, FTIR, KF)", icon: <Shield className="h-6 w-6" /> },
-    { title: "Flexible Packaging", description: "ISO tanks, IBCs, HDPE drums, carboys, bulk bags", icon: <Package className="h-6 w-6" /> },
-    { title: "Global Reach", description: "Active exports to Europe, Africa, Asia, expanding to Americas", icon: <Target className="h-6 w-6" /> }
-  ];
+  const whyChooseUs = [{
+    title: "Proven Legacy",
+    description: "30 years of chemical manufacturing experience",
+    icon: <Award className="h-6 w-6" />
+  }, {
+    title: "Strategic Location",
+    description: "Gujarat-based operations with easy access to Dahej & Mundra ports",
+    icon: <MapPin className="h-6 w-6" />
+  }, {
+    title: "Scale & Network",
+    description: "Partnerships across India's largest chemical clusters",
+    icon: <Globe className="h-6 w-6" />
+  }, {
+    title: "Quality Assurance",
+    description: "ISO-certified, in-house testing labs (HPLC, GC, FTIR, KF)",
+    icon: <Shield className="h-6 w-6" />
+  }, {
+    title: "Flexible Packaging",
+    description: "ISO tanks, IBCs, HDPE drums, carboys, bulk bags",
+    icon: <Package className="h-6 w-6" />
+  }, {
+    title: "Global Reach",
+    description: "Active exports to Europe, Africa, Asia, expanding to Americas",
+    icon: <Target className="h-6 w-6" />
+  }];
 
   // Export Infrastructure Stats
-  const infrastructureStats = [
-    { number: "430", unit: "MT/DAY", label: "Sodium Hypochlorite" },
-    { number: "Dahej", unit: "dahej warehouse", label: "Near Dahej & Mundra Ports" },
-    { number: "20", unit: "MT/DAY CAMPAIGN", label: "Specialty Intermediates" },
-    { number: "Multi", unit: "Format", label: "Export Packaging" }
-  ];
+  const infrastructureStats = [{
+    number: "430",
+    unit: "MT/DAY",
+    label: "Sodium Hypochlorite"
+  }, {
+    number: "Dahej",
+    unit: "dahej warehouse",
+    label: "Near Dahej & Mundra Ports"
+  }, {
+    number: "20",
+    unit: "MT/DAY CAMPAIGN",
+    label: "Specialty Intermediates"
+  }, {
+    number: "Multi",
+    unit: "Format",
+    label: "Export Packaging"
+  }];
 
   // Domestic Industries Data
   const industries = [{
@@ -139,20 +160,17 @@ const Markets = () => {
     label: "Customer Support",
     icon: <Target className="h-6 w-6" />
   }];
-  return (
-    <section id="markets" className="py-20 overflow-hidden relative">
+  return <section id="markets" className="py-20 overflow-hidden relative">
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-secondary/5 rounded-full blur-3xl animate-float" style={{
-        animationDelay: '3s'
-      }}></div>
+      animationDelay: '3s'
+    }}></div>
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Main Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            🌍 Export & Distribution Services
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">🌍 Export & Supplying Services</h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             For nearly three decades, SunSmit Dye Chem Pvt. Ltd. has been a trusted manufacturer of sodium hypochlorite in India. 
             Building on our legacy of reliability, technical strength, and quality assurance, we are now expanding into the 
@@ -190,8 +208,7 @@ const Markets = () => {
           </div>
           
           <div className="grid lg:grid-cols-2 gap-8">
-            {exportCategories.map((category, index) => (
-              <Card key={index} className="shadow-card hover:shadow-corporate transition-all duration-300 hover-lift">
+            {exportCategories.map((category, index) => <Card key={index} className="shadow-card hover:shadow-corporate transition-all duration-300 hover-lift">
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-3 mb-3">
                     <div className={`${category.color}`}>
@@ -205,18 +222,15 @@ const Markets = () => {
                     <div>
                       <h5 className="font-semibold text-foreground mb-2">Products:</h5>
                       <div className="space-y-1">
-                        {category.products.map((product, idx) => (
-                          <div key={idx} className="flex items-start space-x-2">
+                        {category.products.map((product, idx) => <div key={idx} className="flex items-start space-x-2">
                             <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                             <span className="text-muted-foreground text-sm">{product}</span>
-                          </div>
-                        ))}
+                          </div>)}
                       </div>
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -227,8 +241,7 @@ const Markets = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {whyChooseUs.map((item, index) => (
-              <Card key={index} className="text-center shadow-card hover:shadow-corporate transition-all duration-300 hover-lift">
+            {whyChooseUs.map((item, index) => <Card key={index} className="text-center shadow-card hover:shadow-corporate transition-all duration-300 hover-lift">
                 <CardContent className="p-6">
                   <div className="text-primary mb-4 flex justify-center">
                     {item.icon}
@@ -236,8 +249,7 @@ const Markets = () => {
                   <h4 className="font-bold text-foreground mb-2">{item.title}</h4>
                   <p className="text-sm text-muted-foreground">{item.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -249,13 +261,11 @@ const Markets = () => {
           
           <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8">
             <div className="grid md:grid-cols-4 gap-8 text-center mb-8">
-              {infrastructureStats.map((stat, index) => (
-                <div key={index}>
+              {infrastructureStats.map((stat, index) => <div key={index}>
                   <div className="text-3xl font-bold text-primary mb-1">{stat.number}</div>
                   <div className="text-sm text-secondary font-medium mb-2">{stat.unit}</div>
                   <div className="text-muted-foreground text-sm">{stat.label}</div>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             <div className="grid md:grid-cols-3 gap-6">
@@ -300,8 +310,7 @@ const Markets = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {distributionChannels.map((channel, index) => (
-              <Card key={index} className="text-center group hover-lift">
+            {distributionChannels.map((channel, index) => <Card key={index} className="text-center group hover-lift">
                 <CardContent className="p-8">
                   <div className={`${channel.color} mb-6 flex justify-center group-hover:scale-110 transition-transform`}>
                     {channel.icon}
@@ -309,8 +318,7 @@ const Markets = () => {
                   <h5 className="font-bold text-foreground mb-3 text-lg">{channel.title}</h5>
                   <p className="text-muted-foreground leading-relaxed">{channel.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -322,16 +330,14 @@ const Markets = () => {
 
           {/* Industries Served */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {industries.map((industry, index) => (
-              <Card key={index} className="shadow-card hover:shadow-corporate transition-all duration-300">
+            {industries.map((industry, index) => <Card key={index} className="shadow-card hover:shadow-corporate transition-all duration-300">
                 <CardContent className="p-6">
                   <div className={`${industry.color} mb-4`}>
                     {industry.icon}
                   </div>
                   <h4 className="text-xl font-semibold text-foreground mb-3">{industry.name}</h4>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           {/* Domestic Market Strengths */}
@@ -358,7 +364,6 @@ const Markets = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default Markets;
