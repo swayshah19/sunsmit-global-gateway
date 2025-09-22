@@ -7,7 +7,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             About SunSmit Dyechem
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Established in 1996, SunSmit Dyechem Pvt. Ltd. has built over three decades of leadership in chemical manufacturing and supplying, specializing in Sodium Hypochlorite, Bleaching Powder speciality chemical and intermediates with strong domestic and global presence. </p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Established in 1996, SunSmit Dyechem Pvt. Ltd. has built over three decades of leadership in chemical manufacturing and supplying, specializing in Sodium Hypochlorite, Bleaching Powder, Speciality chemical and Intermediates with strong domestic and global presence. </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
