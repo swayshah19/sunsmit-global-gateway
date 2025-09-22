@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Sun Smit Dye Chem Pvt. Ltd.</h3>
+            <h3 className="text-2xl font-bold mb-4">SunSmit Dyechem Pvt. Ltd.</h3>
             <p className="text-white/80 mb-4 max-w-md">
               Leading chemical exporters with 30+ years of expertise in manufacturing and 
               supplying high-quality chemicals to global markets.
@@ -61,7 +61,7 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-white/60 text-sm">
-              © 2024 Sun Smit Dye Chem Pvt. Ltd. All rights reserved.
+              © 2024 SunSmit Dyechem Pvt. Ltd. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-white/60">
               <a href="#" className="hover:text-secondary transition-colors">Privacy Policy</a>

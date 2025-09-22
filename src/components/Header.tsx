@@ -26,13 +26,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center space-x-3">
-              <img src={companyLogoNew} alt="Sun Smit Dye Chem Logo" className="h-10 w-10 object-contain mix-blend-multiply dark:mix-blend-normal dark:invert opacity-80" style={{
+              <img src={companyLogoNew} alt="SunSmit Dyechem Logo" className="h-10 w-10 object-contain mix-blend-multiply dark:mix-blend-normal dark:invert opacity-80" style={{
               backgroundColor: 'transparent'
             }} />
               <div className="flex items-center space-x-2">
                 <div>
                   <h1 className="text-xl font-bold text-primary">
-                    Sun Smit Dye Chem
+                    SunSmit Dyechem
                   </h1>
                   <p className="text-xs text-muted-foreground">Pvt. Ltd.</p>
                 </div>

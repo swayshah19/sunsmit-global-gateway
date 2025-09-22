@@ -5,7 +5,7 @@ const Hero = () => {
   return <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background with Enhanced Overlay */}
       <div className="absolute inset-0">
-        <img src={heroImage} alt="Sun Smit Dye Chem manufacturing facility" className="w-full h-full object-cover scale-105" />
+        <img src={heroImage} alt="SunSmit Dyechem manufacturing facility" className="w-full h-full object-cover scale-105" />
         <div className="absolute inset-0 bg-gradient-overlay"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/20"></div>
       </div>
