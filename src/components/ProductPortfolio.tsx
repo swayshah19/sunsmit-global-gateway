@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Droplets, Beaker, Sprout, TestTube, FlaskConical, Pill } from "lucide-react";
+import { Droplets, Beaker, Sprout, TestTube, FlaskConical, Pill, Globe } from "lucide-react";
 
 const ProductPortfolio = () => {
   const productCategories = [
@@ -129,14 +129,30 @@ const ProductPortfolio = () => {
         </div>
 
         {/* Industries We Serve */}
-        <div className="text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-8">Industries We Serve</h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {industries.map((industry, index) => (
-              <Badge key={index} variant="outline" className="px-4 py-2 text-sm">
-                {industry}
-              </Badge>
-            ))}
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-primary rounded-3xl opacity-90"></div>
+          <div className="relative bg-gradient-overlay rounded-3xl p-8 md:p-16 text-white">
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center p-3 bg-white/20 rounded-full mb-6">
+                <Globe className="h-10 w-10 text-white" />
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold mb-6">Industries We Serve</h3>
+              <p className="text-xl opacity-90 max-w-3xl mx-auto mb-12 leading-relaxed">
+                Delivering specialized chemical solutions across diverse sectors with proven expertise and reliability
+              </p>
+              
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {industries.map((industry, index) => (
+                  <div key={index} className="group">
+                    <div className="glass-dark rounded-xl p-4 hover:bg-white/20 transition-all duration-300 hover-lift text-center">
+                      <div className="text-white/90 font-medium text-sm leading-relaxed group-hover:text-white transition-colors">
+                        {industry}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
