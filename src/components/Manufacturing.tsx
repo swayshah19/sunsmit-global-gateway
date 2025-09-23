@@ -144,15 +144,23 @@ const Manufacturing = () => {
                     <FlaskConical className="h-5 w-5 text-secondary mr-2" />
                     Analytical Laboratory
                   </h5>
-                  <div className="grid gap-3">
+                  <div className="grid gap-4">
                     {labEquipment.map((equipment, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 bg-background rounded-lg border border-border/50">
-                        <Badge variant="secondary" className="font-medium">
-                          {equipment.name}
-                        </Badge>
-                        <span className="text-sm text-muted-foreground">
+                      <div key={index} className="group p-4 bg-gradient-to-r from-background to-muted/30 rounded-xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover-lift">
+                        <div className="flex items-start justify-between">
+                          <div className="flex items-center space-x-3">
+                            <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+                              <TestTube className="h-4 w-4 text-primary" />
+                            </div>
+                            <Badge variant="secondary" className="font-semibold bg-secondary/20 text-secondary border-secondary/30">
+                              {equipment.name}
+                            </Badge>
+                          </div>
+                          <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                        </div>
+                        <p className="text-sm text-muted-foreground mt-3 ml-11 leading-relaxed">
                           {equipment.description}
-                        </span>
+                        </p>
                       </div>
                     ))}
                   </div>
