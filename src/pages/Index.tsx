@@ -4,7 +4,6 @@ import About from "@/components/About";
 import Markets from "@/components/Markets";
 import Manufacturing from "@/components/Manufacturing";
 import ProductPortfolio from "@/components/ProductPortfolio";
-import IndustriesWeServe from "@/components/IndustriesWeServe";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -18,7 +17,6 @@ const Index = () => {
       <Manufacturing />
       <Markets />
       <ProductPortfolio />
-      <IndustriesWeServe />
       <Contact />
       <Footer />
       <WhatsAppFloat />
