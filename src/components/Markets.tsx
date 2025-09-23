@@ -72,17 +72,17 @@ const Markets = () => {
 
   // Export Infrastructure Stats
   const infrastructureStats = [{
-    number: "13000",
-    unit: "MT/MONTH",
+    number: "430",
+    unit: "MT/DAY",
     label: "Sodium Hypochlorite"
   }, {
-    number: "Dahej",
-    unit: "dahej warehouse",
-    label: "Near Dahej & Mundra Ports"
+    number: "20",
+    unit: "MT/DAY",
+    label: "Campaign Specialty"
   }, {
-    number: "1000",
-    unit: "MT/MONTH",
-    label: "Specialty Intermediates"
+    number: "Near",
+    unit: "Dahej & Mundra",
+    label: "Ports Location"
   }, {
     number: "Multi",
     unit: "Format",
@@ -262,7 +262,7 @@ const Markets = () => {
           <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8">
             <div className="grid md:grid-cols-4 gap-8 text-center mb-8">
               {infrastructureStats.map((stat, index) => <div key={index}>
-                  <div className="text-3xl font-bold text-primary mb-1"></div>
+                  <div className="text-3xl font-bold text-primary mb-1">{stat.number}</div>
                   <div className="text-sm text-secondary font-medium mb-2">{stat.unit}</div>
                   <div className="text-muted-foreground text-sm">{stat.label}</div>
                 </div>)}
