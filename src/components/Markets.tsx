@@ -262,7 +262,7 @@ const Markets = () => {
           <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8">
             <div className="grid md:grid-cols-4 gap-8 text-center mb-8">
               {infrastructureStats.map((stat, index) => <div key={index}>
-                  <div className="text-3xl font-bold text-primary mb-1">13000</div>
+                  <div className="text-3xl font-bold text-primary mb-1"></div>
                   <div className="text-sm text-secondary font-medium mb-2">{stat.unit}</div>
                   <div className="text-muted-foreground text-sm">{stat.label}</div>
                 </div>)}
