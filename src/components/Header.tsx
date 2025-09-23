@@ -15,7 +15,7 @@ const Header = () => {
     label: "Infrastructure & Quality Excellence",
     href: "#manufacturing"
   }, {
-    label: "Export Services",
+    label: "Applications",
     href: "#markets"
   }, {
     label: "Products",
