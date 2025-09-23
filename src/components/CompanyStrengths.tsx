@@ -23,7 +23,7 @@ const CompanyStrengths = () => {
       highlight: "Gujarat Based"
     },
     {
-      title: "Global Certifications",
+      title: "Compliance",
       description: "ISO 9001 & ISO 14001 compliant",
       icon: Award,
       highlight: "ISO Compliant"
