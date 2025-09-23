@@ -5,66 +5,42 @@ import { Droplets, Beaker, Sprout, TestTube, FlaskConical, Pill, Globe } from "l
 const ProductPortfolio = () => {
   const productCategories = [
     {
-      title: "Water Treatment Chemicals",
+      title: "Sodium Hypochlorite & Calcium Hypochlorite",
       icon: Droplets,
       products: [
-        { name: "Sodium Hypochlorite", description: "High-grade disinfectant" },
-        { name: "Calcium Hypochlorite", description: "Stable bleaching powder" }
+        { name: "Sodium Hypochlorite", description: "High-grade disinfectant for water treatment" },
+        { name: "Calcium Hypochlorite", description: "Stable bleaching powder with extended shelf life" },
+        { name: "Industrial Grade Solutions", description: "Various concentrations available" },
+        { name: "Water Treatment Applications", description: "Municipal and industrial use" }
       ],
       color: "text-blue-600"
     },
     {
-      title: "Inorganic Chemicals", 
+      title: "Chemical Intermediates",
       icon: Beaker,
       products: [
-        { name: "Soda Ash", description: "Sodium Carbonate" },
-        { name: "Caustic Soda", description: "NaOH" },
-        { name: "Aluminium Hydroxide", description: "Industrial grade" },
-        { name: "Titanium Dioxide", description: "Pigment grade" },
-        { name: "Hydrogen Peroxide", description: "Various concentrations" }
+        { name: "Soda Ash (Sodium Carbonate)", description: "Industrial grade alkali" },
+        { name: "Caustic Soda (NaOH)", description: "High purity sodium hydroxide" },
+        { name: "Acetic Acid & Derivatives", description: "Industrial grade organic acids" },
+        { name: "Aluminium Hydroxide", description: "Flame retardant applications" },
+        { name: "Titanium Dioxide", description: "Pigment and coating grade" },
+        { name: "Hydrogen Peroxide", description: "Various industrial concentrations" },
+        { name: "Industrial Solvents", description: "Ethanol and specialty solvents" }
       ],
       color: "text-purple-600"
     },
     {
-      title: "Organic Chemicals",
+      title: "Specialty Chemicals",
       icon: FlaskConical,
       products: [
-        { name: "Acetic Acid & Derivatives", description: "Industrial grade" },
-        { name: "Ethanol", description: "Industrial Alcohols" },
-        { name: "Phenols", description: "Aniline Derivatives" },
-        { name: "Industrial Solvents", description: "Various grades" }
+        { name: "Pharmaceutical APIs", description: "Active pharmaceutical ingredients" },
+        { name: "Agrochemical Intermediates", description: "Pesticide and herbicide precursors" },
+        { name: "Dye Intermediates", description: "Reactive and acid dye components" },
+        { name: "Fine Chemicals", description: "High-purity specialty compounds" },
+        { name: "Custom Synthesis", description: "Tailored chemical solutions" },
+        { name: "Research Chemicals", description: "Laboratory and R&D applications" }
       ],
       color: "text-green-600"
-    },
-    {
-      title: "Agrochemicals",
-      icon: Sprout,
-      products: [
-        { name: "Technical-grade Pesticides", description: "Various formulations" },
-        { name: "Insecticides", description: "Crop protection" },
-        { name: "Herbicides", description: "Weed control" },
-        { name: "Fungicides", description: "Disease prevention" }
-      ],
-      color: "text-emerald-600"
-    },
-    {
-      title: "Dyes & Intermediates",
-      icon: TestTube,
-      products: [
-        { name: "Reactive Dyes", description: "Textile applications" },
-        { name: "Acid Dyes", description: "Various colors" },
-        { name: "Azo Intermediates", description: "Specialty chemicals" }
-      ],
-      color: "text-orange-600"
-    },
-    {
-      title: "Pharmaceuticals & Fine Chemicals",
-      icon: Pill,
-      products: [
-        { name: "APIs", description: "Bulk Drug Intermediates" },
-        { name: "Specialty Fine Chemicals", description: "Pharma grade" }
-      ],
-      color: "text-red-600"
     }
   ];
 
@@ -90,7 +66,7 @@ const ProductPortfolio = () => {
             Our Product Portfolio
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Comprehensive chemical solutions across six major categories, serving diverse industries 
+            Comprehensive chemical solutions across three major categories, serving diverse industries 
             with quality, reliability, and innovation.
           </p>
         </div>
