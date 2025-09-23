@@ -15,7 +15,7 @@ const Header = () => {
     label: "Export and Supply Chain Services",
     href: "#markets"
   }, {
-    label: "Manufacturing Services",
+    label: "Our Infrastructure",
     href: "#manufacturing"
   }, {
     label: "Contact",
