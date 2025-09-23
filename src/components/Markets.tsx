@@ -80,7 +80,7 @@ const Markets = () => {
     unit: "dahej warehouse",
     label: "Near Dahej & Mundra Ports"
   }, {
-    number: "20",
+    number: "600",
     unit: "MT/DAY CAMPAIGN",
     label: "Specialty Intermediates"
   }, {
