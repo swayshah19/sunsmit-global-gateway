@@ -79,7 +79,7 @@ const About = () => {
         {/* Vision Statement */}
         <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-center text-white">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Our Vision</h3>
-          <p className="text-lg md:text-xl font-light max-w-4xl mx-auto">"To be a global leader in chemical exports, delivering sustainable solutions worldwide while maintaining the highest standards of quality, safety, and environmental responsibility with unwavering benchmark quality ."</p>
+          <p className="text-lg md:text-xl font-light max-w-4xl mx-auto">"To be a global leader in chemicals, delivering sustainable solutions worldwide while maintaining the highest standards of quality, safety, and environmental responsibility with unwavering benchmark quality ."</p>
         </div>
       </div>
     </section>;
