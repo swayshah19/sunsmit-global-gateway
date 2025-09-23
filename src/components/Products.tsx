@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Droplets, Sparkles, FlaskConical, Award, Leaf, Users } from "lucide-react";
+import { Droplets, Sparkles, FlaskConical, Award, Leaf, Users, Beaker, Factory } from "lucide-react";
 
 const Products = () => {
   const products = [
@@ -24,6 +24,26 @@ const Products = () => {
       description: "Premium quality stable bleaching powder with minimum 34% chlorine content. Mercury-free and stable in alkaline medium for reliable performance.",
       applications: ["Water Purification", "Effluent Treatment", "Paper Industry", "Textile Bleaching", "Food Processing", "Oil Refineries"],
       color: "text-green-600"
+    },
+    {
+      icon: <Beaker className="h-8 w-8" />,
+      name: "Custom Specialty Chemicals",
+      brand: "Tailored Solutions",
+      concentration: "As per requirement",
+      capacity: "1000 MT/Month",
+      description: "Bespoke chemical formulations designed to meet specific industrial requirements. From complex organic synthesis to specialized inorganic compounds.",
+      applications: ["Pharmaceutical Intermediates", "Agrochemical Synthesis", "Coating Additives", "Industrial Catalysts", "Research & Development", "Custom Manufacturing"],
+      color: "text-purple-600"
+    },
+    {
+      icon: <Factory className="h-8 w-8" />,
+      name: "Chemical Intermediates",
+      brand: "Industrial Grade",
+      concentration: "High Purity",
+      capacity: "Variable Batch Size",
+      description: "High-quality chemical intermediates for pharmaceutical, agrochemical, and specialty chemical industries. Manufactured under strict quality control standards.",
+      applications: ["API Manufacturing", "Dye Intermediates", "Polymer Additives", "Specialty Solvents", "Fine Chemicals", "Process Chemicals"],
+      color: "text-orange-600"
     }
   ];
 
@@ -40,7 +60,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16 justify-items-center max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
           {products.map((product, index) => (
             <Card key={index} className="shadow-card hover:shadow-corporate transition-all duration-300 group">
               <CardHeader>
