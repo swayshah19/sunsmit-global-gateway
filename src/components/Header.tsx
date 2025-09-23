@@ -12,17 +12,17 @@ const Header = () => {
     label: "Who We Are",
     href: "#about"
   }, {
-    label: "Products",
-    href: "#products"
+    label: "Quality & Infrastructure",
+    href: "#manufacturing"
   }, {
     label: "Export Services",
     href: "#markets"
   }, {
+    label: "Products",
+    href: "#products"
+  }, {
     label: "Industries We Serve",
     href: "#industries"
-  }, {
-    label: "Quality & Infrastructure",
-    href: "#manufacturing"
   }, {
     label: "Contact",
     href: "#contact"
@@ -38,7 +38,7 @@ const Header = () => {
               <div className="flex items-center space-x-2">
                 <div>
                   <h1 className="text-xl font-bold text-primary">
-                    SunSmit Dyechem
+                    chem
                   </h1>
                   <p className="text-xs text-muted-foreground">Pvt. Ltd.</p>
                 </div>
