@@ -258,7 +258,7 @@ const ExportMap: React.FC<ExportMapProps> = ({
 
         {/* Industries We Serve */}
         <div className="space-y-4">
-          <h3 className="text-xl font-bold text-foreground mb-6">Industries we serve </h3>
+          
           
           {/* Export Statistics */}
           <div className="card-premium p-4 bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/20">
