@@ -237,7 +237,7 @@ const Markets = () => {
         {/* 4. Why Choose SunSmit */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-foreground mb-4">🔹 Why Choose SunSmit for Export & Distribution?</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-4">🔹 Why Choose SunSmit DyeChem</h3>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
