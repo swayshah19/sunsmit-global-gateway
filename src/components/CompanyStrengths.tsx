@@ -24,13 +24,13 @@ const CompanyStrengths = () => {
     },
     {
       title: "Global Certifications",
-      description: "ISO 9001 & ISO 14001 certified",
+      description: "ISO 9001 & ISO 14001 compliant",
       icon: Award,
-      highlight: "ISO Certified"
+      highlight: "ISO Compliant"
     },
     {
       title: "Export Readiness",
-      description: "IEC-certified, drug manufacturing license",
+      description: "IEC-compliant, drug manufacturing license",
       icon: Globe,
       highlight: "Export Ready"
     },
