@@ -73,44 +73,6 @@ const ProductPortfolio = () => {
           </p>
         </div>
 
-        {/* Products */}
-        <div className="space-y-16">
-          {products.map((product, index) => {
-            const IconComponent = product.icon;
-            return (
-              <div key={index} className="bg-card rounded-2xl p-8 md:p-12 border border-border/50 hover-lift">
-                <div className="grid lg:grid-cols-2 gap-8 items-start">
-                  <div>
-                    <div className="flex items-center space-x-4 mb-6">
-                      <div className="p-3 bg-primary/10 rounded-xl">
-                        <IconComponent className="h-8 w-8 text-primary" />
-                      </div>
-                      <h3 className="text-2xl md:text-3xl font-bold">{product.title}</h3>
-                    </div>
-                    <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                      {product.description}
-                    </p>
-                    <Button size="lg" className="w-full sm:w-auto">
-                      Request Quote
-                    </Button>
-                  </div>
-                  
-                  <div className="bg-muted/30 rounded-xl p-6">
-                    <h4 className="text-lg font-semibold mb-4 text-foreground">Applications:</h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {product.applications.map((application, appIndex) => (
-                        <div key={appIndex} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                          <span className="text-sm text-muted-foreground">{application}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
 
         {/* Industries We Serve */}
         <div id="industries" className="mt-20">
