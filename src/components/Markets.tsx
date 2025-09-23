@@ -273,7 +273,7 @@ const Markets = () => {
                 <h5 className="font-bold text-foreground mb-3">Manufacturing Backbone</h5>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• 13000 MT/month sodium hypochlorite</li>
-                  <li>• 600 MT/Month campaign specialty intermediates</li>
+                  <li>• 1000 MT/Month campaign specialty intermediates</li>
                 </ul>
               </div>
               
