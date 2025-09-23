@@ -81,7 +81,7 @@ const Markets = () => {
     label: "Near Dahej & Mundra Ports"
   }, {
     number: "1000",
-    unit: "MT/DAY CAMPAIGN",
+    unit: "MT/MONTH",
     label: "Specialty Intermediates"
   }, {
     number: "Multi",
