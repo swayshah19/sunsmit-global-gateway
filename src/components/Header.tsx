@@ -51,9 +51,16 @@ const Header = () => {
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
               {navItems.map((item, index) => <li key={index}>
-                  <a href={item.href} className="text-foreground hover:text-primary transition-colors font-medium">
+                  <button 
+                    onClick={() => {
+                      document.querySelector(item.href)?.scrollIntoView({ 
+                        behavior: 'smooth' 
+                      });
+                    }}
+                    className="text-foreground hover:text-primary transition-colors font-medium"
+                  >
                     {item.label}
-                  </a>
+                  </button>
                 </li>)}
             </ul>
           </nav>
@@ -78,9 +85,17 @@ const Header = () => {
             <nav className="py-4">
               <ul className="space-y-2">
                 {navItems.map((item, index) => <li key={index}>
-                    <a href={item.href} className="block py-2 text-foreground hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>
+                    <button 
+                      onClick={() => {
+                        document.querySelector(item.href)?.scrollIntoView({ 
+                          behavior: 'smooth' 
+                        });
+                        setIsMenuOpen(false);
+                      }}
+                      className="block py-2 text-foreground hover:text-primary transition-colors w-full text-left"
+                    >
                       {item.label}
-                    </a>
+                    </button>
                   </li>)}
               </ul>
               <div className="mt-4 pt-4 border-t border-border">
