@@ -37,9 +37,7 @@ const Header = () => {
             }} />
               <div className="flex items-center space-x-2">
                 <div>
-                  <h1 className="text-xl font-bold text-primary">
-                    chem
-                  </h1>
+                  <h1 className="text-xl font-bold text-primary">chSunem</h1>
                   <p className="text-xs text-muted-foreground">Pvt. Ltd.</p>
                 </div>
                 
@@ -51,14 +49,11 @@ const Header = () => {
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
               {navItems.map((item, index) => <li key={index}>
-                  <button 
-                    onClick={() => {
-                      document.querySelector(item.href)?.scrollIntoView({ 
-                        behavior: 'smooth' 
-                      });
-                    }}
-                    className="text-foreground hover:text-primary transition-colors font-medium"
-                  >
+                  <button onClick={() => {
+                document.querySelector(item.href)?.scrollIntoView({
+                  behavior: 'smooth'
+                });
+              }} className="text-foreground hover:text-primary transition-colors font-medium">
                     {item.label}
                   </button>
                 </li>)}
@@ -85,15 +80,12 @@ const Header = () => {
             <nav className="py-4">
               <ul className="space-y-2">
                 {navItems.map((item, index) => <li key={index}>
-                    <button 
-                      onClick={() => {
-                        document.querySelector(item.href)?.scrollIntoView({ 
-                          behavior: 'smooth' 
-                        });
-                        setIsMenuOpen(false);
-                      }}
-                      className="block py-2 text-foreground hover:text-primary transition-colors w-full text-left"
-                    >
+                    <button onClick={() => {
+                document.querySelector(item.href)?.scrollIntoView({
+                  behavior: 'smooth'
+                });
+                setIsMenuOpen(false);
+              }} className="block py-2 text-foreground hover:text-primary transition-colors w-full text-left">
                       {item.label}
                     </button>
                   </li>)}
