@@ -302,36 +302,6 @@ const Manufacturing = () => {
               </div>
             </div>
 
-            {/* Certifications */}
-            <div>
-              <h4 className="text-2xl font-semibold text-foreground mb-8 flex items-center">
-                <Award className="h-6 w-6 text-secondary mr-3" />
-                Certifications & Compliance
-              </h4>
-              <div className="grid gap-6">
-                {certifications.map((cert, index) => {
-                  const IconComponent = cert.icon;
-                  return (
-                    <Card key={index} className="card-premium hover-lift group">
-                      <CardContent className="p-6">
-                        <div className="flex items-center space-x-4">
-                          <div className="p-3 bg-secondary/10 rounded-xl group-hover:bg-secondary/20 transition-colors">
-                            <IconComponent className="h-6 w-6 text-secondary" />
-                          </div>
-                          <div className="flex-1">
-                            <h5 className="font-bold text-foreground mb-1">{cert.name}</h5>
-                            <p className="text-sm text-muted-foreground">{cert.type}</p>
-                          </div>
-                          <Badge variant="outline" className="border-secondary/30 text-secondary">
-                            Certified
-                          </Badge>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  );
-                })}
-              </div>
-            </div>
           </div>
         </div>
       </div>
