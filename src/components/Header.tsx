@@ -12,7 +12,7 @@ const Header = () => {
     label: "Who We Are",
     href: "#about"
   }, {
-    label: "Quality & Infrastructure",
+    label: "Infrastructure & Quality Excellence",
     href: "#manufacturing"
   }, {
     label: "Export Services",
