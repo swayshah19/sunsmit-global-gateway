@@ -130,12 +130,7 @@ const Manufacturing = () => {
             {/* R&D Centre Card */}
             <Card className="card-premium hover-lift group">
               <CardHeader className="pb-4">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-                    <TestTube className="h-6 w-6 text-primary" />
-                  </div>
-                  <CardTitle className="text-2xl">R&D Centre</CardTitle>
-                </div>
+                <CardTitle className="text-2xl mb-4">R&D Centre</CardTitle>
                 <p className="text-muted-foreground leading-relaxed">
                   Our R&D centre drives innovation in chlor-alkali chemistry, bleaching agents, and specialty intermediates. 
                   Equipped with modern laboratories, our scientists and chemical engineers improve existing processes 
