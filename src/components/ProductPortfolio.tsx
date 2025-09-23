@@ -111,6 +111,37 @@ const ProductPortfolio = () => {
             );
           })}
         </div>
+
+        {/* Industries We Serve */}
+        <div id="industries" className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-bold text-gradient mb-6">Industries We Serve</h3>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Delivering specialized chemical solutions across diverse sectors with proven expertise and reliability
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {[
+              "Agriculture & Crop Protection",
+              "Pharmaceuticals", 
+              "Specialty Chemicals",
+              "Water Treatment & Utilities",
+              "Industrial Manufacturing",
+              "Food & Beverages",
+              "Textile & Paper",
+              "Oil & Gas"
+            ].map((industry, index) => (
+              <div key={index} className="group">
+                <div className="bg-card hover:bg-primary/5 rounded-xl p-6 border border-border/50 hover:border-primary/20 transition-all duration-300 hover-lift text-center">
+                  <div className="text-foreground font-medium text-sm leading-relaxed group-hover:text-primary transition-colors">
+                    {industry}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

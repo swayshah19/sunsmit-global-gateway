@@ -9,13 +9,19 @@ const Header = () => {
     label: "Home",
     href: "#home"
   }, {
-    label: "About Us",
+    label: "Who We Are",
     href: "#about"
   }, {
-    label: "Export and Supply Chain Services",
+    label: "Products",
+    href: "#products"
+  }, {
+    label: "Export Services",
     href: "#markets"
   }, {
-    label: "Our Infrastructure",
+    label: "Industries We Serve",
+    href: "#industries"
+  }, {
+    label: "Quality & Infrastructure",
     href: "#manufacturing"
   }, {
     label: "Contact",
