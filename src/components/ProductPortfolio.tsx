@@ -1,57 +1,60 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Droplets, Beaker, Sprout, TestTube, FlaskConical, Pill, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Droplets, FlaskConical, Beaker, Zap } from "lucide-react";
 
 const ProductPortfolio = () => {
-  const productCategories = [
+  const products = [
     {
-      title: "Sodium Hypochlorite & Calcium Hypochlorite",
+      title: "Sodium Hypochlorite",
+      description: "High-grade liquid disinfectant and bleaching agent with Manufacturing Drug License for water purification. Mercury-free and stable formulation.",
       icon: Droplets,
-      products: [
-        { name: "Sodium Hypochlorite", description: "High-grade disinfectant for water treatment" },
-        { name: "Calcium Hypochlorite", description: "Stable bleaching powder with extended shelf life" },
-        { name: "Industrial Grade Solutions", description: "Various concentrations available" },
-        { name: "Water Treatment Applications", description: "Municipal and industrial use" }
-      ],
-      color: "text-blue-600"
+      applications: [
+        "Drinking Water Disinfection",
+        "Textile Bleaching", 
+        "Food Processing",
+        "Sanitation",
+        "Paper Industry",
+        "Effluent Treatment"
+      ]
     },
     {
-      title: "Chemical Intermediates",
-      icon: Beaker,
-      products: [
-        { name: "Soda Ash (Sodium Carbonate)", description: "Industrial grade alkali" },
-        { name: "Caustic Soda (NaOH)", description: "High purity sodium hydroxide" },
-        { name: "Acetic Acid & Derivatives", description: "Industrial grade organic acids" },
-        { name: "Aluminium Hydroxide", description: "Flame retardant applications" },
-        { name: "Titanium Dioxide", description: "Pigment and coating grade" },
-        { name: "Hydrogen Peroxide", description: "Various industrial concentrations" },
-        { name: "Industrial Solvents", description: "Ethanol and specialty solvents" }
-      ],
-      color: "text-purple-600"
+      title: "Calcium Hypochlorite",
+      description: "Premium quality stable bleaching powder with minimum 34% chlorine content. Mercury-free and stable in alkaline medium for reliable performance.",
+      icon: Zap,
+      applications: [
+        "Water Purification",
+        "Effluent Treatment",
+        "Paper Industry", 
+        "Textile Bleaching",
+        "Food Processing",
+        "Oil Refineries"
+      ]
     },
     {
-      title: "Specialty Chemicals",
+      title: "Custom Specialty Chemicals",
+      description: "Bespoke chemical formulations designed to meet specific industrial requirements. From complex organic synthesis to specialized inorganic compounds.",
       icon: FlaskConical,
-      products: [
-        { name: "Pharmaceutical APIs", description: "Active pharmaceutical ingredients" },
-        { name: "Agrochemical Intermediates", description: "Pesticide and herbicide precursors" },
-        { name: "Dye Intermediates", description: "Reactive and acid dye components" },
-        { name: "Fine Chemicals", description: "High-purity specialty compounds" },
-        { name: "Custom Synthesis", description: "Tailored chemical solutions" },
-        { name: "Research Chemicals", description: "Laboratory and R&D applications" }
-      ],
-      color: "text-green-600"
+      applications: [
+        "Pharmaceutical Intermediates",
+        "Agrochemical Synthesis",
+        "Coating Additives",
+        "Industrial Catalysts", 
+        "Research & Development",
+        "Custom Manufacturing"
+      ]
+    },
+    {
+      title: "Chemical Intermediates", 
+      description: "High-quality chemical intermediates for pharmaceutical, agrochemical, and specialty chemical industries. Manufactured under strict quality control standards.",
+      icon: Beaker,
+      applications: [
+        "API Manufacturing",
+        "Dye Intermediates",
+        "Polymer Additives",
+        "Specialty Solvents",
+        "Fine Chemicals",
+        "Process Chemicals"
+      ]
     }
-  ];
-
-  const industries = [
-    "Agriculture & Crop Protection",
-    "Pharmaceuticals", 
-    "Specialty Chemicals",
-    "Water Treatment & Utilities",
-    "Industrial Manufacturing",
-    "Food & Beverages",
-    "Textile & Paper"
   ];
 
   return (
@@ -66,70 +69,47 @@ const ProductPortfolio = () => {
             Our Product Portfolio
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Comprehensive chemical solutions across three major categories, serving diverse industries 
-            with quality, reliability, and innovation.
+            Manufacturing high-quality chemicals with advanced technology and stringent quality control to meet international standards and customer requirements.
           </p>
         </div>
 
-        {/* Product Categories */}
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
-          {productCategories.map((category, index) => {
-            const IconComponent = category.icon;
+        {/* Products */}
+        <div className="space-y-16">
+          {products.map((product, index) => {
+            const IconComponent = product.icon;
             return (
-              <Card key={index} className="card-premium hover-lift group">
-                <CardHeader className="pb-4">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-                      <IconComponent className={`h-6 w-6 ${category.color}`} />
-                    </div>
-                    <CardTitle className="text-xl">{category.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {category.products.map((product, productIndex) => (
-                      <div key={productIndex} className="p-3 bg-muted/30 rounded-lg border border-border/50">
-                        <div className="flex items-center justify-between mb-1">
-                          <Badge variant="secondary" className="text-xs font-medium">
-                            {product.name}
-                          </Badge>
-                        </div>
-                        <p className="text-sm text-muted-foreground">{product.description}</p>
+              <div key={index} className="bg-card rounded-2xl p-8 md:p-12 border border-border/50 hover-lift">
+                <div className="grid lg:grid-cols-2 gap-8 items-start">
+                  <div>
+                    <div className="flex items-center space-x-4 mb-6">
+                      <div className="p-3 bg-primary/10 rounded-xl">
+                        <IconComponent className="h-8 w-8 text-primary" />
                       </div>
-                    ))}
+                      <h3 className="text-2xl md:text-3xl font-bold">{product.title}</h3>
+                    </div>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                      {product.description}
+                    </p>
+                    <Button size="lg" className="w-full sm:w-auto">
+                      Request Quote
+                    </Button>
                   </div>
-                </CardContent>
-              </Card>
+                  
+                  <div className="bg-muted/30 rounded-xl p-6">
+                    <h4 className="text-lg font-semibold mb-4 text-foreground">Applications:</h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {product.applications.map((application, appIndex) => (
+                        <div key={appIndex} className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                          <span className="text-sm text-muted-foreground">{application}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             );
           })}
-        </div>
-
-        {/* Industries We Serve */}
-        <div className="relative">
-          <div className="absolute inset-0 bg-gradient-primary rounded-3xl opacity-90"></div>
-          <div className="relative bg-gradient-overlay rounded-3xl p-8 md:p-16 text-white">
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center p-3 bg-white/20 rounded-full mb-6">
-                <Globe className="h-10 w-10 text-white" />
-              </div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-6">Industries We Serve</h3>
-              <p className="text-xl opacity-90 max-w-3xl mx-auto mb-12 leading-relaxed">
-                Delivering specialized chemical solutions across diverse sectors with proven expertise and reliability
-              </p>
-              
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {industries.map((industry, index) => (
-                  <div key={index} className="group">
-                    <div className="glass-dark rounded-xl p-4 hover:bg-white/20 transition-all duration-300 hover-lift text-center">
-                      <div className="text-white/90 font-medium text-sm leading-relaxed group-hover:text-white transition-colors">
-                        {industry}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
