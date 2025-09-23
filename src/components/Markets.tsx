@@ -58,7 +58,7 @@ const Markets = () => {
     icon: <Globe className="h-6 w-6" />
   }, {
     title: "Quality Assurance",
-    description: "ISO compliant",
+    description: "ISO-compliant, in-house testing labs (HPLC, GC, FTIR, KF)",
     icon: <Shield className="h-6 w-6" />
   }, {
     title: "Flexible Packaging",
