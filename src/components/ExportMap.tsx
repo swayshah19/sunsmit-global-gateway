@@ -65,43 +65,38 @@ const ExportMap: React.FC<ExportMapProps> = ({
     color: "#F97316",
     description: "High-margin niche chemical exports"
   }];
-  const chemicalCategories = [{
+  const industriesWeServe = [{
     icon: <Leaf className="h-5 w-5" />,
-    title: "Agrochemical Intermediates",
-    products: ["2-Chloro-5-Chloromethylthiazole", "2,6-Dichlorobenzonitrile", "Acetochlor intermediates"],
-    regions: "Latin America, SE Asia, Africa",
+    title: "Agriculture & Crop Protection",
+    description: "Herbicides, fungicides, and plant growth regulators",
     color: "bg-green-500",
     bgColor: "bg-green-50",
     textColor: "text-green-700"
   }, {
     icon: <FlaskConical className="h-5 w-5" />,
-    title: "Pharmaceutical Intermediates",
-    products: ["4-Methoxybenzylamine", "2-Phenylbenzimidazole-5-sulfonic acid", "p-Fluorobenzoyl Chloride"],
-    regions: "US, EU, Regulated Markets",
+    title: "Pharmaceuticals",
+    description: "API intermediates and specialty compounds",
     color: "bg-blue-500",
     bgColor: "bg-blue-50",
     textColor: "text-blue-700"
   }, {
     icon: <Shield className="h-5 w-5" />,
     title: "Specialty Chemicals",
-    products: ["4,4′-Difluorobenzophenone", "2,5-Dimethylthiophene", "p-Toluenesulfonyl Chloride"],
-    regions: "Europe, Korea, Japan",
+    description: "High-performance industrial chemicals",
     color: "bg-purple-500",
     bgColor: "bg-purple-50",
     textColor: "text-purple-700"
   }, {
     icon: <Droplets className="h-5 w-5" />,
     title: "Water Treatment",
-    products: ["Sodium Hypochlorite", "Calcium Hypochlorite", "Zirconium Carbonate"],
-    regions: "Middle East, Africa, SE Asia",
+    description: "Disinfection and purification solutions",
     color: "bg-cyan-500",
     bgColor: "bg-cyan-50",
     textColor: "text-cyan-700"
   }, {
     icon: <Factory className="h-5 w-5" />,
-    title: "Bulk Organics",
-    products: ["Acetic Acid & Derivatives", "Methanol-based intermediates", "Ethylene Glycol derivatives"],
-    regions: "Global Markets",
+    title: "Industrial Manufacturing",
+    description: "Bulk chemicals and process intermediates",
     color: "bg-orange-500",
     bgColor: "bg-orange-50",
     textColor: "text-orange-700"
@@ -261,23 +256,24 @@ const ExportMap: React.FC<ExportMapProps> = ({
           </div>
         </div>
 
-        {/* Chemical Categories */}
+        {/* Industries We Serve */}
         <div className="space-y-4">
-          <h3 className="text-xl font-bold text-foreground mb-6">We supply </h3>
-          {chemicalCategories.map((category, index) => <div key={index} className={`card-premium p-4 hover-lift animate-fade-in-up border-l-4 ${category.bgColor}`} style={{
+          <h3 className="text-xl font-bold text-foreground mb-6">Industries we serve </h3>
+          {industriesWeServe.map((industry, index) => <div key={index} className={`card-premium p-4 hover-lift animate-fade-in-up border-l-4 ${industry.bgColor}`} style={{
           animationDelay: `${index * 0.1}s`,
-          borderLeftColor: category.color.replace('bg-', '').replace('-500', '')
+          borderLeftColor: industry.color.replace('bg-', '').replace('-500', '')
         }}>
               <div className="flex items-start space-x-3">
-                <div className={`p-2 rounded-lg ${category.color} text-white flex-shrink-0`}>
-                  {category.icon}
+                <div className={`p-2 rounded-lg ${industry.color} text-white flex-shrink-0`}>
+                  {industry.icon}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h4 className={`font-semibold text-sm mb-2 ${category.textColor}`}>
-                    {category.title}
+                  <h4 className={`font-semibold text-sm mb-2 ${industry.textColor}`}>
+                    {industry.title}
                   </h4>
-                  
-                  
+                  <p className="text-xs text-muted-foreground">
+                    {industry.description}
+                  </p>
                 </div>
               </div>
             </div>)}
