@@ -1,13 +1,11 @@
-import CompanyStrengths from "./CompanyStrengths";
+import InfrastructureQuality from "./InfrastructureQuality";
 import ProductPortfolio from "./ProductPortfolio";
-import Infrastructure from "./Infrastructure";
 
 const Manufacturing = () => {
   return (
     <>
-      <CompanyStrengths />
+      <InfrastructureQuality />
       <ProductPortfolio />
-      <Infrastructure />
     </>
   );
 };
