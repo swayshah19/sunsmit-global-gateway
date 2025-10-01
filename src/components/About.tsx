@@ -6,9 +6,9 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            About SunSmit Dyechem
+            About SunSmit Dyechem - ISO Certified Chemical Manufacturer & Exporter
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-left md:text-center">Established in 1996, SunSmit Dyechem Pvt. Ltd. has built over three decades of leadership in chemical manufacturing and supplying, specializing in Sodium Hypochlorite, Bleaching Powder, Speciality chemical and Intermediates with strong domestic and global presence. </p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-left md:text-center">Established in 1996, SunSmit Dyechem Pvt. Ltd. is a leading sodium hypochlorite manufacturer India and specialty chemicals exporter from Gujarat with over three decades of expertise. We specialize in bulk sodium hypochlorite solution for water treatment, calcium hypochlorite bleaching powder, pharmaceutical intermediates, agrochemical compounds, and custom chemical formulations with strong domestic and international presence across Africa, Europe, and Asia. </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">

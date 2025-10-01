@@ -27,21 +27,21 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight animate-fade-in-up">
-            Delivering Chemicals with
-            <span className="block text-accent mt-2">Trust & Innovation</span>
+            Sodium Hypochlorite Manufacturer & 
+            <span className="block text-accent mt-2">Specialty Chemicals Exporter from India</span>
           </h1>
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-white/90 mb-6 font-light max-w-3xl animate-fade-in-up" style={{
           animationDelay: '0.2s'
         }}>
-            Premium chemical solutions backed by three decades of expertise and cutting-edge manufacturing
+            ISO certified bulk sodium hypochlorite supplier and custom specialty chemical manufacturer with 30+ years of expertise in Gujarat, India
           </p>
           
           {/* Description */}
           <p className="text-lg text-white/75 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{
           animationDelay: '0.4s'
-        }}>From our state-of-the-art facilities in Ankleshwar and Dahej,Gujarat,India we manufacture and deliver speciality and bulk chemicals with unwavering quality and reliability.</p>
+        }}>Leading sodium hypochlorite manufacturer for water treatment, calcium hypochlorite exporter, and pharmaceutical intermediates supplier. From our state-of-the-art manufacturing facilities in Ankleshwar and Dahej, Gujarat, we deliver industrial chemicals, agrochemical intermediates, and bespoke chemical formulations to Africa, Europe, Asia with unwavering quality.</p>
           
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-6 mb-16 animate-fade-in-up" style={{

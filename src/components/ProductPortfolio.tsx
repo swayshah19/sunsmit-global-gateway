@@ -2,34 +2,34 @@ import { Button } from "@/components/ui/button";
 import { Droplets, FlaskConical, Beaker, Zap } from "lucide-react";
 const ProductPortfolio = () => {
   const products = [{
-    title: "Sodium Hypochlorite",
-    description: "High-grade liquid disinfectant and bleaching agent with Manufacturing Drug License for water purification. Mercury-free and stable formulation.",
+    title: "Sodium Hypochlorite - Bulk Liquid Disinfectant",
+    description: "Leading sodium hypochlorite manufacturer India supplying industrial-grade liquid sodium hypochlorite for water treatment, sanitation & textile bleaching. ISO certified with Manufacturing Drug License for municipal water boards and bottling plants. Mercury-free, stable formulation exported to Africa, Europe, Asia.",
     icon: Droplets,
-    applications: ["Drinking Water Disinfection", "Textile Bleaching", "Food Processing", "Sanitation", "Paper Industry", "Effluent Treatment"]
+    applications: ["Drinking Water Disinfection & Treatment", "Municipal Water Purification", "Textile Industry Bleaching", "Food Processing Sanitation", "Paper Industry Bleaching", "Effluent Treatment Plants"]
   }, {
-    title: "Calcium Hypochlorite",
-    description: "Premium quality stable bleaching powder with minimum 34% chlorine content. Mercury-free and stable in alkaline medium for reliable performance.",
+    title: "Calcium Hypochlorite - Bleaching Powder",
+    description: "Premium calcium hypochlorite exporter from Gujarat supplying stable bleaching powder with minimum 34% chlorine content. ISO certified manufacturer for water purification, textile bleaching and industrial applications. Mercury-free formulation ideal for effluent treatment and sanitation.",
     icon: Zap,
-    applications: ["Water Purification", "Effluent Treatment", "Paper Industry", "Textile Bleaching", "Food Processing", "Oil Refineries"]
+    applications: ["Water Purification Systems", "Industrial Effluent Treatment", "Paper & Pulp Industry", "Textile Bleaching Applications", "Food Processing Sanitation", "Oil Refineries & Chemical Plants"]
   }, {
-    title: "Custom Specialty Chemicals",
-    description: "Bespoke chemical formulations designed to meet specific industrial requirements. From complex organic synthesis to specialized inorganic compounds.",
+    title: "Custom Specialty Chemicals & Formulations",
+    description: "Specialty chemicals exporter India offering bespoke chemical formulations and custom chemical synthesis for pharmaceutical, agrochemical and industrial applications. From complex organic synthesis to specialized inorganic compounds, we manufacture technical-grade chemicals for global markets.",
     icon: FlaskConical,
-    applications: ["Pharmaceutical Intermediates", "Agrochemical Synthesis", "Coating Additives", "Industrial Catalysts", "Research & Development", "Custom Manufacturing"]
+    applications: ["Pharmaceutical Intermediates & APIs", "Agrochemical Pesticide Synthesis", "Industrial Coating Additives", "Chemical Catalysts Manufacturing", "R&D Custom Formulations", "Contract Chemical Manufacturing"]
   }, {
-    title: "Chemical Intermediates",
-    description: "High-quality chemical intermediates for pharmaceutical, agrochemical, and specialty chemical industries. Manufactured under strict quality control standards.",
+    title: "Chemical Intermediates & Fine Chemicals",
+    description: "Leading chemical intermediates exporter from India manufacturing high-purity pharmaceutical intermediates, agrochemical compounds, dye intermediates and polymer additives. ISO certified facility producing fine chemicals, specialty solvents and process chemicals under strict quality control.",
     icon: Beaker,
-    applications: ["API Manufacturing", "Dye Intermediates", "Polymer Additives", "Specialty Solvents", "Fine Chemicals", "Process Chemicals"]
+    applications: ["API & Bulk Drug Intermediates", "Dye & Pigment Intermediates", "Polymer & Plastic Additives", "Industrial Specialty Solvents", "Fine Chemical Manufacturing", "Technical Process Chemicals"]
   }];
   return (
     <section id="products" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">Our Product Portfolio</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-6">Chemical Products - Sodium Hypochlorite & Specialty Chemical Exports</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Manufacturing high-quality chemicals with advanced technology and stringent quality control to meet international standards and customer requirements.
+            ISO certified sodium hypochlorite manufacturer and specialty chemicals exporter from Gujarat, India. Manufacturing bulk industrial chemicals, pharmaceutical intermediates, agrochemical compounds and custom chemical formulations with advanced technology and stringent quality control to meet international standards for water treatment, textile, pharmaceutical and industrial applications.
           </p>
         </div>
 
