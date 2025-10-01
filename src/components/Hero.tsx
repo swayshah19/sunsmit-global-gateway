@@ -51,7 +51,7 @@ const Hero = () => {
           </div>
 
           {/* Key Metrics */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6" style={{
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pb-8 md:pb-0" style={{
           animationDelay: '0.8s'
         }}>
             <div className="glass text-center p-6 rounded-2xl hover-lift group">
@@ -81,8 +81,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Enhanced Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* Enhanced Scroll Indicator - Positioned above metrics */}
+      <div className="absolute bottom-32 md:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-50">
         <div className="glass-dark w-8 h-12 rounded-full flex justify-center items-start pt-3 cursor-pointer group hover:bg-white/20 transition-smooth">
           <div className="w-1 h-3 bg-white/70 rounded-full animate-pulse group-hover:bg-accent"></div>
         </div>

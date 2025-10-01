@@ -176,15 +176,25 @@ const ExportMap: React.FC<ExportMapProps> = ({
         const popup = new mapboxgl.Popup({
           offset: 25,
           closeButton: true,
-          closeOnClick: false
+          closeOnClick: false,
+          maxWidth: '300px'
         }).setHTML(popupContent);
 
-        // Create marker with popup
-        new mapboxgl.Marker(markerEl).setLngLat(region.coordinates).setPopup(popup).addTo(map.current!);
+        // Create marker with popup - open on click
+        const marker = new mapboxgl.Marker(markerEl)
+          .setLngLat(region.coordinates)
+          .setPopup(popup)
+          .addTo(map.current!);
 
-        // Add click handler
+        // Add click handler to toggle popup and set selected region
         markerEl.addEventListener('click', () => {
           setSelectedRegion(selectedRegion === region.id ? null : region.id);
+          // Toggle popup visibility
+          if (popup.isOpen()) {
+            popup.remove();
+          } else {
+            popup.addTo(map.current!);
+          }
         });
       });
     });

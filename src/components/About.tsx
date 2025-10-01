@@ -8,7 +8,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             About SunSmit Dyechem
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Established in 1996, SunSmit Dyechem Pvt. Ltd. has built over three decades of leadership in chemical manufacturing and supplying, specializing in Sodium Hypochlorite, Bleaching Powder, Speciality chemical and Intermediates with strong domestic and global presence. </p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-left md:text-center">Established in 1996, SunSmit Dyechem Pvt. Ltd. has built over three decades of leadership in chemical manufacturing and supplying, specializing in Sodium Hypochlorite, Bleaching Powder, Speciality chemical and Intermediates with strong domestic and global presence. </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -92,8 +92,8 @@ const About = () => {
             </p>
           </div>
 
-          {/* Key Strengths Grid */}
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-16">
+          {/* Key Strengths Grid - Vertical on mobile */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <Card className="card-premium hover-lift group">
               <CardContent className="p-8 text-center">
                 <div className="inline-flex items-center justify-center p-4 bg-primary/10 rounded-full mb-6 group-hover:bg-primary/20 transition-colors">
