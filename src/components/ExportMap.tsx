@@ -258,10 +258,6 @@ const ExportMap: React.FC<ExportMapProps> = ({
             <div className="relative bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl overflow-hidden">
               {/* Mapbox Globe */}
               <div ref={mapContainer} className="w-full h-[400px] rounded-xl" />
-              
-              <p className="text-sm text-muted-foreground text-center p-4">
-                Interactive globe showing export regions - click markers for details
-              </p>
             </div>
           </div>
         </div>
