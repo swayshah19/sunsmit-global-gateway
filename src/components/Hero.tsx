@@ -34,9 +34,7 @@ const Hero = () => {
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-white/90 mb-6 font-light max-w-3xl animate-fade-in-up" style={{
           animationDelay: '0.2s'
-        }}>
-            ISO certified bulk sodium hypochlorite supplier and custom specialty chemical manufacturer with 30+ years of expertise in Gujarat, India
-          </p>
+        }}>Bulk sodium hypochlorite and custom specialty chemical manufacturer with 30+ years of expertise in Gujarat, India</p>
           
           {/* Description */}
           <p className="text-lg text-white/75 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{
