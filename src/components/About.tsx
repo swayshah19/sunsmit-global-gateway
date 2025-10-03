@@ -35,7 +35,7 @@ const About = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Trusted Partnerships:</strong> Long-standing collaborations with clients across pharmaceuticals, agrochemicals, and industrial sectors
+                  <strong className="text-foreground">Trusted Partnerships:</strong> Long-standing collaborations with clients across speciality chemicals, agrochemicals, and industrial sectors
                 </p>
               </div>
               <div className="flex items-start space-x-3">
