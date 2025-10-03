@@ -272,8 +272,7 @@ const Markets = () => {
               <div className="bg-background/50 rounded-xl p-6">
                 <h5 className="font-bold text-foreground mb-3">Manufacturing Backbone</h5>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• 13000 MT/month Sodium Hypochlorite</li>
-                  <li>• 1000 MT/month Campaign Specialty Chemical</li>
+                  <li>• 13000 MT/month Sodium Hypochlorite • 1000 MT/month Campaign Specialty Chemical</li>
                   <li>• Dahej warehouse near Dahej & Mundra Ports</li>
                   <li>• Multi format export packaging</li>
                 </ul>
