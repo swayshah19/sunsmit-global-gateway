@@ -160,7 +160,7 @@ const About = () => {
                 <Badge variant="secondary" className="mb-4 bg-secondary/20 text-secondary border-secondary/30">
                   Quality First
                 </Badge>
-                <h3 className="text-xl font-bold text-foreground mb-3">Quality Assurance</h3>
+                <h3 className="text-xl font-bold text-foreground mb-3">Quality Control</h3>
                 <p className="text-muted-foreground leading-relaxed">In-house labs with MSDS & COAs</p>
               </CardContent>
             </Card>
