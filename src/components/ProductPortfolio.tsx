@@ -22,21 +22,17 @@ const ProductPortfolio = () => {
     icon: Beaker,
     applications: ["API & Bulk Drug Intermediates", "Dye & Pigment Intermediates", "Polymer & Plastic Additives", "Industrial Specialty Solvents", "Fine Chemical Manufacturing", "Technical Process Chemicals"]
   }];
-  return (
-    <section id="products" className="py-20 bg-background">
+  return <section id="products" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-6">Chemical Products - Sodium Hypochlorite & Specialty Chemical Exports</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            ISO certified sodium hypochlorite manufacturer and specialty chemicals exporter from Gujarat, India. Manufacturing bulk industrial chemicals, pharmaceutical intermediates, agrochemical compounds and custom chemical formulations with advanced technology and stringent quality control to meet international standards for water treatment, textile, pharmaceutical and industrial applications.
-          </p>
+          
         </div>
 
         {/* Products Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {products.map((product, index) => (
-            <div key={index} className="bg-card border rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+          {products.map((product, index) => <div key={index} className="bg-card border rounded-xl p-8 hover:shadow-lg transition-all duration-300">
               <div className="flex items-start gap-4 mb-6">
                 <div className="bg-primary/10 p-3 rounded-lg">
                   <product.icon className="w-8 h-8 text-primary" />
@@ -54,19 +50,15 @@ const ProductPortfolio = () => {
               <div>
                 <h4 className="font-semibold text-card-foreground mb-3">Applications:</h4>
                 <ul className="grid grid-cols-2 gap-2">
-                  {product.applications.map((application, appIndex) => (
-                    <li key={appIndex} className="text-sm text-muted-foreground flex items-center gap-2">
+                  {product.applications.map((application, appIndex) => <li key={appIndex} className="text-sm text-muted-foreground flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
                       {application}
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default ProductPortfolio;
