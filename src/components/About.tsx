@@ -134,7 +134,7 @@ const About = () => {
                 <Badge variant="secondary" className="mb-4 bg-secondary/20 text-secondary border-secondary/30">
                   ISO Compliant
                 </Badge>
-                <h3 className="text-xl font-bold text-foreground mb-3">Compliance</h3>
+                <h3 className="text-xl font-bold text-foreground mb-3">Quality Assurance</h3>
                 <p className="text-muted-foreground leading-relaxed">ISO 9001 & ISO 14001 compliant</p>
               </CardContent>
             </Card>
