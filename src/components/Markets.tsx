@@ -76,8 +76,8 @@ const Markets = () => {
     unit: "MT/Month",
     label: "Sodium Hypochlorite"
   }, {
-    number: "20",
-    unit: "MT/DAY",
+    number: "1000",
+    unit: "MT/MONTH",
     label: "Campaign Specialty"
   }, {
     number: "Near",
