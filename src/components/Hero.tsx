@@ -39,7 +39,7 @@ const Hero = () => {
           {/* Description */}
           <p className="text-lg text-white/75 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{
           animationDelay: '0.4s'
-        }}>Leading sodium hypochlorite manufacturer for water treatment, calcium hypochlorite exporter, and pharmaceutical intermediates supplier. From our state-of-the-art manufacturing facilities in Ankleshwar and Dahej, Gujarat, we deliver industrial chemicals, agrochemical intermediates, and bespoke chemical formulations to Africa, Europe, Asia with unwavering quality.</p>
+        }}>Leading sodium hypochlorite manufacturer for water treatment, calcium hypochlorite exporter, and pharmaceutical intermediates supplier. From our state-of-the-art manufacturing facilities in Ankleshwar and Dahej, Gujarat, we deliver industrial chemicals,and agrochemical intermediates to Africa, Europe, Asia with unwavering quality.</p>
           
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-6 mb-16 animate-fade-in-up" style={{
