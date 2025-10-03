@@ -19,12 +19,7 @@ const About = () => {
                   <strong className="text-foreground">Established Leadership:</strong> Over three decades of operations in chemical manufacturing since 1996
                 </p>
               </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-muted-foreground">
-                  <strong className="text-foreground">Licensed Manufacturing:</strong> Holds Manufacturing Drug License for sodium hypochlorite for water purification and IEC certificate for exporting
-                </p>
-              </div>
+              
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-muted-foreground">
