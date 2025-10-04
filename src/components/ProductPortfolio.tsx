@@ -39,7 +39,7 @@ const ProductPortfolio = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-semibold text-card-foreground mb-3">{product.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{product.description}</p>
+                  
                 </div>
               </div>
 
