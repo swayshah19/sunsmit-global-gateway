@@ -39,7 +39,7 @@ const Hero = () => {
           {/* Description */}
           <p className="text-lg text-white/75 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{
           animationDelay: '0.4s'
-        }}>A leading manufacturer and distributor of sodium hypochlorite, APIs (Active Pharmaceutical Ingredients), specialty chemicals, and pharmaceutical intermediates, we operate from state-of-the-art facilities in Ankleshwar and Dahej, Gujarat. With a strong focus on quality and reliability, we distribute and export APIs, industrial chemicals, and intermediates to clients across Africa, Europe, and Asia.</p>
+        }}>A leading manufacturer and distributor of sodium hypochlorite, Specialty chemicals, and Pharmaceutical intermediates, we operate from state-of-the-art facilities in Ankleshwar and Dahej, Gujarat. With a strong focus on quality and reliability, we distribute and export APIs, industrial chemicals,Speciality chemicals and intermediates to clients across Africa, Europe,America and Asia.</p>
           
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-6 mb-16 animate-fade-in-up" style={{
