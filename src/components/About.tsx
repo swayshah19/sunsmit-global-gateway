@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">About SunSmit Dyechem </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-left md:text-center">Established in 1996, SunSmit Dyechem Pvt. Ltd. is a trusted manufacturer of sodium hypochlorite in India and a leading exporter of specialty chemicals and intermediates from Gujarat, backed by over three decades of expertise. We specialize in sodium hypochlorite, bulk, commodity chemicals, specialty chemicals, intermediates, and custom chemical formulations, with a strong presence across domestic markets and international regions including Africa, Europe, and Asia.</p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-left md:text-center">Established in 1996, SunSmit Dyechem Pvt. Ltd. is a trusted manufacturer of sodium hypochlorite in India and a leading distributor and exporter of APIs (Active Pharmaceutical Ingredients), specialty chemicals, and pharmaceutical intermediates from Gujarat, backed by over three decades of expertise. We specialize in sodium hypochlorite, APIs, bulk and commodity chemicals, specialty chemicals, pharmaceutical intermediates, and custom chemical formulations, with a strong presence across domestic markets and international regions including Africa, Europe, and Asia.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">

@@ -12,15 +12,15 @@ const ProductPortfolio = () => {
     icon: Zap,
     applications: ["Water Purification Systems", "Industrial Effluent Treatment", "Paper & Pulp Industry", "Textile Bleaching Applications", "Food Processing Sanitation", "Oil Refineries & Chemical Plants"]
   }, {
-    title: "Custom Specialty Chemicals & Formulations",
-    description: "Specialty chemicals exporter India offering bespoke chemical formulations and custom chemical synthesis for pharmaceutical, agrochemical and industrial applications. From complex organic synthesis to specialized inorganic compounds, we manufacture technical-grade chemicals for global markets.",
+    title: "APIs (Active Pharmaceutical Ingredients) Distribution & Export",
+    description: "Leading API distributor and exporter from India supplying high-quality Active Pharmaceutical Ingredients (APIs) to pharmaceutical manufacturers worldwide. ISO certified distribution network for bulk drug APIs and pharmaceutical intermediates with strict quality control, regulatory compliance, and global logistics support.",
     icon: FlaskConical,
-    applications: ["Pharmaceutical Intermediates & APIs", "Agrochemical Pesticide Synthesis", "Industrial Coating Additives", "Chemical Catalysts Manufacturing", "R&D Custom Formulations", "Contract Chemical Manufacturing"]
+    applications: ["API Distribution & Export", "Pharmaceutical APIs for Drug Manufacturing", "Bulk Drug Intermediates", "Custom API Sourcing & Procurement", "GMP-Compliant API Supply Chain", "Global Pharmaceutical Distribution"]
   }, {
     title: "Chemical Intermediates & Fine Chemicals",
-    description: "Leading chemical intermediates exporter from India manufacturing high-purity pharmaceutical intermediates, agrochemical compounds, dye intermediates and polymer additives. ISO certified facility producing fine chemicals, specialty solvents and process chemicals under strict quality control.",
+    description: "Leading chemical intermediates exporter from India manufacturing high-purity pharmaceutical intermediates, API precursors, agrochemical compounds, dye intermediates and polymer additives. ISO certified facility producing fine chemicals, specialty solvents and process chemicals under strict quality control.",
     icon: Beaker,
-    applications: ["API & Bulk Drug Intermediates", "Dye & Pigment Intermediates", "Polymer & Plastic Additives", "Industrial Specialty Solvents", "Fine Chemical Manufacturing", "Technical Process Chemicals"]
+    applications: ["API & Bulk Drug Intermediates", "Pharmaceutical API Precursors", "Dye & Pigment Intermediates", "Polymer & Plastic Additives", "Industrial Specialty Solvents", "Fine Chemical Manufacturing"]
   }];
   return <section id="products" className="py-20 bg-background">
       <div className="container mx-auto px-4">

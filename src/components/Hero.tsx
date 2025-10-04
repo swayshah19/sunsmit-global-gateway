@@ -34,12 +34,12 @@ const Hero = () => {
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-white/90 mb-6 font-light max-w-3xl animate-fade-in-up" style={{
           animationDelay: '0.2s'
-        }}>Sodium hypochlorite and custom specialty chemical manufacturer and supplier with 30+ years of expertise in Gujarat, India</p>
+        }}>Leading manufacturer and exporter of sodium hypochlorite, APIs (Active Pharmaceutical Ingredients), and custom specialty chemicals with 30+ years of expertise in Gujarat, India</p>
           
           {/* Description */}
           <p className="text-lg text-white/75 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{
           animationDelay: '0.4s'
-        }}>A leading manufacturer of sodium hypochlorite, specialty chemicals, and intermediates, we operate from state-of-the-art facilities in Ankleshwar and Dahej, Gujarat. With a strong focus on quality and reliability, we supply industrial chemicals and intermediates to clients across Africa, Europe, and Asia.</p>
+        }}>A leading manufacturer and distributor of sodium hypochlorite, APIs (Active Pharmaceutical Ingredients), specialty chemicals, and pharmaceutical intermediates, we operate from state-of-the-art facilities in Ankleshwar and Dahej, Gujarat. With a strong focus on quality and reliability, we distribute and export APIs, industrial chemicals, and intermediates to clients across Africa, Europe, and Asia.</p>
           
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-6 mb-16 animate-fade-in-up" style={{
