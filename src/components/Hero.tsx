@@ -26,8 +26,8 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight animate-fade-in-up">
-            30+ Years of Excellence in Chemical Manufacturing and Global Distribution 
+          <h1 className="text-5xl md:text-7xl font-bold text-accent mb-8 leading-tight animate-fade-in-up">
+            30+ Years of Excellence in Chemical Manufacturing and Global Distribution
             
           </h1>
           
