@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Droplets, FlaskConical, Beaker, Zap } from "lucide-react";
 const ProductPortfolio = () => {
   const products = [{
-    title: "Sodium Hypochlorite - Bulk Liquid Disinfectant",
+    title: "Sodium Hypochlorite",
     description: "Leading sodium hypochlorite manufacturer India supplying industrial-grade liquid sodium hypochlorite for water treatment, sanitation & textile bleaching. ISO certified with Manufacturing Drug License for municipal water boards and bottling plants. Mercury-free, stable formulation exported to Africa, Europe, Asia.",
     icon: Droplets,
     applications: ["Drinking Water Disinfection & Treatment", "Municipal Water Purification", "Textile Industry Bleaching", "Food Processing Sanitation", "Paper Industry Bleaching", "Effluent Treatment Plants"]
