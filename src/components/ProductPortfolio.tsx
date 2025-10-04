@@ -44,7 +44,7 @@ const ProductPortfolio = () => {
               </div>
 
               <div className="mb-6">
-                <Button className="mb-4">Request Quote</Button>
+                <Button size="lg" className="mb-4">Request Quote</Button>
               </div>
 
               
