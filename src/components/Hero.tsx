@@ -28,7 +28,7 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight animate-fade-in-up">
             Sodium Hypochlorite & Speciality Chemical 
-            <span className="block text-accent mt-2">Manufacturer and Exporter from India</span>
+            <span className="block text-accent mt-2">30+ Years of Global Trust in Chemical Manufacturing</span>
           </h1>
           
           {/* Subheading */}
