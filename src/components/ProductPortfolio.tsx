@@ -47,15 +47,7 @@ const ProductPortfolio = () => {
                 <Button className="mb-4">Request Quote</Button>
               </div>
 
-              <div>
-                <h4 className="font-semibold text-card-foreground mb-3">Applications:</h4>
-                <ul className="grid grid-cols-2 gap-2">
-                  {product.applications.map((application, appIndex) => <li key={appIndex} className="text-sm text-muted-foreground flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
-                      {application}
-                    </li>)}
-                </ul>
-              </div>
+              
             </div>)}
         </div>
       </div>
