@@ -26,7 +26,7 @@ const ProductPortfolio = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">Chemical Products - Sodium Hypochlorite & Specialty Chemical Exports</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-6">Our Products </h2>
           
         </div>
 
