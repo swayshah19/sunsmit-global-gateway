@@ -44,7 +44,9 @@ const ProductPortfolio = () => {
               </div>
 
               <div className="mb-6">
-                <Button size="lg" className="mb-4">Request Quote</Button>
+                <Button size="lg" className="mb-4" asChild>
+                  <a href="#contact">Request Quote</a>
+                </Button>
               </div>
 
               
