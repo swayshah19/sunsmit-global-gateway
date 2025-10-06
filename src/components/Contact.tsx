@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useState, FormEvent } from "react";
 import { toast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,8 +18,9 @@ const Contact = () => {
     quantity: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     
     // Validate required fields
@@ -31,16 +33,50 @@ const Contact = () => {
       return;
     }
 
-    // Create WhatsApp message
-    const message = `*New Inquiry*\n\nCompany: ${formData.companyName}\nContact: ${formData.contactPerson}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCountry: ${formData.country}\nProduct: ${formData.productInterest}\nQuantity: ${formData.quantity}\n\nMessage:\n${formData.message}`;
-    
-    const whatsappUrl = `https://wa.me/919825030377?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-    
-    toast({
-      title: "Opening WhatsApp",
-      description: "Your inquiry is ready to send via WhatsApp"
-    });
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          companyName: formData.companyName,
+          contactPerson: formData.contactPerson,
+          email: formData.email,
+          phone: formData.phone,
+          country: formData.country,
+          product: formData.productInterest,
+          quantity: formData.quantity,
+          message: formData.message,
+        },
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Inquiry Sent Successfully",
+        description: "We'll get back to you within 24 hours!",
+      });
+
+      // Clear form
+      setFormData({
+        companyName: "",
+        contactPerson: "",
+        email: "",
+        phone: "",
+        country: "",
+        productInterest: "",
+        quantity: "",
+        message: "",
+      });
+    } catch (error: any) {
+      console.error("Error sending inquiry:", error);
+      toast({
+        title: "Error Sending Inquiry",
+        description: "Please try again later or contact us directly at export02@sunsmitdyechem.com",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return <section id="contact" className="py-20 bg-muted/30">
@@ -249,8 +285,8 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full">
-                    Send Enquiry
+                  <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                    {isSubmitting ? "Sending..." : "Send Enquiry"}
                   </Button>
 
                   <p className="text-xs text-muted-foreground text-center">
