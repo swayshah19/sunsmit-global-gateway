@@ -3,7 +3,46 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { useState, FormEvent } from "react";
+import { toast } from "@/hooks/use-toast";
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    companyName: "",
+    contactPerson: "",
+    email: "",
+    phone: "",
+    country: "",
+    productInterest: "",
+    quantity: "",
+    message: ""
+  });
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    
+    // Validate required fields
+    if (!formData.companyName || !formData.contactPerson || !formData.email || !formData.country) {
+      toast({
+        title: "Required fields missing",
+        description: "Please fill in all required fields marked with *",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    // Create WhatsApp message
+    const message = `*New Inquiry*\n\nCompany: ${formData.companyName}\nContact: ${formData.contactPerson}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCountry: ${formData.country}\nProduct: ${formData.productInterest}\nQuantity: ${formData.quantity}\n\nMessage:\n${formData.message}`;
+    
+    const whatsappUrl = `https://wa.me/919825030377?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+    
+    toast({
+      title: "Opening WhatsApp",
+      description: "Your inquiry is ready to send via WhatsApp"
+    });
+  };
+
   return <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
@@ -106,19 +145,29 @@ const Contact = () => {
                 </p>
               </CardHeader>
               <CardContent>
-                <form className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Company Name *
                       </label>
-                      <Input placeholder="Your Company Name" />
+                      <Input 
+                        placeholder="Your Company Name" 
+                        value={formData.companyName}
+                        onChange={(e) => setFormData({...formData, companyName: e.target.value})}
+                        required
+                      />
                     </div>
                     <div>
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Contact Person *
                       </label>
-                      <Input placeholder="Your Name" />
+                      <Input 
+                        placeholder="Your Name" 
+                        value={formData.contactPerson}
+                        onChange={(e) => setFormData({...formData, contactPerson: e.target.value})}
+                        required
+                      />
                     </div>
                   </div>
 
@@ -127,13 +176,23 @@ const Contact = () => {
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Email Address *
                       </label>
-                      <Input type="email" placeholder="your@email.com" />
+                      <Input 
+                        type="email" 
+                        placeholder="your@email.com" 
+                        value={formData.email}
+                        onChange={(e) => setFormData({...formData, email: e.target.value})}
+                        required
+                      />
                     </div>
                     <div>
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Phone Number
                       </label>
-                      <Input placeholder="+91 98765 43210" />
+                      <Input 
+                        placeholder="+91 98765 43210" 
+                        value={formData.phone}
+                        onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      />
                     </div>
                   </div>
 
@@ -142,13 +201,22 @@ const Contact = () => {
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Country *
                       </label>
-                      <Input placeholder="Your Country" />
+                      <Input 
+                        placeholder="Your Country" 
+                        value={formData.country}
+                        onChange={(e) => setFormData({...formData, country: e.target.value})}
+                        required
+                      />
                     </div>
                     <div>
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Product Interest
                       </label>
-                      <select className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm">
+                      <select 
+                        className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm"
+                        value={formData.productInterest}
+                        onChange={(e) => setFormData({...formData, productInterest: e.target.value})}
+                      >
                         <option>Select Product</option>
                         <option>Sodium Hypochlorite</option>
                         <option>Calcium Hypochlorite</option>
@@ -162,17 +230,26 @@ const Contact = () => {
                     <label className="text-sm font-medium text-foreground mb-2 block">
                       Quantity Required
                     </label>
-                    <Input placeholder="e.g., 100 MT per month" />
+                    <Input 
+                      placeholder="e.g., 100 MT per month" 
+                      value={formData.quantity}
+                      onChange={(e) => setFormData({...formData, quantity: e.target.value})}
+                    />
                   </div>
 
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
                       Message
                     </label>
-                    <Textarea placeholder="Please provide details about your requirements, specifications, and any other relevant information..." className="min-h-[120px]" />
+                    <Textarea 
+                      placeholder="Please provide details about your requirements, specifications, and any other relevant information..." 
+                      className="min-h-[120px]" 
+                      value={formData.message}
+                      onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    />
                   </div>
 
-                  <Button variant="premium" size="lg" className="w-full">
+                  <Button type="submit" size="lg" className="w-full">
                     Send Enquiry
                   </Button>
 
