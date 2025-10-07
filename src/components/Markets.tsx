@@ -326,37 +326,7 @@ const Markets = () => {
         </div>
 
         {/* 7. Domestic Market Strengths */}
-        <div className="bg-muted/30 rounded-2xl p-8 md:p-12">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-foreground mb-8">Domestic Market Leadership</h3>
-          </div>
-
-          {/* Industries Served */}
-          
-
-          {/* Domestic Market Strengths */}
-          <div className="bg-background/50 rounded-xl p-8">
-            <h4 className="text-2xl font-bold text-center text-foreground mb-8">Domestic Market Strengths</h4>
-            <div className="grid md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">Pan-India</div>
-                <div className="text-muted-foreground">Distribution Network</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-secondary mb-2">24/7</div>
-                <div className="text-muted-foreground">Supply Chain</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">MSDS</div>
-                <div className="text-muted-foreground">Compliance Reports</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-secondary mb-2">Licensed</div>
-                <div className="text-muted-foreground">Manufacturing</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>;
 };
