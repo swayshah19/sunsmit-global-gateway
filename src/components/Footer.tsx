@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, Globe, Award } from "lucide-react";
+import { MapPin, Mail, Phone, Globe, Award, Shield } from "lucide-react";
 const Footer = () => {
   return <footer className="bg-foreground text-white py-12">
       <div className="container mx-auto px-4">
@@ -19,7 +19,7 @@ SunSmit stands for trust, innovation, and global reliabilitypowering industries 
                 <span>Quality Assured</span>
               </div>
               <div className="flex items-center space-x-2 text-sm">
-                <Award className="h-4 w-4 text-secondary" />
+                <Shield className="h-4 w-4 text-secondary" />
                 <span>Trusted Partner</span>
               </div>
             </div>
