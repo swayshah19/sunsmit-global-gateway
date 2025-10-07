@@ -82,7 +82,7 @@ const Hero = () => {
       {/* Enhanced Scroll Indicator - Positioned above metrics */}
       <div className="absolute bottom-32 md:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-50">
         
-        <p className="text-white/60 text-xs mt-2 text-center font-medium">Scroll to explore</p>
+        
       </div>
 
       {/* Side Navigation Dots */}
