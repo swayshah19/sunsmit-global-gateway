@@ -9,12 +9,19 @@ const Footer = () => {
             <p className="text-white/80 mb-4 max-w-md">SunSmit Dyechem Pvt. Ltd. is a Gujarat-based manufacturer and exporter with 30+ years of expertise in sodium hypochlorite, specialty chemicals, and pharmaceutical intermediates.
 SunSmit stands for trust, innovation, and global reliabilitypowering industries across Asia, Africa, Europe, and the Americas
           </p>
-            <div className="flex space-x-4">
+            <div className="flex flex-wrap gap-3">
               <div className="flex items-center space-x-2 text-sm">
                 <Globe className="h-4 w-4 text-secondary" />
                 <span>Global Presence</span>
               </div>
-              
+              <div className="flex items-center space-x-2 text-sm">
+                <Award className="h-4 w-4 text-secondary" />
+                <span>Quality Assured</span>
+              </div>
+              <div className="flex items-center space-x-2 text-sm">
+                <Award className="h-4 w-4 text-secondary" />
+                <span>Trusted Partner</span>
+              </div>
             </div>
           </div>
 
