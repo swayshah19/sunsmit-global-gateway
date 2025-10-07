@@ -222,10 +222,7 @@ const Markets = () => {
                     <div>
                       <h5 className="font-semibold text-foreground mb-2">Products:</h5>
                       <div className="space-y-1">
-                        {category.products.map((product, idx) => <div key={idx} className="flex items-start space-x-2">
-                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-muted-foreground text-sm">{product}</span>
-                          </div>)}
+                        {category.products.map((product, idx) => {})}
                       </div>
                     </div>
                   </div>
