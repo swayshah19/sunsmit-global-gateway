@@ -15,10 +15,7 @@ const Footer = () => {
                 <Globe className="h-4 w-4 text-secondary" />
                 <span>Global Presence</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm">
-                <Award className="h-4 w-4 text-secondary" />
-                <span>ISO Certified</span>
-              </div>
+              
             </div>
           </div>
 
