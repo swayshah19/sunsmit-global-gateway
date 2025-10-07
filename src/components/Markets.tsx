@@ -78,7 +78,7 @@ const Markets = () => {
   }, {
     number: "1000",
     unit: "MT/MONTH",
-    label: "Campaign Specialty"
+    label: "Campaign Specialty Chemicals"
   }, {
     number: "Near",
     unit: "Dahej & Mundra",
