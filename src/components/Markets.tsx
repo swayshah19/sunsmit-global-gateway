@@ -332,16 +332,7 @@ const Markets = () => {
           </div>
 
           {/* Industries Served */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {industries.map((industry, index) => <Card key={index} className="shadow-card hover:shadow-corporate transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className={`${industry.color} mb-4`}>
-                    {industry.icon}
-                  </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-3">{industry.name}</h4>
-                </CardContent>
-              </Card>)}
-          </div>
+          
 
           {/* Domestic Market Strengths */}
           <div className="bg-background/50 rounded-xl p-8">
