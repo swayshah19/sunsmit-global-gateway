@@ -24,7 +24,7 @@ const Markets = () => {
     products: ["Reactive Dyes", "Acid Dyes", "Azo Intermediates"],
     advantage: "India supplies ~16% of global dyestuffs and exports to 90+ countries"
   }, {
-    title: "Agro-Chemicals",
+    title: "Agro-Chemicals and Intermediates",
     icon: <Wheat className="h-8 w-8" />,
     color: "text-amber-600",
     products: ["Technical-grade Pesticides", "Formulations (insecticides, herbicides, fungicides)"],
