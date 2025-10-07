@@ -6,7 +6,6 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useState, FormEvent } from "react";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     companyName: "",
@@ -19,10 +18,9 @@ const Contact = () => {
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    
+
     // Validate required fields
     if (!formData.companyName || !formData.contactPerson || !formData.email || !formData.country) {
       toast({
@@ -32,11 +30,11 @@ const Contact = () => {
       });
       return;
     }
-
     setIsSubmitting(true);
-
     try {
-      const { error } = await supabase.functions.invoke('send-contact-email', {
+      const {
+        error
+      } = await supabase.functions.invoke('send-contact-email', {
         body: {
           companyName: formData.companyName,
           contactPerson: formData.contactPerson,
@@ -45,15 +43,13 @@ const Contact = () => {
           country: formData.country,
           product: formData.productInterest,
           quantity: formData.quantity,
-          message: formData.message,
-        },
+          message: formData.message
+        }
       });
-
       if (error) throw error;
-
       toast({
         title: "Inquiry Sent Successfully",
-        description: "We'll get back to you within 24 hours!",
+        description: "We'll get back to you within 24 hours!"
       });
 
       // Clear form
@@ -65,20 +61,19 @@ const Contact = () => {
         country: "",
         productInterest: "",
         quantity: "",
-        message: "",
+        message: ""
       });
     } catch (error: any) {
       console.error("Error sending inquiry:", error);
       toast({
         title: "Error Sending Inquiry",
         description: "Please try again later or contact us directly at export02@sunsmitdyechem.com",
-        variant: "destructive",
+        variant: "destructive"
       });
     } finally {
       setIsSubmitting(false);
     }
   };
-
   return <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
@@ -142,7 +137,7 @@ const Contact = () => {
                   </div>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-muted-foreground">+91 9825030377</span>
+                    <span className="text-muted-foreground">+91 7069889770</span>
                   </div>
                 </CardContent>
               </Card>
@@ -187,23 +182,19 @@ const Contact = () => {
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Company Name *
                       </label>
-                      <Input 
-                        placeholder="Your Company Name" 
-                        value={formData.companyName}
-                        onChange={(e) => setFormData({...formData, companyName: e.target.value})}
-                        required
-                      />
+                      <Input placeholder="Your Company Name" value={formData.companyName} onChange={e => setFormData({
+                      ...formData,
+                      companyName: e.target.value
+                    })} required />
                     </div>
                     <div>
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Contact Person *
                       </label>
-                      <Input 
-                        placeholder="Your Name" 
-                        value={formData.contactPerson}
-                        onChange={(e) => setFormData({...formData, contactPerson: e.target.value})}
-                        required
-                      />
+                      <Input placeholder="Your Name" value={formData.contactPerson} onChange={e => setFormData({
+                      ...formData,
+                      contactPerson: e.target.value
+                    })} required />
                     </div>
                   </div>
 
@@ -212,23 +203,19 @@ const Contact = () => {
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Email Address *
                       </label>
-                      <Input 
-                        type="email" 
-                        placeholder="your@email.com" 
-                        value={formData.email}
-                        onChange={(e) => setFormData({...formData, email: e.target.value})}
-                        required
-                      />
+                      <Input type="email" placeholder="your@email.com" value={formData.email} onChange={e => setFormData({
+                      ...formData,
+                      email: e.target.value
+                    })} required />
                     </div>
                     <div>
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Phone Number
                       </label>
-                      <Input 
-                        placeholder="+91 98765 43210" 
-                        value={formData.phone}
-                        onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      />
+                      <Input placeholder="+91 98765 43210" value={formData.phone} onChange={e => setFormData({
+                      ...formData,
+                      phone: e.target.value
+                    })} />
                     </div>
                   </div>
 
@@ -237,22 +224,19 @@ const Contact = () => {
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Country *
                       </label>
-                      <Input 
-                        placeholder="Your Country" 
-                        value={formData.country}
-                        onChange={(e) => setFormData({...formData, country: e.target.value})}
-                        required
-                      />
+                      <Input placeholder="Your Country" value={formData.country} onChange={e => setFormData({
+                      ...formData,
+                      country: e.target.value
+                    })} required />
                     </div>
                     <div>
                       <label className="text-sm font-medium text-foreground mb-2 block">
                         Product Interest
                       </label>
-                      <select 
-                        className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm"
-                        value={formData.productInterest}
-                        onChange={(e) => setFormData({...formData, productInterest: e.target.value})}
-                      >
+                      <select className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm" value={formData.productInterest} onChange={e => setFormData({
+                      ...formData,
+                      productInterest: e.target.value
+                    })}>
                         <option>Select Product</option>
                         <option>Sodium Hypochlorite</option>
                         <option>Calcium Hypochlorite</option>
@@ -266,23 +250,20 @@ const Contact = () => {
                     <label className="text-sm font-medium text-foreground mb-2 block">
                       Quantity Required
                     </label>
-                    <Input 
-                      placeholder="e.g., 100 MT per month" 
-                      value={formData.quantity}
-                      onChange={(e) => setFormData({...formData, quantity: e.target.value})}
-                    />
+                    <Input placeholder="e.g., 100 MT per month" value={formData.quantity} onChange={e => setFormData({
+                    ...formData,
+                    quantity: e.target.value
+                  })} />
                   </div>
 
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
                       Message
                     </label>
-                    <Textarea 
-                      placeholder="Please provide details about your requirements, specifications, and any other relevant information..." 
-                      className="min-h-[120px]" 
-                      value={formData.message}
-                      onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    />
+                    <Textarea placeholder="Please provide details about your requirements, specifications, and any other relevant information..." className="min-h-[120px]" value={formData.message} onChange={e => setFormData({
+                    ...formData,
+                    message: e.target.value
+                  })} />
                   </div>
 
                   <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
