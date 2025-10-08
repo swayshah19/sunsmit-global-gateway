@@ -12,7 +12,7 @@ const ProductPortfolio = () => {
     icon: Zap,
     applications: ["Water Purification Systems", "Industrial Effluent Treatment", "Paper & Pulp Industry", "Textile Bleaching Applications", "Food Processing Sanitation", "Oil Refineries & Chemical Plants"]
   }, {
-    title: "APIs (Active Pharmaceutical Ingredients) Distribution & Export",
+    title: "APIs (Active Pharmaceutical Ingredients)",
     description: "Leading API distributor and exporter from India supplying high-quality Active Pharmaceutical Ingredients (APIs) to pharmaceutical manufacturers worldwide. ISO certified distribution network for bulk drug APIs and pharmaceutical intermediates with strict quality control, regulatory compliance, and global logistics support.",
     icon: FlaskConical,
     applications: ["API Distribution & Export", "Pharmaceutical APIs for Drug Manufacturing", "Bulk Drug Intermediates", "Custom API Sourcing & Procurement", "GMP-Compliant API Supply Chain", "Global Pharmaceutical Distribution"]
