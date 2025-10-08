@@ -12,8 +12,7 @@ const Hero = () => {
           allow="autoplay; encrypted-media"
           title="SunSmit Dyechem manufacturing facility"
         />
-        <div className="absolute inset-0 bg-gradient-overlay"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/20"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
       {/* Floating Elements */}
