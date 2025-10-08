@@ -1,16 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Globe, Award, Factory, Users, ChevronDown, Play } from "lucide-react";
-import heroImage from "@/assets/hero-background-whitish-blue.jpg";
+import heroBanner from "@/assets/hero-banner.gif";
 const Hero = () => {
   return <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background with Enhanced Overlay */}
       <div className="absolute inset-0">
-        <iframe 
-          src="https://www.youtube.com/embed/wcdPpCdPtoI?autoplay=1&mute=1&loop=1&playlist=wcdPpCdPtoI&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" 
-          className="w-full h-full object-cover scale-105"
-          style={{ minHeight: '100%', minWidth: '100%', border: 'none', pointerEvents: 'none' }}
-          allow="autoplay; encrypted-media"
-          title="SunSmit Dyechem manufacturing facility"
+        <img 
+          src={heroBanner} 
+          alt="SunSmit Dyechem manufacturing facility"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
