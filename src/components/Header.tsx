@@ -32,8 +32,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center space-x-3">
-              <img src={companyLogoNew} alt="SunSmit Dyechem Logo" className="h-10 w-10 object-contain dark:invert" style={{
-              backgroundColor: 'transparent'
+              <img src={companyLogoNew} alt="SunSmit Dyechem Logo" className="h-10 w-10 object-contain dark:invert brightness-75 contrast-125" style={{
+              backgroundColor: 'transparent',
+              filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'
             }} />
               <div className="flex items-center space-x-2">
                 <div>
