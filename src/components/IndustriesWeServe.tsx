@@ -1,4 +1,4 @@
-import { Building, Leaf, Pill, Beaker, Droplets, Factory, Coffee, Shirt } from "lucide-react";
+import { Building, Leaf, Pill, Beaker, Droplets, Factory, Palette, Shirt } from "lucide-react";
 
 const IndustriesWeServe = () => {
   const industries = [
@@ -23,8 +23,8 @@ const IndustriesWeServe = () => {
       icon: Factory,
     },
     {
-      title: "Food & Beverages",
-      icon: Coffee,
+      title: "Dyes & Pigments",
+      icon: Palette,
     },
     {
       title: "Textile & Paper",
