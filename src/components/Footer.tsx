@@ -29,11 +29,11 @@ SunSmit stands for trust, innovation, and global reliabilitypowering industries 
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-white/80">
-              <li><a href="#about" className="hover:text-secondary transition-colors">About Us</a></li>
-              <li><a href="#products" className="hover:text-secondary transition-colors">Products</a></li>
-              <li><a href="#manufacturing" className="hover:text-secondary transition-colors">Manufacturing</a></li>
-              <li><a href="#markets" className="hover:text-secondary transition-colors">Export Markets</a></li>
-              <li><a href="#contact" className="hover:text-secondary transition-colors">Contact Us</a></li>
+              <li><a href="#about" title="About SunSmit Dyechem - Chemical Manufacturer Gujarat" className="hover:text-secondary transition-colors">About Us</a></li>
+              <li><a href="#products" title="Sodium Hypochlorite & Specialty Chemicals Products" className="hover:text-secondary transition-colors">Products</a></li>
+              <li><a href="#manufacturing" title="ISO Certified Chemical Manufacturing Facilities" className="hover:text-secondary transition-colors">Manufacturing</a></li>
+              <li><a href="#markets" title="Global Chemical Export Markets - Africa Europe Asia" className="hover:text-secondary transition-colors">Export Markets</a></li>
+              <li><a href="#contact" title="Contact SunSmit Dyechem for Chemical Export Inquiries" className="hover:text-secondary transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
