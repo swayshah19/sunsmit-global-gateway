@@ -62,7 +62,7 @@ const Header = () => {
           </nav>
 
           {/* Contact Info & CTA */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
             <Button variant="premium" size="sm" onClick={() => {
               document.querySelector('#contact')?.scrollIntoView({
                 behavior: 'smooth'
