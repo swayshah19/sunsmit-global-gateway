@@ -7,7 +7,7 @@ const Products = () => {
   const products = [
     {
       icon: <Droplets className="h-8 w-8" />,
-      name: "Sodium Hypochlorite",
+      name: "Sodium HypoChlorite",
       brand: "Sun Chlorex (12%)",
       concentration: "12%",
       capacity: "275,000 L/day",

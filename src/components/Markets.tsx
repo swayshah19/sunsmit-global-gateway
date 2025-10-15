@@ -74,7 +74,7 @@ const Markets = () => {
   const infrastructureStats = [{
     number: "13000",
     unit: "MT/Month",
-    label: "Sodium Hypochlorite"
+    label: "Sodium HypoChlorite"
   }, {
     number: "1000",
     unit: "MT/MONTH",
@@ -93,14 +93,14 @@ const Markets = () => {
   const industries = [{
     icon: <Droplets className="h-8 w-8" />,
     name: "Textiles",
-    description: "Sodium Hypochlorite for bleaching and processing",
-    products: ["Sodium Hypochlorite 12%"],
+    description: "Sodium HypoChlorite for bleaching and processing",
+    products: ["Sodium HypoChlorite 12%"],
     color: "text-blue-600"
   }, {
     icon: <Wheat className="h-8 w-8" />,
     name: "Starch & Paper",
     description: "Industrial bleaching and processing solutions",
-    products: ["Sodium Hypochlorite", "Bleaching Agents"],
+    products: ["Sodium HypoChlorite", "Bleaching Agents"],
     color: "text-amber-600"
   }, {
     icon: <ShieldCheck className="h-8 w-8" />,
@@ -112,7 +112,7 @@ const Markets = () => {
     icon: <Building2 className="h-8 w-8" />,
     name: "Government Water",
     description: "Water purification for municipal supplies",
-    products: ["Sodium Hypochlorite", "Calcium Hypochlorite"],
+    products: ["Sodium HypoChlorite", "Calcium Hypochlorite"],
     color: "text-blue-700"
   }, {
     icon: <Zap className="h-8 w-8" />,
@@ -124,7 +124,7 @@ const Markets = () => {
     icon: <Factory className="h-8 w-8" />,
     name: "Bottling & Food",
     description: "Sanitization and food processing applications",
-    products: ["Food Grade Sodium Hypochlorite"],
+    products: ["Food Grade Sodium HypoChlorite"],
     color: "text-green-700"
   }];
   const distributionChannels = [{
@@ -170,9 +170,9 @@ const Markets = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Main Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">🌍 Export  Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">🌍 Export  Services</h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            For nearly three decades, SunSmit Dye Chem Pvt. Ltd. has been a trusted manufacturer of sodium hypochlorite in India. 
+            For nearly three decades, SunSmit Dye Chem Pvt. Ltd. has been a trusted manufacturer of Sodium HypoChlorite in India. 
             Building on our legacy of reliability, technical strength, and quality assurance, we are now expanding into the 
             <span className="text-primary font-semibold"> global export and distribution of APIs (Active Pharmaceutical Ingredients), bulk and specialty chemicals</span>.
           </p>
@@ -260,7 +260,7 @@ const Markets = () => {
               <div className="bg-background/50 rounded-xl p-6">
                 <h5 className="font-bold text-foreground mb-3">Manufacturing Backbone</h5>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• 13000 MT/month Sodium Hypochlorite                                       • 1000 MT/month Campaign Specialty Chemical</li>
+                  <li>• 13000 MT/month Sodium HypoChlorite                                       • 1000 MT/month Campaign Specialty Chemical</li>
                   <li>• Dahej warehouse near Dahej & Mundra Ports</li>
                   <li>• Multi format export packaging</li>
                 </ul>

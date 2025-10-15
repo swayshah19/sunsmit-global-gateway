@@ -238,7 +238,7 @@ const Contact = () => {
                       productInterest: e.target.value
                     })}>
                         <option>Select Product</option>
-                        <option>Sodium Hypochlorite</option>
+                        <option>Sodium HypoChlorite</option>
                         <option>Calcium Hypochlorite</option>
                         <option>Specialty Intermediates</option>
                         <option>Custom Requirements</option>

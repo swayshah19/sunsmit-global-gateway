@@ -19,7 +19,7 @@ const InfrastructureQuality = () => {
   const manufacturingCapacity = [
     {
       title: "Primary Product",
-      subtitle: "Sodium Hypochlorite",
+      subtitle: "Sodium HypoChlorite",
       capacity: "13,000 MT/month",
       icon: Factory
     },

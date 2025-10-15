@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Factory, FlaskConical, Microscope, ShieldCheck, Beaker, TestTube, Building2, Warehouse, CheckCircle, Award, Target, Star, ChevronRight } from "lucide-react";
 const Infrastructure = () => {
   const manufacturingCapacity = [{
-    title: "Sodium Hypochlorite",
+    title: "Sodium HypoChlorite",
     capacity: "13,000 MT/month",
     icon: Beaker,
     highlight: "Primary Product"

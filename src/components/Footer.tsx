@@ -6,7 +6,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">SunSmit Dyechem Pvt. Ltd.</h3>
-            <p className="text-white/80 mb-4 max-w-md">SunSmit Dyechem Pvt. Ltd. is a Gujarat-based manufacturer and exporter with 30+ years of expertise in sodium hypochlorite, specialty chemicals, and pharmaceutical intermediates.
+            <p className="text-white/80 mb-4 max-w-md">SunSmit Dyechem Pvt. Ltd. is a Gujarat-based manufacturer and exporter with 30+ years of expertise in Sodium HypoChlorite, specialty chemicals, and pharmaceutical intermediates.
 SunSmit stands for trust, innovation, and global reliabilitypowering industries across Asia, Africa, Europe, and the Americas
           </p>
             <div className="flex flex-wrap gap-3">
@@ -30,7 +30,7 @@ SunSmit stands for trust, innovation, and global reliabilitypowering industries 
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-white/80">
               <li><a href="#about" title="About SunSmit Dyechem - Chemical Manufacturer Gujarat" className="hover:text-secondary transition-colors">About Us</a></li>
-              <li><a href="#products" title="Sodium Hypochlorite & Specialty Chemicals Products" className="hover:text-secondary transition-colors">Products</a></li>
+              <li><a href="#products" title="Sodium HypoChlorite & Specialty Chemicals Products" className="hover:text-secondary transition-colors">Products</a></li>
               <li><a href="#manufacturing" title="ISO Certified Chemical Manufacturing Facilities" className="hover:text-secondary transition-colors">Manufacturing</a></li>
               <li><a href="#markets" title="Global Chemical Export Markets - Africa Europe Asia" className="hover:text-secondary transition-colors">Export Markets</a></li>
               <li><a href="#contact" title="Contact SunSmit Dyechem for Chemical Export Inquiries" className="hover:text-secondary transition-colors">Contact Us</a></li>
