@@ -127,7 +127,7 @@ const Markets = () => {
     products: ["Food Grade Sodium HypoChlorite"],
     color: "text-green-700"
   }];
-  const distributionChannels = [{
+  const supplyChannels = [{
     icon: <Ship className="h-10 w-10" />,
     title: "Sea Freight",
     description: "Major shipping routes to global ports with reliable container services",
@@ -135,7 +135,7 @@ const Markets = () => {
   }, {
     icon: <Truck className="h-10 w-10" />,
     title: "Land Transport",
-    description: "Pan-India distribution network with specialized chemical transportation",
+    description: "Pan-India supply network with specialized chemical transportation",
     color: "text-secondary"
   }, {
     icon: <Plane className="h-10 w-10" />,
@@ -174,7 +174,7 @@ const Markets = () => {
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             For nearly three decades, SunSmit Dye Chem Pvt. Ltd. has been a trusted manufacturer of Sodium HypoChlorite in India. 
             Building on our legacy of reliability, technical strength, and quality assurance, we are now expanding into the 
-            <span className="text-primary font-semibold"> global export and distribution of APIs (Active Pharmaceutical Ingredients), bulk and specialty chemicals</span>.
+            <span className="text-primary font-semibold"> global export and supply of APIs (Active Pharmaceutical Ingredients), bulk and specialty chemicals</span>.
           </p>
         </div>
 
@@ -287,11 +287,11 @@ const Markets = () => {
           </div>
         </div>
 
-        {/* 6. Distribution Network */}
+        {/* 6. Supply Network */}
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">
-              Distribution Network
+              Supply Network
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Comprehensive logistics solutions ensuring seamless delivery across global markets
@@ -299,7 +299,7 @@ const Markets = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {distributionChannels.map((channel, index) => <Card key={index} className="text-center group hover-lift">
+            {supplyChannels.map((channel, index) => <Card key={index} className="text-center group hover-lift">
                 <CardContent className="p-8">
                   <div className={`${channel.color} mb-6 flex justify-center group-hover:scale-110 transition-transform`}>
                     {channel.icon}

@@ -30,7 +30,7 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-accent mb-8 leading-tight animate-fade-in-up">
-            30+ Years of Excellence in Chemical Manufacturing and Global Distribution
+            30+ Years of Excellence in Chemical Manufacturing and Global Supply
             
           </h1>
           
@@ -42,7 +42,7 @@ const Hero = () => {
           {/* Description */}
           <p className="text-lg text-white/75 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{
           animationDelay: '0.4s'
-        }}>A leading manufacturer and distributor of Sodium HypoChlorite, Specialty chemicals, and Pharmaceutical intermediates, we operate from state-of-the-art facilities in Ankleshwar and Dahej, Gujarat. With a strong focus on quality and reliability, we distribute and export APIs, Industrial chemicals,Speciality chemicals, Dyes and intermediates to clients across Africa, Europe,America and Asia.</p>
+        }}>A leading manufacturer and supplier of Sodium HypoChlorite, Specialty chemicals, and Pharmaceutical intermediates, we operate from state-of-the-art facilities in Ankleshwar and Dahej, Gujarat. With a strong focus on quality and reliability, we supply and export APIs, Industrial chemicals,Speciality chemicals, Dyes and intermediates to clients across Africa, Europe,America and Asia.</p>
           
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-6 mb-16 animate-fade-in-up" style={{

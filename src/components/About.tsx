@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">About SunSmit Dyechem </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-left md:text-center">Established in 1996, SunSmit Dyechem Pvt. Ltd. is a trusted manufacturer of Sodium HypoChlorite in India and a leading distributor and exporter of APIs (Active Pharmaceutical Ingredients), Specialty chemicals, Bulk chemicals and Intermediates from Gujarat, backed by over three decades of expertise. We specialize in Sodium HypoChlorite, APIs, bulk and commodity chemicals, specialty chemicals, Dyes and Dyes intermediates, and custom chemical formulations, with a strong presence across domestic markets and international regions including Africa, Europe, and Asia.</p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-left md:text-center">Established in 1996, SunSmit Dyechem Pvt. Ltd. is a trusted manufacturer of Sodium HypoChlorite in India and a leading supplier and exporter of APIs (Active Pharmaceutical Ingredients), Specialty chemicals, Bulk chemicals and Intermediates from Gujarat, backed by over three decades of expertise. We specialize in Sodium HypoChlorite, APIs, bulk and commodity chemicals, specialty chemicals, Dyes and Dyes intermediates, and custom chemical formulations, with a strong presence across domestic markets and international regions including Africa, Europe, and Asia.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -41,7 +41,7 @@ const About = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Strong Supply Chain:</strong> Integrated logistics for smooth domestic distribution and international exports
+                  <strong className="text-foreground">Strong Supply Chain:</strong> Integrated logistics for smooth domestic supply and international exports
                 </p>
               </div>
             </div>
