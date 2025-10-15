@@ -11,16 +11,6 @@ const ProductPortfolio = () => {
     description: "Premium calcium hypochlorite exporter from Gujarat supplying stable bleaching powder with minimum 34% chlorine content. ISO certified manufacturer for water purification, textile bleaching and industrial applications. Mercury-free formulation ideal for effluent treatment and sanitation.",
     icon: Zap,
     applications: ["Water Purification Systems", "Industrial Effluent Treatment", "Paper & Pulp Industry", "Textile Bleaching Applications", "Food Processing Sanitation", "Oil Refineries & Chemical Plants"]
-  }, {
-    title: "APIs (Active Pharmaceutical Ingredients)",
-    description: "Leading API supplier and exporter from India supplying high-quality Active Pharmaceutical Ingredients (APIs) to pharmaceutical manufacturers worldwide. ISO certified supply network for bulk drug APIs and pharmaceutical intermediates with strict quality control, regulatory compliance, and global logistics support.",
-    icon: FlaskConical,
-    applications: ["API Supply & Export", "Pharmaceutical APIs for Drug Manufacturing", "Bulk Drug Intermediates", "Custom API Sourcing & Procurement", "GMP-Compliant API Supply Chain", "Global Pharmaceutical Supply"]
-  }, {
-    title: "Chemical Intermediates & Fine Chemicals",
-    description: "Leading chemical intermediates exporter from India manufacturing high-purity pharmaceutical intermediates, API precursors, agrochemical compounds, dye intermediates and polymer additives. ISO certified facility producing fine chemicals, specialty solvents and process chemicals under strict quality control.",
-    icon: Beaker,
-    applications: ["API & Bulk Drug Intermediates", "Pharmaceutical API Precursors", "Dye & Pigment Intermediates", "Polymer & Plastic Additives", "Industrial Specialty Solvents", "Fine Chemical Manufacturing"]
   }];
   return <section id="products" className="py-20 bg-background">
       <div className="container mx-auto px-4">
