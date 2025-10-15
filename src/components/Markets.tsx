@@ -30,7 +30,7 @@ const Markets = () => {
     products: ["Technical-grade Pesticides", "Formulations (insecticides, herbicides, fungicides)"],
     advantage: "India is one of the world's largest producers of agro-chemicals"
   }, {
-    title: "Pharmaceuticals & Intermediates",
+    title: "Active Pharmaceutical Intermediates",
     icon: <ShieldCheck className="h-8 w-8" />,
     color: "text-red-600",
     products: ["APIs (Active Pharmaceutical Ingredients)", "Bulk Drug Intermediates", "Specialty Fine Chemicals for pharma"],
