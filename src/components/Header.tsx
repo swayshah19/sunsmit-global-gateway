@@ -63,7 +63,11 @@ const Header = () => {
 
           {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="premium" size="sm">
+            <Button variant="premium" size="sm" onClick={() => {
+              document.querySelector('#contact')?.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }}>
               Get Quote
             </Button>
           </div>
@@ -92,7 +96,12 @@ const Header = () => {
                   </li>)}
               </ul>
               <div className="mt-4 pt-4 border-t border-border">
-                <Button variant="premium" className="w-full">
+                <Button variant="premium" className="w-full" onClick={() => {
+                  document.querySelector('#contact')?.scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                  setIsMenuOpen(false);
+                }}>
                   Get Quote
                 </Button>
               </div>
