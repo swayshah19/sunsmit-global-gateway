@@ -42,7 +42,7 @@ const Hero = () => {
           {/* Description */}
           <p className="text-lg text-white/75 mb-12 max-w-2xl leading-relaxed animate-fade-in-up" style={{
           animationDelay: '0.4s'
-        }}>Leading manufacturer and supplier of Inorganic Chemicals, Organic Chemicals, Dyes & Dye Intermediates, Agro-Chemicals and Intermediates, Active Pharmaceutical Intermediates, and Specialty Chemicals. We operate from state-of-the-art facilities in Ankleshwar, Gujarat and Dahej, Gujarat, with a strong focus on quality and reliability.</p>
+        }}>Leading manufacturer of Sodium HypoChlorite and supplier of Specialty Chemicals, Inorganic Chemicals, Organic Chemicals,Agro-Chemicals and Intermediates, Dyes & Dye Intermediates,and Active Pharmaceutical Intermediates. We operate from state-of-the-art facilities in Ankleshwar, Gujarat and Dahej, Gujarat, with a strong focus on quality and reliability.</p>
           
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-6 mb-16 animate-fade-in-up" style={{
