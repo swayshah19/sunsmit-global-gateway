@@ -284,9 +284,7 @@ const Markets = () => {
         {/* 6. Supply Network */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-foreground mb-4">
-              Supply Network
-            </h3>
+            <h3 className="text-3xl font-bold text-foreground mb-4">Logistic Network</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Comprehensive logistics solutions ensuring seamless delivery across global markets
             </p>
