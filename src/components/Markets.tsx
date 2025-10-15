@@ -35,6 +35,12 @@ const Markets = () => {
     color: "text-red-600",
     products: ["APIs (Active Pharmaceutical Ingredients)", "Bulk Drug Intermediates", "Specialty Fine Chemicals for pharma"],
     advantage: "India's pharma ecosystem is export-driven, with world-class regulatory compliance (US FDA, EU GMP)"
+  }, {
+    title: "Specialty Chemicals",
+    icon: <Settings className="h-8 w-8" />,
+    color: "text-indigo-600",
+    products: ["Custom Chemical Formulations", "Performance Additives", "Surfactants & Emulsifiers", "Catalysts", "Process Chemicals"],
+    advantage: "Tailored solutions for specific industrial applications with flexible manufacturing capabilities"
   }];
 
   // Why Choose SunSmit
