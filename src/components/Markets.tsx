@@ -174,7 +174,7 @@ const Markets = () => {
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             For nearly three decades, SunSmit Dye Chem Pvt. Ltd. has been a trusted manufacturer of Sodium HypoChlorite in India. 
             Building on our legacy of reliability, technical strength, and quality assurance, we are now expanding into the 
-            <span className="text-primary font-semibold"> global export and supply of APIs (Active Pharmaceutical Ingredients), bulk and specialty chemicals</span>.
+            <span className="text-primary font-semibold"> Global Markets</span>.
           </p>
         </div>
 
