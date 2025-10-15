@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">About SunSmit Dyechem </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-left md:text-center">Established in 1996, SunSmit Dyechem Pvt. Ltd. is a trusted manufacturer of Sodium HypoChlorite in India and a leading supplier of Specialty chemicals, Bulk chemicals, from Gujarat, backed by over three decades of expertise. We specialize in Sodium HypoChlorite, APIs, bulk and commodity chemicals, specialty chemicals, Dyes and Dyes intermediates, and custom chemical formulations, with a strong presence across domestic markets and international regions including Africa, Europe, and Asia.</p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-left md:text-center">Established in 1996, SunSmit Dyechem Pvt. Ltd. is a trusted manufacturer of Sodium HypoChlorite in India and a leading supplier of Inorganic Chemicals, Organic Chemicals, Dyes & Dye Intermediates, Agro-Chemicals and Intermediates, Active Pharmaceutical Intermediates, and Specialty Chemicals from Gujarat, backed by over three decades of expertise. We specialize in Sodium HypoChlorite, APIs, bulk and commodity chemicals, specialty chemicals, Dyes and Dyes intermediates, and custom chemical formulations, with a strong presence across domestic markets and international regions including Africa, Europe, and Asia.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
