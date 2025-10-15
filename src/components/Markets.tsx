@@ -30,12 +30,6 @@ const Markets = () => {
     products: ["Technical-grade Pesticides", "Formulations (insecticides, herbicides, fungicides)"],
     advantage: "India is one of the world's largest producers of agro-chemicals"
   }, {
-    title: "Plastics & Polymers",
-    icon: <Package className="h-8 w-8" />,
-    color: "text-indigo-600",
-    products: ["Polyethylene (PE) & Polypropylene (PP) derivatives", "Films & Packaging Materials", "Synthetic Rubber & Filaments"],
-    advantage: "Applications: FMCG, industrial packaging, automotive, textiles"
-  }, {
     title: "Pharmaceuticals & Intermediates",
     icon: <ShieldCheck className="h-8 w-8" />,
     color: "text-red-600",
